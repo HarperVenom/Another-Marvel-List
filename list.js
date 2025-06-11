@@ -1,5 +1,5 @@
 async function fillMovieList() {
-  const response = await fetch("/titles.json");
+  const response = await fetch("titles.json");
   const movies = await response.json();
 
   const list = document.querySelector(".list");
