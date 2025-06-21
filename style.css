@@ -36,10 +36,6 @@ body {
   background-color: var(--theme-accent, rgb(100, 100, 100));
 }
 
-.overview::-webkit-scrollbar-thumb {
-  background-color: var(--theme-accent, rgb(70, 70, 70));
-}
-
 /* On hover */
 *::-webkit-scrollbar-thumb:hover {
   background-color: var(--theme-accent-hover, rgb(130, 130, 130));
@@ -57,8 +53,8 @@ body {
 }
 
 .hidden {
-  visibility: hidden;
   pointer-events: none;
+  opacity: 0;
 }
 
 .noscroll {
@@ -68,7 +64,6 @@ body {
 .title-list-container {
   width: 100%;
   max-width: 2000px;
-  /* background-color: pink; */
   padding: 0.5rem;
 
   @media screen and (max-width: 650px) {
@@ -79,7 +74,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: clamp(1rem, 5vw, 4rem); */
     margin-bottom: min(1vw, 1rem);
 
     .header {
@@ -116,12 +110,14 @@ body {
       width: 100%;
       height: 100%;
       user-select: none;
-      /* width: var(--title-width); */
-      /* max-width: var(--title-width); */
-      /* aspect-ratio: 2 / 3; */
       background-color: black;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       cursor: pointer;
+      transition: scale 0.1s ease, outline-color 1s ease;
+
+      &:active {
+        scale: 0.95;
+      }
     }
 
     .number {
@@ -130,14 +126,8 @@ body {
   }
 }
 
-.overview.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .overview.noscroll {
   overflow: hidden;
-  padding-right: 6px;
 }
 
 .overview {
@@ -150,9 +140,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(30px);
   transition: opacity 0.3s ease;
-  opacity: 1;
 
   overflow: auto;
   cursor: pointer;
@@ -160,27 +149,59 @@ body {
   .container {
     top: 0;
     max-width: 400px;
+    margin-block: auto;
     padding: 1.5rem;
+
+    @media screen and (min-width: 700px) {
+      display: flex;
+      flex-direction: row;
+      max-width: min(1000px, 100vw);
+      gap: 1.5rem;
+    }
 
     .poster {
       width: 100%;
+
+      height: fit-content;
+      aspect-ratio: 2 / 3;
+      max-width: 400px;
       user-select: none;
+      /* object-fit: cover; */
+
+      @media screen and (min-width: 700px) {
+        width: 50%;
+        /* max-width: 50%; */
+        /* width: fit-content; */
+        /* flex-shrink: 3; */
+        /* flex: 1; */
+      }
     }
 
     .info {
-      padding-top: 1.5rem;
+      padding: 0.5rem;
+      padding-top: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      height: fit-content;
       cursor: auto;
+      transition: opacity 0.2s ease;
+
+      @media screen and (min-width: 700px) {
+        min-width: 250px;
+        /* flex-shrink: 0; */
+      }
 
       .title {
         width: 100%;
         font-weight: 500;
         font-size: 1.7rem;
         margin-bottom: 1.5rem;
-        text-wrap: stable;
+        text-wrap: pretty;
+
+        @media screen and (min-width: 700px) {
+          font-size: 2.5rem;
+        }
       }
 
       .details {
@@ -191,12 +212,15 @@ body {
         * {
           font-weight: 200;
           width: 100%;
-          font-size: 1.1rem;
+          font-size: 1.2rem;
           color: rgba(200, 200, 200, 0.8);
+
+          @media screen and (min-width: 700px) {
+            font-size: 1.4rem;
+          }
         }
 
         .section {
-          /* font-weight: 600; */
           color: white;
         }
       }

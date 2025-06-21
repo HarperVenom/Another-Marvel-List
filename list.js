@@ -6,11 +6,16 @@ const overviewContainer = document.querySelector("#overview-container");
 
 let lastClickedThumbnail = null;
 
+window.addEventListener("resize", () => {
+  fillMovieList();
+});
+
 async function fillMovieList() {
   const response = await fetch("titles.json");
   const movies = await response.json();
 
   const list = document.querySelector(".list");
+  list.innerHTML = "";
 
   movies.forEach((movie, index) => {
     const li = document.createElement("li");
@@ -30,7 +35,7 @@ async function fillMovieList() {
 
       overviewContainer.innerHTML = `
             <img class="poster big" src="/posters/${movie.poster}" alt="" />
-            <div class="info">
+            <div class="info hidden">
               <h2 class="title">${movie.title}</h2>
 
               <div class="details">
@@ -51,12 +56,21 @@ async function fillMovieList() {
 
       const info = overviewContainer.querySelector(".info");
       info.addEventListener("click", (e) => {
-        e.stopPropagation(); // ✅ Prevent click from bubbling to parent
+        e.stopPropagation();
       });
 
       requestAnimationFrame(() => {
         const bigImg = overviewContainer.querySelector(".poster.big");
+
+        // if (bigImg.complete) {
+        //   animateTransition();
+        // } else {
+        //   bigImg.onload = animateTransition;
+        // }
+
         const bigRect = bigImg.getBoundingClientRect();
+
+        console.log(bigRect.width + " " + bigRect.height);
 
         // 4. Clone the small image
         const clone = img.cloneNode(true);
@@ -93,9 +107,15 @@ async function fillMovieList() {
             clone.remove();
             transitioning = false;
             overview.classList.remove("noscroll");
+            overview.style.paddingRight = `unset`;
+            info.classList.remove("hidden");
           },
           { once: true }
         );
+
+        if (overviewContainer.scrollHeight > window.innerHeight) {
+          overview.style.paddingRight = `6px`;
+        }
 
         overview.classList.add("noscroll");
 
@@ -172,11 +192,13 @@ function toggleOverview() {
         { once: true }
       );
     } else {
-      overview.classList.add("hidden");
+      // overview.classList.add("hidden");
     }
 
     transitioning = true;
     bigImg.style.visibility = "hidden";
+
+    // console.log(bigImg.getBoundingClientRect().height);
 
     overview.classList.add("hidden");
   }
