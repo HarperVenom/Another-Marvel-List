@@ -34,7 +34,7 @@ async function fillMovieList() {
       toggleOverview();
 
       overviewContainer.innerHTML = `
-            <img class="poster big" src="/posters/${movie.poster}" alt="" />
+            <img class="poster big" src="posters/${movie.poster}" alt="" />
             <div class="info hidden">
               <h2 class="title">${movie.title}</h2>
 
