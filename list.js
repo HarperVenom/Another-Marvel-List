@@ -6,6 +6,8 @@ const postersPath = "new-posters";
 const overview = document.querySelector("#overview");
 const overviewContainer = document.querySelector("#overview-container");
 
+const glowContainer = document.querySelector("#glow-container");
+
 let lastClickedThumbnail = null;
 
 async function fillMovieList() {
@@ -30,6 +32,8 @@ async function fillMovieList() {
 
       lastClickedThumbnail = img;
       toggleOverview();
+
+      glowContainer.classList.remove("hidden");
 
       const glow = document.querySelector("#glow");
       const [color1, color2] = movie.colors.split(" ");
@@ -83,7 +87,9 @@ async function fillMovieList() {
         }
 
         overview.classList.add("noscroll");
-        img.style.visibility = "hidden";
+        setTimeout(() => {
+          img.style.visibility = "hidden";
+        }, 10);
         bigImg.style.visibility = "hidden";
         transitioning = true;
       };
@@ -127,8 +133,12 @@ function toggleOverview() {
       });
 
       transitioning = true;
-      bigImg.style.visibility = "hidden";
+      setTimeout(() => {
+        bigImg.style.visibility = "hidden";
+      }, 10);
+
       overview.classList.add("hidden");
+      glowContainer.classList.add("hidden");
     };
 
     if (bigImg.complete) {
