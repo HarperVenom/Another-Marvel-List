@@ -103,7 +103,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100lvh;
   /* background: rgba(20, 20, 20, 0.6); */
   display: flex;
   flex-direction: column;
@@ -119,6 +119,7 @@ body {
     max-width: 400px;
     margin-block: auto;
     padding: 1.5rem;
+    overflow: visible;
 
     .poster {
       width: 100%;
@@ -154,7 +155,7 @@ body {
           font-weight: 200;
           width: 100%;
           font-size: 1.2rem;
-          color: rgba(200, 200, 200, 0.8);
+          color: rgb(220, 220, 220, 0.9);
         }
 
         .section {
@@ -165,7 +166,7 @@ body {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 870px) {
   .title-list-container {
     padding: 12px;
 
@@ -206,11 +207,14 @@ body {
 }
 
 .glow-container {
-  top: 0;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   position: fixed;
-  width: 101%;
-  height: 100vh;
+  width: 200vw;
+  height: 200vh;
   overflow: hidden;
+  /* background: white; */
 
   display: flex;
   align-items: center;
@@ -218,35 +222,134 @@ body {
 
   z-index: 0;
   pointer-events: none;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(10px);
 
   transition: opacity 0.3s ease;
-  filter: brightness(0.8);
-}
+  /* filter: brightness(0.8); */
+  filter: blur(3vmax);
 
-.glow {
-  position: relative;
-  width: 150vmax;
-  height: 150vmax;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
+  .glow {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* filter: url(#goo); */
+    filter: blur(3vmax) contrast(1.2) brightness(0.8);
+    scale: 1.5;
 
-  pointer-events: none;
-  opacity: 0.6;
-  filter: contrast(120%);
-  /* filter: blur(100px); */
-  background: radial-gradient(circle at 10% 10%, #e90000, rgb(63, 24, 255) 80%);
-  mix-blend-mode: screen;
-
-  animation: spin 20s linear infinite;
-  transform-origin: center;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+    opacity: 0.6;
+    /* filter: contrast(120%); */
+    background: white;
+    transform-origin: center;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.circle {
+  position: absolute;
+  width: clamp(200px, 50vmax, 500px);
+  height: clamp(200px, 50vmax, 500px);
+  background: red;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  /* animation: move 4s ease-in-out infinite alternate; */
+
+  &.small {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.circle:nth-child(1) {
+  /* opacity: 0.8; */
+  translate: -50% -50%;
+  transform-origin: center;
+  animation: orbit 30s linear infinite;
+}
+
+.circle:nth-child(2) {
+  width: clamp(150px, 30vmax, 400px);
+  height: clamp(150px, 30vmax, 400px);
+  translate: -50% -50%;
+  transform-origin: center;
+  animation: orbit2 30s linear infinite;
+}
+
+/* .circle:nth-child(2) {
+  top: 0;
+  left: 0;
+  animation: moveright 20s ease-in-out infinite alternate;
+}
+.circle:nth-child(3) {
+  top: 0;
+  left: 100%;
+  translate: -100% 0;
+  animation: movedown 20s ease-in-out infinite alternate;
+}
+.circle:nth-child(4) {
+  top: 100%;
+  left: 100%;
+  translate: -100% -100%;
+  animation: moveleft 20s ease-in-out infinite alternate;
+}
+.circle:nth-child(5) {
+  top: 100%;
+  left: 0;
+  translate: 0 -100%;
+  animation: moveup 20s ease-in-out infinite alternate;
+} */
+
+/* .circle.straight:nth-of-type(1) {
+  
+} */
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(40vmin);
+  }
+  100% {
+    transform: rotate(360deg) translateX(40vmin);
+  }
+}
+
+@keyframes orbit2 {
+  0% {
+    transform: rotate(0deg) translateX(-40vmin);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-40vmin);
+  }
+}
+
+@keyframes moveright {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(100vw - 100%), 0);
+  }
+}
+
+@keyframes movedown {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, calc(100vh - 100%));
+  }
+}
+@keyframes moveleft {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(-100vw + 100%), 0);
+  }
+}
+@keyframes moveup {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, calc(-100vh + 100%));
   }
 }

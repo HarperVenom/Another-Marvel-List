@@ -37,11 +37,19 @@ async function fillMovieList() {
 
       const glow = document.querySelector("#glow");
       const [color1, color2] = movie.colors.split(" ");
-      if (color1 == "") {
-        glow.style.background = `radial-gradient(circle at 20% 20%, white, black 80%)`;
-      } else {
-        glow.style.background = `radial-gradient(circle at 20% 20%, ${color2}, ${color1} 80%)`;
-      }
+      glow.style.backgroundColor = color1; // dark background
+
+      // Set background color of all circles
+      const circles = glow.querySelectorAll(".circle");
+      circles.forEach((circle) => {
+        circle.style.backgroundColor = color2; // any color you like
+      });
+
+      // if (color1 == "") {
+      //   glow.style.background = `radial-gradient(circle at 20% 20%, white, black 80%)`;
+      // } else {
+      //   glow.style.background = `radial-gradient(circle at 20% 20%, ${color2}, ${color1} 80%)`;
+      // }
 
       overviewContainer.innerHTML = `
             <img class="poster big" src="${
