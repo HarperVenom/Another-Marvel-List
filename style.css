@@ -144,6 +144,10 @@ body {
         font-size: 1.7rem;
         margin-bottom: 1.5rem;
         text-wrap: pretty;
+
+        @media screen and (min-width: 400px) {
+          font-size: 2rem;
+        }
       }
 
       .details {
@@ -156,6 +160,10 @@ body {
           width: 100%;
           font-size: 1.2rem;
           color: rgb(220, 220, 220, 0.9);
+
+          @media screen and (min-width: 400px) {
+            font-size: 1.3rem;
+          }
         }
 
         .section {
@@ -198,7 +206,7 @@ body {
 
         .details {
           * {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
           }
         }
       }
@@ -226,14 +234,14 @@ body {
 
   transition: opacity 0.3s ease;
   /* filter: brightness(0.8); */
-  filter: blur(3vmax);
+  filter: blur(4vmax);
 
   .glow {
     position: relative;
     width: 100vw;
     height: 100vh;
     /* filter: url(#goo); */
-    filter: blur(3vmax) contrast(1.2) brightness(0.8);
+    filter: blur(4vmax) contrast(1.2) brightness(0.8);
     scale: 1.5;
 
     opacity: 0.6;
@@ -245,8 +253,8 @@ body {
 
 .circle {
   position: absolute;
-  width: clamp(200px, 50vmax, 500px);
-  height: clamp(200px, 50vmax, 500px);
+  width: clamp(200px, 50vmax, 600px);
+  height: clamp(200px, 50vmax, 600px);
   background: red;
   border-radius: 50%;
   top: 50%;
@@ -260,47 +268,18 @@ body {
 }
 
 .circle:nth-child(1) {
-  /* opacity: 0.8; */
   translate: -50% -50%;
   transform-origin: center;
-  animation: orbit 30s linear infinite;
+  animation: orbit 20s linear infinite;
 }
 
 .circle:nth-child(2) {
-  width: clamp(150px, 30vmax, 400px);
-  height: clamp(150px, 30vmax, 400px);
+  width: clamp(150px, 30vmax, 500px);
+  height: clamp(150px, 30vmax, 500px);
   translate: -50% -50%;
   transform-origin: center;
-  animation: orbit2 30s linear infinite;
+  animation: orbit2 20s linear infinite;
 }
-
-/* .circle:nth-child(2) {
-  top: 0;
-  left: 0;
-  animation: moveright 20s ease-in-out infinite alternate;
-}
-.circle:nth-child(3) {
-  top: 0;
-  left: 100%;
-  translate: -100% 0;
-  animation: movedown 20s ease-in-out infinite alternate;
-}
-.circle:nth-child(4) {
-  top: 100%;
-  left: 100%;
-  translate: -100% -100%;
-  animation: moveleft 20s ease-in-out infinite alternate;
-}
-.circle:nth-child(5) {
-  top: 100%;
-  left: 0;
-  translate: 0 -100%;
-  animation: moveup 20s ease-in-out infinite alternate;
-} */
-
-/* .circle.straight:nth-of-type(1) {
-  
-} */
 
 @keyframes orbit {
   0% {
@@ -317,39 +296,5 @@ body {
   }
   100% {
     transform: rotate(360deg) translateX(-40vmin);
-  }
-}
-
-@keyframes moveright {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(calc(100vw - 100%), 0);
-  }
-}
-
-@keyframes movedown {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(0, calc(100vh - 100%));
-  }
-}
-@keyframes moveleft {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(calc(-100vw + 100%), 0);
-  }
-}
-@keyframes moveup {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(0, calc(-100vh + 100%));
   }
 }
