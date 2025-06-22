@@ -6,9 +6,9 @@ const overviewContainer = document.querySelector("#overview-container");
 
 let lastClickedThumbnail = null;
 
-window.addEventListener("resize", () => {
-  fillMovieList();
-});
+// window.addEventListener("resize", () => {
+//   fillMovieList();
+// });
 
 async function fillMovieList() {
   const response = await fetch("titles.json");
@@ -59,77 +59,41 @@ async function fillMovieList() {
         e.stopPropagation();
       });
 
-      requestAnimationFrame(() => {
-        const bigImg = overviewContainer.querySelector(".poster.big");
+      const bigImg = overviewContainer.querySelector(".poster.big");
 
-        // if (bigImg.complete) {
-        //   animateTransition();
-        // } else {
-        //   bigImg.onload = animateTransition;
-        // }
-
-        const bigRect = bigImg.getBoundingClientRect();
-
-        console.log(bigRect.width + " " + bigRect.height);
-
-        // 4. Clone the small image
-        const clone = img.cloneNode(true);
-        Object.assign(clone.style, {
-          position: "fixed",
-          top: `${thumbRect.top}px`,
-          left: `${thumbRect.left}px`,
-          width: `${thumbRect.width}px`,
-          height: `${thumbRect.height}px`,
-          margin: 0,
-          zIndex: 9999,
-          transition: "all 0.3s ease",
-          pointerEvents: "none",
+      const startTransition = () => {
+        animateImageTransition(img, bigImg, () => {
+          bigImg.style.visibility = "visible";
+          transitioning = false;
+          overview.classList.remove("noscroll");
+          overview.style.paddingRight = `unset`;
+          info.classList.remove("hidden");
         });
-        document.body.appendChild(clone);
-
-        // 5. Force reflow, then animate
-        clone.getBoundingClientRect(); // force reflow
-
-        requestAnimationFrame(() => {
-          Object.assign(clone.style, {
-            top: `${bigRect.top}px`,
-            left: `${bigRect.left}px`,
-            width: `${bigRect.width}px`,
-            height: `${bigRect.height}px`,
-          });
-        });
-
-        // 6. After animation ends, reveal real big image
-        clone.addEventListener(
-          "transitionend",
-          () => {
-            bigImg.style.visibility = "visible";
-            clone.remove();
-            transitioning = false;
-            overview.classList.remove("noscroll");
-            overview.style.paddingRight = `unset`;
-            info.classList.remove("hidden");
-          },
-          { once: true }
-        );
 
         if (overviewContainer.scrollHeight > window.innerHeight) {
           overview.style.paddingRight = `6px`;
         }
 
         overview.classList.add("noscroll");
-
         img.style.visibility = "hidden";
         bigImg.style.visibility = "hidden";
         transitioning = true;
-      });
+      };
+
+      if (bigImg.complete) {
+        requestAnimationFrame(startTransition);
+      } else {
+        bigImg.onload = () => requestAnimationFrame(startTransition);
+      }
     });
 
     list.appendChild(li);
   });
 }
 
-overview.addEventListener("click", () => toggleOverview());
+overview.addEventListener("click", () => {
+  toggleOverview();
+});
 
 function toggleOverview() {
   if (transitioning) return;
@@ -137,71 +101,76 @@ function toggleOverview() {
 
   if (overviewOpened) {
     const scrollBarWidth = getScrollbarWidth();
-    // document.body.style.overflow = "hidden";
     document.body.style.paddingRight = `${scrollBarWidth}px`;
 
     document.body.classList.add("noscroll");
     overview.classList.remove("hidden");
   } else {
     const bigImg = overview.querySelector(".poster.big");
+    if (!bigImg || !lastClickedThumbnail) return;
 
-    // const scrollOffset = overview.scro;
-
-    // console.log(scrollOffset);
-
-    if (bigImg && lastClickedThumbnail) {
-      const fromRect = bigImg.getBoundingClientRect();
-      const toRect = lastClickedThumbnail.getBoundingClientRect();
-
-      const clone = bigImg.cloneNode(true);
-      Object.assign(clone.style, {
-        position: "fixed",
-        top: `${fromRect.top}px`,
-        left: `${fromRect.left}px`,
-        width: `${fromRect.width}px`,
-        height: `${fromRect.height}px`,
-        margin: 0,
-        zIndex: 9999,
-        transition: "all 0.3s ease",
-        pointerEvents: "none",
+    const closeTransition = () => {
+      animateImageTransition(bigImg, lastClickedThumbnail, () => {
+        transitioning = false;
+        lastClickedThumbnail.style.visibility = "visible";
+        overview.scrollTop = 0;
+        document.body.classList.remove("noscroll");
+        document.body.style.paddingRight = "";
       });
 
-      document.body.appendChild(clone);
-      overview.classList.add("hidden"); // hide the overlay immediately
+      transitioning = true;
+      bigImg.style.visibility = "hidden";
+      overview.classList.add("hidden");
+    };
 
-      // Wait one frame before animating
-      requestAnimationFrame(() => {
-        Object.assign(clone.style, {
-          top: `${toRect.top}px`,
-          left: `${toRect.left}px`,
-          width: `${toRect.width}px`,
-          height: `${toRect.height}px`,
-        });
-      });
-
-      clone.addEventListener(
-        "transitionend",
-        () => {
-          clone.remove();
-          transitioning = false;
-          lastClickedThumbnail.style.visibility = "visible";
-          overview.scrollTop = 0;
-          document.body.classList.remove("noscroll");
-          document.body.style.paddingRight = "";
-        },
-        { once: true }
-      );
+    if (bigImg.complete) {
+      requestAnimationFrame(closeTransition);
     } else {
-      // overview.classList.add("hidden");
+      bigImg.onload = () => requestAnimationFrame(closeTransition);
     }
-
-    transitioning = true;
-    bigImg.style.visibility = "hidden";
-
-    // console.log(bigImg.getBoundingClientRect().height);
-
-    overview.classList.add("hidden");
   }
+}
+
+function animateImageTransition(fromEl, toEl, onEnd) {
+  const fromRect = fromEl.getBoundingClientRect();
+  const toRect = toEl.getBoundingClientRect();
+
+  const dx = toRect.left - fromRect.left;
+  const dy = toRect.top - fromRect.top;
+  const scaleX = toRect.width / fromRect.width;
+  const scaleY = toRect.height / fromRect.height;
+
+  const clone = fromEl.cloneNode(true);
+  Object.assign(clone.style, {
+    position: "fixed",
+    top: `${fromRect.top}px`,
+    left: `${fromRect.left}px`,
+    width: `${fromRect.width}px`,
+    height: `${fromRect.height}px`,
+    margin: 0,
+    zIndex: 9999,
+    transform: "translate(0px, 0px) scale(1, 1)",
+    transformOrigin: "top left",
+    transition: "transform 0.3s ease",
+    pointerEvents: "none",
+    willChange: "transform",
+  });
+
+  document.body.appendChild(clone);
+
+  // Trigger transition on next frame
+  requestAnimationFrame(() => {
+    clone.style.transform = `translate(${dx}px, ${dy}px) scale(${scaleX}, ${scaleY})`;
+  });
+
+  clone.addEventListener(
+    "transitionend",
+    () => {
+      clone.remove();
+      onEnd?.();
+    },
+    { once: true }
+  );
 }
 
 function getScrollbarWidth() {

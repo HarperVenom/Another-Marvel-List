@@ -16,7 +16,6 @@ body {
   background-color: rgb(30, 30, 30);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -142,6 +141,7 @@ body {
   align-items: center;
   backdrop-filter: blur(30px);
   transition: opacity 0.3s ease;
+  /* padding-bottom: 20vh; */
 
   overflow: auto;
   cursor: pointer;
@@ -149,12 +149,17 @@ body {
   .container {
     top: 0;
     max-width: 400px;
+    /* height: 100%; */
     margin-block: auto;
     padding: 1.5rem;
+
+    /* height: 80%; */
 
     @media screen and (min-width: 700px) {
       display: flex;
       flex-direction: row;
+      /* align-items: self-start; */
+      max-height: 2000px;
       max-width: min(1000px, 100vw);
       gap: 1.5rem;
     }
@@ -163,17 +168,11 @@ body {
       width: 100%;
 
       height: fit-content;
-      aspect-ratio: 2 / 3;
       max-width: 400px;
       user-select: none;
-      /* object-fit: cover; */
 
       @media screen and (min-width: 700px) {
         width: 50%;
-        /* max-width: 50%; */
-        /* width: fit-content; */
-        /* flex-shrink: 3; */
-        /* flex: 1; */
       }
     }
 
@@ -182,14 +181,14 @@ body {
       padding-top: 1rem;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: ;
       height: fit-content;
       cursor: auto;
       transition: opacity 0.2s ease;
 
       @media screen and (min-width: 700px) {
+        /* width: 50%; */
         min-width: 250px;
-        /* flex-shrink: 0; */
       }
 
       .title {
