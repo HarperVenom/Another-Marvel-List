@@ -1,14 +1,12 @@
 let overviewOpened = false;
 let transitioning = false;
 
+const postersPath = "new-posters";
+
 const overview = document.querySelector("#overview");
 const overviewContainer = document.querySelector("#overview-container");
 
 let lastClickedThumbnail = null;
-
-// window.addEventListener("resize", () => {
-//   fillMovieList();
-// });
 
 async function fillMovieList() {
   const response = await fetch("titles.json");
@@ -20,7 +18,7 @@ async function fillMovieList() {
   movies.forEach((movie, index) => {
     const li = document.createElement("li");
     li.innerHTML = `
-        <img class="poster" src="posters/${movie.poster}" alt="" />
+        <img class="poster" src="${postersPath + "/" + movie.poster}" alt="" />
       `;
 
     const img = li.querySelector(".poster");
@@ -33,8 +31,18 @@ async function fillMovieList() {
       lastClickedThumbnail = img;
       toggleOverview();
 
+      const glow = document.querySelector("#glow");
+      const [color1, color2] = movie.colors.split(" ");
+      if (color1 == "") {
+        glow.style.background = `radial-gradient(circle at 20% 20%, white, black 80%)`;
+      } else {
+        glow.style.background = `radial-gradient(circle at 20% 20%, ${color2}, ${color1} 80%)`;
+      }
+
       overviewContainer.innerHTML = `
-            <img class="poster big" src="posters/${movie.poster}" alt="" />
+            <img class="poster big" src="${
+              postersPath + "/" + movie.poster
+            }" alt="" />
             <div class="info hidden">
               <h2 class="title">${movie.title}</h2>
 

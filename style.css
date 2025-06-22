@@ -1,5 +1,6 @@
 :root {
   --title-width: 320px;
+  --small-screen: 800px;
 }
 
 * {
@@ -63,47 +64,14 @@ body {
 .title-list-container {
   width: 100%;
   max-width: 2000px;
-  padding: 0.5rem;
-
-  @media screen and (max-width: 650px) {
-    padding: 0.3rem;
-  }
-
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: min(1vw, 1rem);
-
-    .header {
-      margin: 0;
-      margin-top: 1rem;
-      font-size: 3rem;
-      font-weight: 500;
-      font-style: italic;
-
-      @media screen and (max-width: 400px) {
-        font-size: 2.5rem;
-      }
-    }
-
-    .sub-header {
-      font-weight: 500;
-      font-size: 1rem;
-    }
-  }
+  padding: 10px;
 
   .list {
     width: 100%;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 6px;
-
-    @media screen and (max-width: 650px) {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 0.3rem;
-    }
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
 
     .poster {
       width: 100%;
@@ -141,7 +109,6 @@ body {
   align-items: center;
   backdrop-filter: blur(30px);
   transition: opacity 0.3s ease;
-  /* padding-bottom: 20vh; */
 
   overflow: auto;
   cursor: pointer;
@@ -149,20 +116,8 @@ body {
   .container {
     top: 0;
     max-width: 400px;
-    /* height: 100%; */
     margin-block: auto;
     padding: 1.5rem;
-
-    /* height: 80%; */
-
-    @media screen and (min-width: 700px) {
-      display: flex;
-      flex-direction: row;
-      /* align-items: self-start; */
-      max-height: 2000px;
-      max-width: min(1000px, 100vw);
-      gap: 1.5rem;
-    }
 
     .poster {
       width: 100%;
@@ -170,10 +125,6 @@ body {
       height: fit-content;
       max-width: 400px;
       user-select: none;
-
-      @media screen and (min-width: 700px) {
-        width: 50%;
-      }
     }
 
     .info {
@@ -181,15 +132,9 @@ body {
       padding-top: 1rem;
       display: flex;
       flex-direction: column;
-      align-items: ;
       height: fit-content;
       cursor: auto;
       transition: opacity 0.2s ease;
-
-      @media screen and (min-width: 700px) {
-        /* width: 50%; */
-        min-width: 250px;
-      }
 
       .title {
         width: 100%;
@@ -197,10 +142,6 @@ body {
         font-size: 1.7rem;
         margin-bottom: 1.5rem;
         text-wrap: pretty;
-
-        @media screen and (min-width: 700px) {
-          font-size: 2.5rem;
-        }
       }
 
       .details {
@@ -213,10 +154,6 @@ body {
           width: 100%;
           font-size: 1.2rem;
           color: rgba(200, 200, 200, 0.8);
-
-          @media screen and (min-width: 700px) {
-            font-size: 1.4rem;
-          }
         }
 
         .section {
@@ -224,5 +161,85 @@ body {
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .title-list-container {
+    padding: 12px;
+
+    .list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+  }
+
+  .overview {
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: self-start;
+      max-height: 2000px;
+      max-width: min(1000px, 100vw);
+      gap: 1.5rem;
+
+      .poster {
+        width: 40%;
+      }
+
+      .info {
+        min-width: 250px;
+
+        .title {
+          font-size: 2.5rem;
+        }
+
+        .details {
+          * {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.glow-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: -1;
+}
+
+.glow {
+  position: relative;
+  width: 150vmax;
+  height: 150vmax;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+
+  pointer-events: none;
+  opacity: 0.6;
+  filter: contrast(120%);
+  /* filter: blur(100px); */
+  background: radial-gradient(circle at 10% 10%, #e90000, rgb(63, 24, 255) 80%);
+  mix-blend-mode: screen;
+
+  animation: spin 20s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
