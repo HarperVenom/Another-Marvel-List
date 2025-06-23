@@ -1,0 +1,119 @@
+.overview.noscroll {
+  overflow: hidden;
+}
+
+.overview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  /* background: rgba(20, 20, 20, 0.6); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* backdrop-filter: blur(30px); */
+  transition: opacity 0.3s ease;
+  z-index: 1;
+
+  overflow: auto;
+  cursor: pointer;
+
+  .container {
+    top: 0;
+    max-width: 400px;
+    margin-block: auto;
+    padding: 1.5rem;
+    overflow: visible;
+
+    .poster {
+      width: 100%;
+      border-radius: 10px;
+
+      height: fit-content;
+      max-width: 400px;
+      user-select: none;
+    }
+
+    .info {
+      padding: 0.5rem;
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      cursor: auto;
+      transition: opacity 0.2s ease;
+      mix-blend-mode: difference;
+      filter: drop-shadow(10px);
+      /* backdrop-filter: brightness(0.8); */
+
+      .title {
+        width: 100%;
+        font-weight: 500;
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+        text-wrap: pretty;
+
+        @media screen and (min-width: 400px) {
+          font-size: 2rem;
+        }
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        * {
+          font-weight: 200;
+          width: 100%;
+          font-size: 1.2rem;
+
+          @media screen and (min-width: 400px) {
+            font-size: 1.3rem;
+          }
+        }
+
+        .section {
+          color: rgb(200, 200, 200, 0.9);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .overview {
+    max-height: 100vh;
+    /* overflow: hidden; */
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: self-start;
+      /* height: 100%; */
+      max-height: 2000px;
+      max-width: min(1000px, 100vw);
+      gap: 1.5rem;
+
+      .poster {
+        width: 40%;
+        max-height: 100%;
+      }
+
+      .info {
+        min-width: 250px;
+
+        .title {
+          font-size: 2.5rem;
+        }
+
+        .details {
+          * {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,5 @@
+let titles = [];
+
 let overviewOpened = false;
 let transitioning = false;
 
@@ -27,9 +29,6 @@ async function fillMovieList() {
     img.addEventListener("click", () => {
       if (overviewOpened || transitioning) return;
 
-      // 1. Get position of clicked image
-      const thumbRect = img.getBoundingClientRect();
-
       lastClickedThumbnail = img;
       toggleOverview();
 
@@ -44,12 +43,6 @@ async function fillMovieList() {
       circles.forEach((circle) => {
         circle.style.backgroundColor = color2; // any color you like
       });
-
-      // if (color1 == "") {
-      //   glow.style.background = `radial-gradient(circle at 20% 20%, white, black 80%)`;
-      // } else {
-      //   glow.style.background = `radial-gradient(circle at 20% 20%, ${color2}, ${color1} 80%)`;
-      // }
 
       overviewContainer.innerHTML = `
             <img class="poster big" src="${
@@ -110,6 +103,7 @@ async function fillMovieList() {
     });
 
     list.appendChild(li);
+    titles.push(li);
   });
 }
 
@@ -173,11 +167,12 @@ function animateImageTransition(fromEl, toEl, onEnd) {
     left: `${fromRect.left}px`,
     width: `${fromRect.width}px`,
     height: `${fromRect.height}px`,
+    borderRadius: `10px`,
     margin: 0,
     zIndex: 9999,
     transform: "translate(0px, 0px) scale(1, 1)",
     transformOrigin: "top left",
-    transition: "transform 0.3s ease",
+    transition: "transform 0.3s ease, border-radius 0.3s ease",
     pointerEvents: "none",
     willChange: "transform",
   });
@@ -187,6 +182,7 @@ function animateImageTransition(fromEl, toEl, onEnd) {
   // Trigger transition on next frame
   requestAnimationFrame(() => {
     clone.style.transform = `translate(${dx}px, ${dy}px) scale(${scaleX}, ${scaleY})`;
+    clone.style.borderRadius = `${10 / scaleX}px`;
   });
 
   clone.addEventListener(
