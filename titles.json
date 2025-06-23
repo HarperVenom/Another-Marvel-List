@@ -29,7 +29,7 @@
     "duration": 121,
     "description": "After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.",
     "poster": "spider-man.webp",
-    "colors": "#f4c931 #c13b23"
+    "colors": "#ba7025 #c13b23"
   },
   {
     "title": "Daredevil",
@@ -45,7 +45,7 @@
     "duration": 134,
     "description": "When anti-mutant Colonel William Stryker kidnaps Professor X and attacks his school, the X-Men must ally with their archenemy Magneto to stop him.",
     "poster": "x2.webp",
-    "colors": "#7a7e96 #b5bcca"
+    "colors": "#606279 #b5bcca"
   },
   {
     "title": "Hulk",
@@ -85,7 +85,7 @@
     "duration": 97,
     "description": "An assassin's change of heart leads her into a war against an evil crime syndicate.",
     "poster": "elektra.webp",
-    "colors": "#d23d28 white"
+    "colors": "#9c838c #d23d28"
   },
   {
     "title": "Fantastic Four",
@@ -117,7 +117,7 @@
     "duration": 139,
     "description": "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
     "poster": "spider-man_3.webp",
-    "colors": "#272c2e #d1bb96"
+    "colors": "#4e4b4a #191d20"
   },
   {
     "title": "Fantastic Four: Rise of the Silver Surfer",
@@ -213,7 +213,7 @@
     "duration": 96,
     "description": "Johnny Blaze, tortured by the Ghost Rider's curse, gets a chance of redemption through protecting the Devil's son, whose father is pursuing him.",
     "poster": "ghost_rider_spirit_of_vengeance.webp",
-    "colors": "#1b1514 #e59a43"
+    "colors": "#454a4c #e59a43"
   },
   {
     "title": "The Avengers",
@@ -411,7 +411,7 @@
     "title": "Jessica Jones season 1",
     "date": "2015-11-20",
     "duration": 656,
-    "description": "",
+    "description": "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases involving people with extraordinary abilities in New York City.",
     "poster": "jessica_jones_s1.webp",
     "colors": "#1f152e #7c69a6"
   },

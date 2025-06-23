@@ -18,13 +18,13 @@
   backdrop-filter: blur(1px);
 
   transition: opacity 0.3s ease;
-  filter: blur(4vmax);
+  filter: blur(min(4vmax, 100px));
 
   .glow {
     position: relative;
     width: 100vw;
     height: 100vh;
-    filter: blur(4vmax) contrast(1.2);
+    filter: blur(min(4vmax, 100px)) contrast(1.2) brightness(0.7);
     scale: 1.5;
 
     opacity: 0.6;
@@ -35,8 +35,8 @@
 
 .circle {
   position: absolute;
-  width: clamp(200px, 50vmax, 600px);
-  height: clamp(200px, 50vmax, 600px);
+  width: clamp(200px, 60vmin, 600px);
+  height: clamp(200px, 60vmin, 600px);
   background: red;
   border-radius: 50%;
   top: 50%;
@@ -50,8 +50,8 @@
 }
 
 .circle:nth-child(2) {
-  width: clamp(150px, 30vmax, 500px);
-  height: clamp(150px, 30vmax, 500px);
+  width: clamp(150px, 40vmin, 500px);
+  height: clamp(150px, 40vmin, 500px);
   translate: -50% -50%;
   transform-origin: center;
   animation: orbit2 20s linear infinite;
@@ -59,18 +59,18 @@
 
 @keyframes orbit {
   0% {
-    transform: rotate(0deg) translateX(40vmin);
+    transform: rotate(0deg) translateX(min(40vmin, 400px));
   }
   100% {
-    transform: rotate(360deg) translateX(40vmin);
+    transform: rotate(360deg) translateX(min(40vmin, 400px));
   }
 }
 
 @keyframes orbit2 {
   0% {
-    transform: rotate(0deg) translateX(-40vmin);
+    transform: rotate(0deg) translateX(max(-40vmin, -400px));
   }
   100% {
-    transform: rotate(360deg) translateX(-40vmin);
+    transform: rotate(360deg) translateX(max(-40vmin, -400px));
   }
 }
