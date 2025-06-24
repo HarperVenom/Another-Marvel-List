@@ -4,6 +4,7 @@ let overviewOpened = false;
 let transitioning = false;
 
 const postersPath = "new-posters";
+const smallPostersPath = "small-posters";
 
 const overview = document.querySelector("#overview");
 const overviewContainer = document.querySelector("#overview-container");
@@ -22,7 +23,17 @@ async function fillMovieList() {
   movies.forEach((movie, index) => {
     const li = document.createElement("li");
     li.innerHTML = `
-        <img class="poster" src="${postersPath + "/" + movie.poster}" alt="" />
+        <img class="poster" src="${smallPostersPath + "/" + movie.poster}" 
+        loading="lazy" 
+        alt=""
+        onerror="
+         this.onerror = null;
+         this.src = '${postersPath}/${movie.poster}';
+         this.onerror = () => {
+           this.onerror = null;
+           this.src = '';
+         };" 
+        />
       `;
 
     const img = li.querySelector(".poster");
@@ -44,35 +55,30 @@ async function fillMovieList() {
         circle.style.backgroundColor = color2; // any color you like
       });
 
-      overviewContainer.innerHTML = `
-            <img class="poster big" src="${
-              postersPath + "/" + movie.poster
-            }" alt="" />
-            <div class="info hidden">
-              <h2 class="title">${movie.title}</h2>
+      const bigImg = new Image();
+      const titleEl = overviewContainer.querySelector(".title");
+      const dateEl = overviewContainer.querySelector(".date-value");
+      const durationEl = overviewContainer.querySelector(".duration-value");
+      const descEl = overviewContainer.querySelector(".description-value");
 
-              <div class="details">
-                <h3 class="date">
-                  <span class="section">Date: </span>${formatDate(movie.date)}
-                </h3>
-                <h3 class="duration">
-                  <span class="section">Duration: </span>${formatDuration(
-                    movie.duration
-                  )}
-                </h3>
-                <p class="description">
-                  <span class="section">Description: </span>${movie.description}
-                </p>
-              </div>
-            </div>
-          `;
+      // Replace the old poster
+      bigImg.classList.add("poster", "big");
+      bigImg.style.visibility = "hidden";
+      bigImg.src = `${postersPath}/${movie.poster}`;
+
+      const oldImg = overviewContainer.querySelector(".poster.big");
+      if (oldImg) oldImg.remove();
+      overviewContainer.prepend(bigImg);
+
+      titleEl.textContent = movie.title;
+      dateEl.textContent = formatDate(movie.date);
+      durationEl.textContent = formatDuration(movie.duration);
+      descEl.textContent = movie.description;
 
       const info = overviewContainer.querySelector(".info");
       info.addEventListener("click", (e) => {
         e.stopPropagation();
       });
-
-      const bigImg = overviewContainer.querySelector(".poster.big");
 
       const startTransition = () => {
         animateImageTransition(img, bigImg, () => {
@@ -140,6 +146,7 @@ function toggleOverview() {
       }, 10);
 
       overview.classList.add("hidden");
+      overview.querySelector(".info").classList.add("hidden");
       glowContainer.classList.add("hidden");
     };
 
