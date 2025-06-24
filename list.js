@@ -4,14 +4,17 @@ let overviewOpened = false;
 let transitioning = false;
 
 const postersPath = "new-posters";
-const smallPostersPath = "small-posters";
+const smallPostersPath = "posters-200-300";
 
 const overview = document.querySelector("#overview");
 const overviewContainer = document.querySelector("#overview-container");
 
+const blur = document.querySelector("#blur");
 const glowContainer = document.querySelector("#glow-container");
 
 let lastClickedThumbnail = null;
+
+let currentClone;
 
 async function fillMovieList() {
   const response = await fetch("titles.json");
@@ -23,7 +26,9 @@ async function fillMovieList() {
   movies.forEach((movie, index) => {
     const li = document.createElement("li");
     li.innerHTML = `
-        <img class="poster" src="${smallPostersPath + "/" + movie.poster}" 
+        <img class="poster" 
+        
+        src = "${smallPostersPath + "/" + movie.poster}";
         loading="lazy" 
         alt=""
         onerror="
@@ -43,17 +48,14 @@ async function fillMovieList() {
       lastClickedThumbnail = img;
       toggleOverview();
 
-      glowContainer.classList.remove("hidden");
-
       const glow = document.querySelector("#glow");
       const [color1, color2] = movie.colors.split(" ");
-      glow.style.backgroundColor = color1; // dark background
 
-      // Set background color of all circles
-      const circles = glow.querySelectorAll(".circle");
-      circles.forEach((circle) => {
-        circle.style.backgroundColor = color2; // any color you like
-      });
+      glow.style.background = `linear-gradient(
+      to left,
+      ${color1} 25%,
+      ${color2} 100%
+      )`;
 
       const bigImg = new Image();
       const titleEl = overviewContainer.querySelector(".title");
@@ -62,15 +64,14 @@ async function fillMovieList() {
       const descEl = overviewContainer.querySelector(".description-value");
 
       // Replace the old poster
-      bigImg.classList.add("poster", "big");
-      bigImg.style.visibility = "hidden";
-      bigImg.src = `${postersPath}/${movie.poster}`;
+      bigImg.classList.add("poster");
+      bigImg.classList.add("hidden");
 
-      const oldImg = overviewContainer.querySelector(".poster.big");
+      const oldImg = overviewContainer.querySelector(".poster");
       if (oldImg) oldImg.remove();
       overviewContainer.prepend(bigImg);
 
-      titleEl.textContent = movie.title;
+      titleEl.innerHTML = movie.title;
       dateEl.textContent = formatDate(movie.date);
       durationEl.textContent = formatDuration(movie.duration);
       descEl.textContent = movie.description;
@@ -81,34 +82,58 @@ async function fillMovieList() {
       });
 
       const startTransition = () => {
-        animateImageTransition(img, bigImg, () => {
-          bigImg.style.visibility = "visible";
-          transitioning = false;
-          overview.classList.remove("noscroll");
-          overview.style.paddingRight = `unset`;
-          info.classList.remove("hidden");
-        });
+        animateImageTransition(
+          img,
+          bigImg,
+          // on clone load
+          () => {
+            img.style.visibility = "hidden";
+            setIsGlowing(true);
+          },
+          // on transition end
+          (clone) => {
+            // console.log(bigImg.getBoundingClientRect().width);
+            bigImg.src = `${postersPath + "/" + movie.poster}`;
+
+            const finishTransition = () => {
+              requestAnimationFrame(() => {
+                // console.log(bigImg.getBoundingClientRect().width);
+                clone.classList.add("hidden");
+                clone.addEventListener("transitionend", () => clone.remove(), {
+                  once: true,
+                });
+
+                bigImg.classList.remove("hidden");
+              });
+            };
+
+            if (bigImg.complete) {
+              finishTransition();
+            } else {
+              bigImg.onload = finishTransition;
+            }
+
+            transitioning = false;
+            // overview.classList.remove("noscroll");
+            // overview.style.paddingRight = `unset`;
+            info.classList.remove("hidden");
+          }
+        );
 
         if (overviewContainer.scrollHeight > window.innerHeight) {
-          overview.style.paddingRight = `6px`;
+          // overview.style.paddingRight = `6px`;
         }
 
-        overview.classList.add("noscroll");
-        setTimeout(() => {
-          img.style.visibility = "hidden";
-        }, 10);
-        bigImg.style.visibility = "hidden";
+        // overview.classList.add("noscroll");
+        bigImg.classList.add("hidden");
         transitioning = true;
       };
 
-      if (bigImg.complete) {
-        requestAnimationFrame(startTransition);
-      } else {
-        bigImg.onload = () => requestAnimationFrame(startTransition);
-      }
+      startTransition();
     });
 
     list.appendChild(li);
+    li.movie = movie;
     titles.push(li);
   });
 }
@@ -123,42 +148,57 @@ function toggleOverview() {
 
   if (overviewOpened) {
     const scrollBarWidth = getScrollbarWidth();
-    document.body.style.paddingRight = `${scrollBarWidth}px`;
+    // document.body.style.paddingRight = `${scrollBarWidth}px`;
 
     document.body.classList.add("noscroll");
     overview.classList.remove("hidden");
   } else {
-    const bigImg = overview.querySelector(".poster.big");
+    const bigImg = overview.querySelector(".poster");
     if (!bigImg || !lastClickedThumbnail) return;
 
     const closeTransition = () => {
-      animateImageTransition(bigImg, lastClickedThumbnail, () => {
-        transitioning = false;
-        lastClickedThumbnail.style.visibility = "visible";
-        overview.scrollTop = 0;
-        document.body.classList.remove("noscroll");
-        document.body.style.paddingRight = "";
-      });
+      let fromEl = bigImg;
+      if (!fromEl.complete) {
+        bigImg.src = "";
+        fromEl = currentClone;
+      }
+
+      animateImageTransition(
+        fromEl,
+        lastClickedThumbnail,
+        // on clone load
+        () => {
+          if (fromEl != bigImg) {
+            fromEl.remove();
+          }
+          bigImg.style.visibility = "hidden";
+
+          setIsGlowing(false);
+          overview.classList.add("hidden");
+          overview.querySelector(".info").classList.add("hidden");
+        },
+        // on transition end
+        (clone) => {
+          clone.style.transition = "";
+          // clone.classList.add("hidden");
+          clone.remove();
+          document.body.classList.remove("noscroll");
+          document.body.style.paddingRight = "";
+
+          transitioning = false;
+          lastClickedThumbnail.style.visibility = "visible";
+          overview.scrollTop = 0;
+        }
+      );
 
       transitioning = true;
-      setTimeout(() => {
-        bigImg.style.visibility = "hidden";
-      }, 10);
-
-      overview.classList.add("hidden");
-      overview.querySelector(".info").classList.add("hidden");
-      glowContainer.classList.add("hidden");
     };
 
-    if (bigImg.complete) {
-      requestAnimationFrame(closeTransition);
-    } else {
-      bigImg.onload = () => requestAnimationFrame(closeTransition);
-    }
+    closeTransition();
   }
 }
 
-function animateImageTransition(fromEl, toEl, onEnd) {
+function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
   const fromRect = fromEl.getBoundingClientRect();
   const toRect = toEl.getBoundingClientRect();
 
@@ -182,24 +222,45 @@ function animateImageTransition(fromEl, toEl, onEnd) {
     transition: "transform 0.3s ease, border-radius 0.3s ease",
     pointerEvents: "none",
     willChange: "transform",
+    objectFit: "cover",
   });
 
   document.body.appendChild(clone);
+  currentClone = clone;
 
-  // Trigger transition on next frame
-  requestAnimationFrame(() => {
-    clone.style.transform = `translate(${dx}px, ${dy}px) scale(${scaleX}, ${scaleY})`;
-    clone.style.borderRadius = `${10 / scaleX}px`;
-  });
+  function onCloneLoad() {
+    onCloneLoadCallback();
+    // Trigger transition on next frame
+    requestAnimationFrame(() => {
+      clone.style.transform = `translate(${dx}px, ${dy}px) scale(${scaleX}, ${scaleY})`;
+      clone.style.borderRadius = `${10 / scaleX}px`;
+    });
 
-  clone.addEventListener(
-    "transitionend",
-    () => {
-      clone.remove();
-      onEnd?.();
-    },
-    { once: true }
-  );
+    clone.addEventListener(
+      "transitionend",
+      () => {
+        // clone.remove();
+        onEnd?.(clone);
+      },
+      { once: true }
+    );
+  }
+
+  if (clone.complete) {
+    onCloneLoad();
+  } else {
+    clone.onload = onCloneLoad;
+  }
+}
+
+function setIsGlowing(isGlowing) {
+  if (isGlowing) {
+    glowContainer.classList.remove("hidden");
+    blur.classList.remove("hidden");
+  } else {
+    glowContainer.classList.add("hidden");
+    blur.classList.add("hidden");
+  }
 }
 
 function getScrollbarWidth() {
@@ -222,3 +283,65 @@ function formatDuration(minutes) {
   if (mins > 0) result += (hours > 0 ? " " : "") + `${mins}m`;
   return result;
 }
+
+function hexToRgba(hex, alpha = 1) {
+  // Remove '#' if present
+  hex = hex.replace(/^#/, "");
+
+  // Expand shorthand form (e.g. "abc" → "aabbcc")
+  if (hex.length === 3) {
+    hex = hex
+      .split("")
+      .map((c) => c + c)
+      .join("");
+  }
+
+  if (hex.length !== 6) {
+    throw new Error("Invalid hex color: " + hex);
+  }
+
+  const bigint = parseInt(hex, 16);
+  const r = (bigint >> 16) & 255;
+  const g = (bigint >> 8) & 255;
+  const b = bigint & 255;
+
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+function getPosterPath() {
+  const width = window.innerWidth;
+
+  if (width < 800) return "posters-200-300";
+  return "small-posters";
+}
+
+let currentPostersPath = "";
+
+function updatePostersOnResize() {
+  const newPostersPath = getPosterPath();
+  if (newPostersPath === currentPostersPath) return;
+
+  console.log(newPostersPath);
+
+  currentPostersPath = newPostersPath;
+
+  titles.forEach((li) => {
+    const movie = li.movie; // store the movie on each <li> when created
+    const img = li.querySelector(".poster");
+
+    // Update src manually instead of setting innerHTML again
+    img.src = `${newPostersPath}/${movie.poster}`;
+    img.onerror = function () {
+      this.onerror = null;
+      this.src = `fallback-folder/${movie.poster}`;
+      this.onerror = () => {
+        this.onerror = null;
+        this.src = "";
+      };
+    };
+  });
+}
+
+window.addEventListener("resize", () => {
+  updatePostersOnResize();
+});

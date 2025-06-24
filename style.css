@@ -12,34 +12,27 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+* {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #444 #111; /* Firefox */
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(10, 10, 10);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  width: 100vw;
+  height: 100dvh;
 
-/* Scrollbar track (background) */
-*::-webkit-scrollbar {
-  width: 6px; /* width of vertical scrollbar */
-  height: 6px; /* height of horizontal scrollbar */
-}
+  overflow: hidden;
 
-/* Scrollbar track */
-*::-webkit-scrollbar-track {
-  background: var(--theme-background, rgba(48, 48, 48, 0.2));
-}
+  main {
+    overflow: auto;
+    scrollbar-gutter: stable;
+    height: 100%;
 
-/* Scrollbar thumb (the draggable part) */
-*::-webkit-scrollbar-thumb {
-  background-color: var(--theme-accent, rgba(100, 100, 100, 0.2));
-  mix-blend-mode: color;
-}
-
-/* On hover */
-*::-webkit-scrollbar-thumb:hover {
-  background-color: var(--theme-accent-hover, rgba(130, 130, 130, 0.4));
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .background {
@@ -59,32 +52,36 @@ body {
 }
 
 .noscroll {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .title-list-container {
   width: 100%;
-  max-width: 1200px;
-  padding: 10px;
+  padding: 40px;
 
   .list {
     width: 100%;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 30px;
+    row-gap: 40px;
 
     .poster {
       width: 100%;
-      height: 100%;
       border-radius: 10px;
       aspect-ratio: 2 / 3;
+      object-fit: cover;
       user-select: none;
       background-color: black;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       cursor: pointer;
       transition: scale 0.1s ease, outline-color 1s ease;
       filter: contrast(1.03) saturate(1.03) brightness(1.1);
+
+      /* &:hover {
+        scale: 1.2;
+      } */
 
       &:active {
         scale: 0.95;
@@ -97,13 +94,15 @@ body {
   }
 }
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 1000px) {
   .title-list-container {
-    padding: 12px;
+    max-width: min(75vw, 1600px);
+    padding: 80px;
 
     .list {
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 60px;
+      row-gap: 80px;
     }
   }
 }

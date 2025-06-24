@@ -1,6 +1,6 @@
-.overview.noscroll {
+/* .overview.noscroll {
   overflow: hidden;
-}
+} */
 
 .overview {
   position: fixed;
@@ -17,6 +17,8 @@
   z-index: 1;
 
   overflow: auto;
+  /* overflow-y: scroll; */
+  scrollbar-gutter: stable;
   cursor: pointer;
 
   .container {
@@ -27,12 +29,15 @@
     overflow: visible;
 
     .poster {
+      position: relative;
       width: 100%;
       border-radius: 10px;
+      aspect-ratio: 2 / 3;
 
-      height: fit-content;
       max-width: 400px;
       user-select: none;
+
+      object-fit: cover;
     }
 
     .info {
@@ -97,7 +102,9 @@
       gap: 1.5rem;
 
       .poster {
-        width: 40%;
+        background: black;
+        min-width: 40%;
+        aspect-ratio: 2 / 3;
         max-height: 100%;
       }
 

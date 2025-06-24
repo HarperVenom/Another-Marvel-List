@@ -14,13 +14,12 @@
     />
   </head>
   <body class="hidden">
+    <div id="blur" class="blur hidden"></div>
     <div id="glow-container" class="glow-container hidden">
-      <div id="glow" class="glow">
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
+      <div id="glow" class="glow"></div>
     </div>
 
+    <!-- Overview -->
     <div id="overview" class="overview hidden">
       <div id="overview-container" class="container">
         <img class="poster big" />
@@ -48,11 +47,13 @@
       <button class="hide-button"></button>
     </div>
 
-    <div class="title-list-container">
-      <ol class="list">
-        <script src="list.js"></script>
-        <script src="scroll.js"></script>
-      </ol>
-    </div>
+    <main>
+      <div class="title-list-container">
+        <ol class="list">
+          <script src="list.js"></script>
+          <script src="scroll.js"></script>
+        </ol>
+      </div>
+    </main>
   </body>
 </html>
