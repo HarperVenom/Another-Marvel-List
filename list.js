@@ -4,12 +4,13 @@ let overviewOpened = false;
 let transitioning = false;
 
 const postersPath = "new-posters";
-const smallPostersPath = "posters-200-300";
 
+const main = document.querySelector("main");
 const overview = document.querySelector("#overview");
 const overviewContainer = document.querySelector("#overview-container");
+const posterContainer = document.querySelector("#poster-container");
 
-const blur = document.querySelector("#blur");
+// const blur = document.querySelector("#blur");
 const glowContainer = document.querySelector("#glow-container");
 
 let lastClickedThumbnail = null;
@@ -28,7 +29,7 @@ async function fillMovieList() {
     li.innerHTML = `
         <img class="poster" 
         
-        src = "${smallPostersPath + "/" + movie.poster}";
+        src = "${getPosterPath() + "/" + movie.poster}";
         loading="lazy" 
         alt=""
         onerror="
@@ -52,8 +53,8 @@ async function fillMovieList() {
       const [color1, color2] = movie.colors.split(" ");
 
       glow.style.background = `linear-gradient(
-      to left,
-      ${color1} 25%,
+      45deg,
+      ${color1},
       ${color2} 100%
       )`;
 
@@ -67,9 +68,9 @@ async function fillMovieList() {
       bigImg.classList.add("poster");
       bigImg.classList.add("hidden");
 
-      const oldImg = overviewContainer.querySelector(".poster");
+      const oldImg = posterContainer.querySelector(".poster");
       if (oldImg) oldImg.remove();
-      overviewContainer.prepend(bigImg);
+      posterContainer.prepend(bigImg);
 
       titleEl.innerHTML = movie.title;
       dateEl.textContent = formatDate(movie.date);
@@ -80,6 +81,8 @@ async function fillMovieList() {
       info.addEventListener("click", (e) => {
         e.stopPropagation();
       });
+
+      overview.style.overflow = "hidden";
 
       const startTransition = () => {
         animateImageTransition(
@@ -92,18 +95,30 @@ async function fillMovieList() {
           },
           // on transition end
           (clone) => {
-            // console.log(bigImg.getBoundingClientRect().width);
             bigImg.src = `${postersPath + "/" + movie.poster}`;
 
-            const finishTransition = () => {
-              requestAnimationFrame(() => {
-                // console.log(bigImg.getBoundingClientRect().width);
-                clone.classList.add("hidden");
-                clone.addEventListener("transitionend", () => clone.remove(), {
-                  once: true,
-                });
+            transitioning = false;
+            info.classList.remove("hidden");
+            overview.style.overflow = "auto";
 
-                bigImg.classList.remove("hidden");
+            const finishTransition = () => {
+              void bigImg.offsetHeight;
+              bigImg.classList.remove("hidden");
+              requestAnimationFrame(() => {
+                clone.remove();
+
+                // clone.style.opacity = 0;
+                // clone.classList.add("hidden");
+                // clone.addEventListener(
+                //   "transitionend",
+                //   (event) => {
+                //     console.log(event.propertyName);
+                //     clone.remove();
+                //   },
+                //   {
+                //     once: true,
+                //   }
+                // );
               });
             };
 
@@ -112,19 +127,9 @@ async function fillMovieList() {
             } else {
               bigImg.onload = finishTransition;
             }
-
-            transitioning = false;
-            // overview.classList.remove("noscroll");
-            // overview.style.paddingRight = `unset`;
-            info.classList.remove("hidden");
           }
         );
 
-        if (overviewContainer.scrollHeight > window.innerHeight) {
-          // overview.style.paddingRight = `6px`;
-        }
-
-        // overview.classList.add("noscroll");
         bigImg.classList.add("hidden");
         transitioning = true;
       };
@@ -147,9 +152,6 @@ function toggleOverview() {
   overviewOpened = !overviewOpened;
 
   if (overviewOpened) {
-    const scrollBarWidth = getScrollbarWidth();
-    // document.body.style.paddingRight = `${scrollBarWidth}px`;
-
     document.body.classList.add("noscroll");
     overview.classList.remove("hidden");
   } else {
@@ -162,6 +164,8 @@ function toggleOverview() {
         bigImg.src = "";
         fromEl = currentClone;
       }
+
+      main.style.overflow = "hidden";
 
       animateImageTransition(
         fromEl,
@@ -180,10 +184,8 @@ function toggleOverview() {
         // on transition end
         (clone) => {
           clone.style.transition = "";
-          // clone.classList.add("hidden");
           clone.remove();
-          document.body.classList.remove("noscroll");
-          document.body.style.paddingRight = "";
+          main.style.overflow = "auto";
 
           transitioning = false;
           lastClickedThumbnail.style.visibility = "visible";
@@ -202,11 +204,6 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
   const fromRect = fromEl.getBoundingClientRect();
   const toRect = toEl.getBoundingClientRect();
 
-  const dx = toRect.left - fromRect.left;
-  const dy = toRect.top - fromRect.top;
-  const scaleX = toRect.width / fromRect.width;
-  const scaleY = toRect.height / fromRect.height;
-
   const clone = fromEl.cloneNode(true);
   Object.assign(clone.style, {
     position: "fixed",
@@ -217,29 +214,32 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
     borderRadius: `10px`,
     margin: 0,
     zIndex: 9999,
-    transform: "translate(0px, 0px) scale(1, 1)",
-    transformOrigin: "top left",
-    transition: "transform 0.3s ease, border-radius 0.3s ease",
     pointerEvents: "none",
-    willChange: "transform",
+    willChange: "top, left, width, height",
+    transition:
+      "top 0.3s ease, left 0.3s ease, width 0.3s ease, height 0.3s ease, border-radius 0.3s ease",
     objectFit: "cover",
   });
 
   document.body.appendChild(clone);
+  clone.getBoundingClientRect();
   currentClone = clone;
 
   function onCloneLoad() {
     onCloneLoadCallback();
-    // Trigger transition on next frame
+
+    // Ensure transition happens in next frame
     requestAnimationFrame(() => {
-      clone.style.transform = `translate(${dx}px, ${dy}px) scale(${scaleX}, ${scaleY})`;
-      clone.style.borderRadius = `${10 / scaleX}px`;
+      clone.style.top = `${toRect.top}px`;
+      clone.style.left = `${toRect.left}px`;
+      clone.style.width = `${toRect.width}px`;
+      clone.style.height = `${toRect.height}px`;
+      clone.style.borderRadius = `10px`; // or adapt dynamically if needed
     });
 
     clone.addEventListener(
       "transitionend",
       () => {
-        // clone.remove();
         onEnd?.(clone);
       },
       { once: true }
@@ -256,10 +256,8 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
 function setIsGlowing(isGlowing) {
   if (isGlowing) {
     glowContainer.classList.remove("hidden");
-    blur.classList.remove("hidden");
   } else {
     glowContainer.classList.add("hidden");
-    blur.classList.add("hidden");
   }
 }
 
@@ -311,8 +309,11 @@ function hexToRgba(hex, alpha = 1) {
 function getPosterPath() {
   const width = window.innerWidth;
 
-  if (width < 800) return "posters-200-300";
-  return "small-posters";
+  // return "new-posters";
+
+  // if (width < 600) return "posters-100-150";
+  if (width < 1200) return "small-posters";
+  return "new-posters";
 }
 
 let currentPostersPath = "";
