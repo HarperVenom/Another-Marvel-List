@@ -53,6 +53,7 @@ body {
 
 .title-list-container {
   width: 100%;
+  height: fit-content;
   padding: 20px;
 
   .list {

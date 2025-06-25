@@ -25,6 +25,7 @@ async function fillMovieList() {
   list.innerHTML = "";
 
   movies.forEach((movie, index) => {
+    if (movie.title == "") return;
     const li = document.createElement("li");
     li.innerHTML = `
         <img class="poster" 
@@ -106,19 +107,6 @@ async function fillMovieList() {
               bigImg.classList.remove("hidden");
               requestAnimationFrame(() => {
                 clone.remove();
-
-                // clone.style.opacity = 0;
-                // clone.classList.add("hidden");
-                // clone.addEventListener(
-                //   "transitionend",
-                //   (event) => {
-                //     console.log(event.propertyName);
-                //     clone.remove();
-                //   },
-                //   {
-                //     once: true,
-                //   }
-                // );
               });
             };
 
@@ -178,7 +166,6 @@ function toggleOverview() {
           bigImg.style.visibility = "hidden";
 
           setIsGlowing(false);
-          overview.classList.add("hidden");
           overview.querySelector(".info").classList.add("hidden");
         },
         // on transition end
@@ -186,6 +173,7 @@ function toggleOverview() {
           clone.style.transition = "";
           clone.remove();
           main.style.overflow = "auto";
+          overview.classList.add("hidden");
 
           transitioning = false;
           lastClickedThumbnail.style.visibility = "visible";
@@ -204,11 +192,17 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
   const fromRect = fromEl.getBoundingClientRect();
   const toRect = toEl.getBoundingClientRect();
 
+  const containerRect = overview.getBoundingClientRect();
+  const top = fromRect.top - containerRect.top + overview.scrollTop;
+  const left = fromRect.left - containerRect.left + overview.scrollLeft;
+
+  const toRectTop = toRect.top + overview.scrollTop;
+
   const clone = fromEl.cloneNode(true);
   Object.assign(clone.style, {
-    position: "fixed",
-    top: `${fromRect.top}px`,
-    left: `${fromRect.left}px`,
+    position: "absolute",
+    top: `${top}px`,
+    left: `${left}px`,
     width: `${fromRect.width}px`,
     height: `${fromRect.height}px`,
     borderRadius: `10px`,
@@ -221,7 +215,8 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
     objectFit: "cover",
   });
 
-  document.body.appendChild(clone);
+  overview.appendChild(clone);
+  // document.body.appendChild(clone);
   clone.getBoundingClientRect();
   currentClone = clone;
 
@@ -230,7 +225,7 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
 
     // Ensure transition happens in next frame
     requestAnimationFrame(() => {
-      clone.style.top = `${toRect.top}px`;
+      clone.style.top = `${toRectTop}px`;
       clone.style.left = `${toRect.left}px`;
       clone.style.width = `${toRect.width}px`;
       clone.style.height = `${toRect.height}px`;
