@@ -82,9 +82,9 @@ body {
         scale: 1.2;
       } */
 
-      &:active {
+      /* &:active {
         scale: 0.95;
-      }
+      } */
     }
 
     .number {

@@ -13,6 +13,12 @@ const posterContainer = document.querySelector("#poster-container");
 // const blur = document.querySelector("#blur");
 const glowContainer = document.querySelector("#glow-container");
 
+const mask = document.querySelector(".gradient-mask");
+const lastPos = {
+  x: 0,
+  y: 0,
+};
+
 let lastClickedThumbnail = null;
 
 let currentClone;
@@ -53,7 +59,7 @@ async function fillMovieList() {
       const glow = document.querySelector("#glow");
       const [color1, color2] = movie.colors.split(" ");
 
-      glow.style.background = `linear-gradient(
+      mask.style.background = `linear-gradient(
       45deg,
       ${color1},
       ${color2} 100%
@@ -92,7 +98,7 @@ async function fillMovieList() {
           // on clone load
           () => {
             img.style.visibility = "hidden";
-            setIsGlowing(true);
+            // setIsGlowing(true);
           },
           // on transition end
           (clone) => {
@@ -115,6 +121,10 @@ async function fillMovieList() {
             } else {
               bigImg.onload = finishTransition;
             }
+          },
+          // before animation
+          (animate) => {
+            startCircleFill(getCenter(img), () => animate());
           }
         );
 
@@ -165,19 +175,23 @@ function toggleOverview() {
           }
           bigImg.style.visibility = "hidden";
 
-          setIsGlowing(false);
+          // setIsGlowing(false);
+
           overview.querySelector(".info").classList.add("hidden");
         },
         // on transition end
         (clone) => {
-          clone.style.transition = "";
-          clone.remove();
-          main.style.overflow = "auto";
-          overview.classList.add("hidden");
+          shrinkCircleBack(getCenter(lastClickedThumbnail), () => {
+            clone.style.transition = "";
+            clone.remove();
 
-          transitioning = false;
-          lastClickedThumbnail.style.visibility = "visible";
-          overview.scrollTop = 0;
+            main.style.overflow = "auto";
+            overview.classList.add("hidden");
+
+            transitioning = false;
+            lastClickedThumbnail.style.visibility = "visible";
+            overview.scrollTop = 0;
+          });
         }
       );
 
@@ -188,7 +202,13 @@ function toggleOverview() {
   }
 }
 
-function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
+function animateImageTransition(
+  fromEl,
+  toEl,
+  onCloneLoadCallback,
+  onEnd,
+  beforeAnimation
+) {
   const fromRect = fromEl.getBoundingClientRect();
   const toRect = toEl.getBoundingClientRect();
 
@@ -226,22 +246,30 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
   function onCloneLoad() {
     onCloneLoadCallback();
 
-    // Ensure transition happens in next frame
-    requestAnimationFrame(() => {
-      clone.style.top = `${toRectTop}px`;
-      clone.style.left = `${toRect.left}px`;
-      clone.style.width = `${toRect.width}px`;
-      clone.style.height = `${toRect.height}px`;
-      clone.style.borderRadius = toStyle.borderRadius; // or adapt dynamically if needed
-    });
+    if (typeof beforeAnimation === "function") {
+      beforeAnimation(animate);
+    } else {
+      animate();
+    }
 
-    clone.addEventListener(
-      "transitionend",
-      () => {
-        onEnd?.(clone);
-      },
-      { once: true }
-    );
+    function animate() {
+      // Ensure transition happens in next frame
+      requestAnimationFrame(() => {
+        clone.style.top = `${toRectTop}px`;
+        clone.style.left = `${toRect.left}px`;
+        clone.style.width = `${toRect.width}px`;
+        clone.style.height = `${toRect.height}px`;
+        clone.style.borderRadius = toStyle.borderRadius; // or adapt dynamically if needed
+      });
+
+      clone.addEventListener(
+        "transitionend",
+        () => {
+          onEnd?.(clone);
+        },
+        { once: true }
+      );
+    }
   }
 
   if (clone.complete) {
@@ -344,3 +372,49 @@ function updatePostersOnResize() {
 window.addEventListener("resize", () => {
   updatePostersOnResize();
 });
+
+function getCenter(element) {
+  return {
+    x:
+      element.getBoundingClientRect().left +
+      element.getBoundingClientRect().width / 2,
+    y:
+      element.getBoundingClientRect().top +
+      element.getBoundingClientRect().height / 2,
+  };
+}
+
+function startCircleFill(pos, callback) {
+  // Instantly set a 0px circle at the target position
+  mask.style.transition = "none";
+  mask.style.clipPath = `circle(0px at ${pos.x}px ${pos.y}px)`;
+  void mask.offsetHeight; // force reflow
+
+  // Animate to full screen
+  mask.style.transition = "clip-path 0.5s cubic-bezier(0.7, 0, 1, 1)";
+  mask.style.clipPath = `circle(200vmax at ${pos.x}px ${pos.y}px)`;
+
+  if (callback) {
+    mask.addEventListener("transitionend", function handler(e) {
+      if (e.propertyName === "clip-path") {
+        mask.removeEventListener("transitionend", handler);
+        callback();
+      }
+    });
+  }
+}
+
+function shrinkCircleBack(pos, callback) {
+  // Animate back to 0px
+  mask.style.transition = "clip-path 0.5s cubic-bezier(0, 0.25, 0, 1)";
+  mask.style.clipPath = `circle(0px at ${pos.x}px ${pos.y}px)`;
+
+  if (callback) {
+    mask.addEventListener("transitionend", function handler(e) {
+      if (e.propertyName === "clip-path") {
+        mask.removeEventListener("transitionend", handler);
+        callback();
+      }
+    });
+  }
+}
