@@ -198,6 +198,9 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
 
   const toRectTop = toRect.top + overview.scrollTop;
 
+  const fromStyle = getComputedStyle(fromEl);
+  const toStyle = getComputedStyle(toEl);
+
   const clone = fromEl.cloneNode(true);
   Object.assign(clone.style, {
     position: "absolute",
@@ -205,7 +208,7 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
     left: `${left}px`,
     width: `${fromRect.width}px`,
     height: `${fromRect.height}px`,
-    borderRadius: `10px`,
+    borderRadius: fromStyle.borderRadius,
     margin: 0,
     zIndex: 9999,
     pointerEvents: "none",
@@ -229,7 +232,7 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
       clone.style.left = `${toRect.left}px`;
       clone.style.width = `${toRect.width}px`;
       clone.style.height = `${toRect.height}px`;
-      clone.style.borderRadius = `10px`; // or adapt dynamically if needed
+      clone.style.borderRadius = toStyle.borderRadius; // or adapt dynamically if needed
     });
 
     clone.addEventListener(

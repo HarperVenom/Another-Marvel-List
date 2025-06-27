@@ -58,7 +58,7 @@ body {
 
   .list {
     width: 100%;
-    max-width: 500px;
+    max-width: 680px;
     list-style: none;
     display: grid;
     margin: auto;
@@ -68,7 +68,7 @@ body {
 
     .poster {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 5px;
       aspect-ratio: 2 / 3;
       object-fit: cover;
       user-select: none;
@@ -76,7 +76,7 @@ body {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       cursor: pointer;
       transition: scale 0.1s ease, outline-color 1s ease;
-      filter: contrast(1.03) saturate(1.03) brightness(1.1);
+      /* filter: contrast(1.03) saturate(1.03) brightness(1.1); */
 
       /* &:hover {
         scale: 1.2;
@@ -93,28 +93,19 @@ body {
   }
 }
 
-@media screen and (min-width: 600px) {
-  .title-list-container {
-    padding: 80px;
-
-    .list {
-      max-width: min(75vw, 1200px);
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 40px;
-      row-gap: 80px;
-    }
-  }
-}
-
 @media screen and (min-width: 900px) {
   .title-list-container {
-    padding: 120px;
+    padding: 40px;
 
     .list {
       max-width: min(75vw, 1200px);
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 60px;
-      row-gap: 120px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 40px;
+      row-gap: 80px;
+
+      .poster {
+        border-radius: 8px;
+      }
     }
   }
 }
