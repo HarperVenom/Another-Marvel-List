@@ -5,7 +5,7 @@
     "duration": 120,
     "description": "Deacon Frost, a vampire, kills the elders of the underground vampiric society in order to gain control over his kind. To cement his powers, he needs the blood of Blade, a half-human vampire hunter.",
     "poster": "blade.webp",
-    "colors": "#2f0906 #a82d1d"
+    "colors": "#2f0906 #8a1604"
   },
   {
     "title": "X-Men",
@@ -13,7 +13,7 @@
     "duration": 104,
     "description": "In a world where mutants (evolved super-powered humans) exist and are discriminated against, two groups form for an inevitable clash: the supremacist Brotherhood, and the pacifist X-Men.",
     "poster": "x-men.webp",
-    "colors": "#1e1f20 #788fa8"
+    "colors": "#282a2c #4b5f78"
   },
   {
     "title": "Blade II",
@@ -21,7 +21,7 @@
     "duration": 117,
     "description": "Blade forms an uneasy alliance with the vampire council in order to combat the Reapers, who are feeding on vampires.",
     "poster": "blade_ii.webp",
-    "colors": "#7f7787 #e2e4e8"
+    "colors": "#4d4148 #7f7787"
   },
   {
     "title": "Spider-Man",
@@ -29,7 +29,7 @@
     "duration": 121,
     "description": "After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.",
     "poster": "spider-man.webp",
-    "colors": "#ba7025 #c13b23"
+    "colors": "#c13b23 #cb8323"
   },
   {
     "title": "Daredevil",
@@ -37,7 +37,7 @@
     "duration": 103,
     "description": "A man blinded by toxic waste which also enhanced his remaining senses fights crime as an acrobatic martial arts superhero.",
     "poster": "daredevil.webp",
-    "colors": "#143542 #cfaa9c"
+    "colors": "#143542 #623632"
   },
   {
     "title": "X2",
@@ -45,7 +45,7 @@
     "duration": 134,
     "description": "When anti-mutant Colonel William Stryker kidnaps Professor X and attacks his school, the X-Men must ally with their archenemy Magneto to stop him.",
     "poster": "x2.webp",
-    "colors": "#606279 #b5bcca"
+    "colors": "#20191d #606279"
   },
   {
     "title": "Hulk",
@@ -53,7 +53,7 @@
     "duration": 138,
     "description": "Bruce Banner, a genetics researcher with a tragic past, suffers a lab accident that makes him transform into a raging, giant green monster when angered, making him a target of forces seeking to abuse his power.",
     "poster": "hulk.webp",
-    "colors": "#050b09 #215a39"
+    "colors": "#050b09 #164d24"
   },
   {
     "title": "The Punisher",
@@ -61,7 +61,7 @@
     "duration": 124,
     "description": "An undercover FBI agent becomes a vigilante and sets out to unleash his wrath upon the corrupt businessman who slaughtered his entire family at a reunion.",
     "poster": "the_punisher.webp",
-    "colors": "#090b0c #5e6466"
+    "colors": "#090b0c #32373a"
   },
   {
     "title": "Spider Man 2",
@@ -77,7 +77,7 @@
     "duration": 113,
     "description": "Blade, now a wanted man by the FBI, must join forces with the Nightstalkers to face his most challenging enemy yet: Dracula.",
     "poster": "blade_trinity.webp",
-    "colors": "#203648 #7392a1"
+    "colors": "#203648 #567788"
   },
   {
     "title": "Elektra",
@@ -85,7 +85,7 @@
     "duration": 97,
     "description": "An assassin's change of heart leads her into a war against an evil crime syndicate.",
     "poster": "elektra.webp",
-    "colors": "#9c838c #d23d28"
+    "colors": "#6a0d08 #9c838c"
   },
   {
     "title": "Fantastic Four",
@@ -93,7 +93,7 @@
     "duration": 106,
     "description": "A group of astronauts gain superpowers after a cosmic radiation exposure and must use them to oppose the plans of their enemy, Doctor Victor Von Doom.",
     "poster": "fantastic_four.webp",
-    "colors": "#26455a #8aa8b4"
+    "colors": "#0b0f17 #26455a"
   },
   {
     "title": "X-Men: The Last Stand",
@@ -101,7 +101,7 @@
     "duration": 104,
     "description": "The human government develops a cure for mutations, and Jean Grey becomes a darker uncontrollable persona called the Phoenix who allies with Magneto, causing escalation into an all-out battle for the X-Men.",
     "poster": "x-men_the_last_stand.webp",
-    "colors": "#123145 #3c5d70"
+    "colors": "#0b141d #123145"
   },
   {
     "title": "Ghost Rider",
@@ -109,7 +109,7 @@
     "duration": 110,
     "description": "A motorcycle stuntman who sold his soul becomes a supernatural agent of vengeance.",
     "poster": "ghost_rider.webp",
-    "colors": "#6b210e #e0924e"
+    "colors": "#1c0605 #9c3f24"
   },
   {
     "title": "Spider-Man 3",
@@ -117,7 +117,7 @@
     "duration": 139,
     "description": "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
     "poster": "spider-man_3.webp",
-    "colors": "#4e4b4a #191d20"
+    "colors": "#191d20 #475866"
   },
   {
     "title": "Fantastic Four: Rise of the Silver Surfer",
@@ -125,7 +125,7 @@
     "duration": 92,
     "description": "The Fantastic Four learn that they aren't the only super-powered beings in the universe when they square off against the powerful Silver Surfer and the planet-eating Galactus.",
     "poster": "fantastic_four_rise_of_the_silver_surfer.webp",
-    "colors": "#0e3d60 #626266"
+    "colors": "#0e3d60 #abbac4"
   },
   {
     "title": "Iron Man",
@@ -141,7 +141,7 @@
     "duration": 112,
     "description": "Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he turns into whenever he loses his temper.",
     "poster": "the_incredible_hulk.webp",
-    "colors": "#090b0d #323734"
+    "colors": "#090b0d #1f2b24"
   },
   {
     "title": "Punisher: War Zone",
@@ -149,7 +149,7 @@
     "duration": 107,
     "description": "Frank Castle, known as the Punisher, ruthlessly demolishes organized crime, but it starts an even bigger war.",
     "poster": "punisher_war_zone.webp",
-    "colors": "#050505 #585758"
+    "colors": "#050505 #2c2c2e"
   },
   {
     "title": "X-Men Origins: Wolverine",
@@ -165,7 +165,7 @@
     "duration": 125,
     "description": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
     "poster": "iron_man_2.webp",
-    "colors": "#274659 #734334"
+    "colors": "#274659 #aa3227"
   },
   {
     "title": "Thor",
@@ -173,7 +173,7 @@
     "duration": 114,
     "description": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
     "poster": "thor.webp",
-    "colors": "#152b45 #6e98ae"
+    "colors": "#0c0d15 #152b45"
   },
   {
     "title": "X-Men: First Class",
@@ -181,7 +181,7 @@
     "duration": 132,
     "description": "In the 1960s, superpowered humans Charles Xavier and Erik Lensherr work together to find others like them, but Erik's vengeful pursuit of an ambitious mutant who ruined his life causes a schism to divide them.",
     "poster": "x-men_first_class.webp",
-    "colors": "#223b43 #6b9b95"
+    "colors": "#091013 #34504e"
   },
   {
     "title": "Captain America: The First Avenger",
@@ -229,7 +229,7 @@
     "duration": 136,
     "description": "After Peter Parker is bitten by a genetically altered spider, he gains newfound, spider-like powers and ventures out to save the city from the machinations of a mysterious reptilian foe.",
     "poster": "the_amazing_spider-man.webp",
-    "colors": "#234f67 #6a313b"
+    "colors": "#0d2736 #6a313b"
   },
   {
     "title": "Marvel One-Shot: Item 47",
@@ -245,7 +245,7 @@
     "duration": 130,
     "description": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
     "poster": "iron_man_3.webp",
-    "colors": "#1a475b #bc7230"
+    "colors": "#91551f #1a475b"
   },
   {
     "title": "The Wolverine",
@@ -269,7 +269,7 @@
     "duration": 287,
     "description": "The missions of the Strategic Homeland Intervention, Enforcement and Logistics Division.",
     "poster": "agents_of_shield_s1_ep1-7.webp",
-    "colors": "#282221 #e4a768"
+    "colors": "#171412 #45352f"
   },
   {
     "title": "Thor: The Dark World",
@@ -277,7 +277,7 @@
     "duration": 112,
     "description": "When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.",
     "poster": "thor_the_dark_world.webp",
-    "colors": "#1e3134 #95b0ac"
+    "colors": "#1e3134 #476f7e"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 1 Episodes 8-16",
@@ -285,7 +285,7 @@
     "duration": 366,
     "description": "The team faces new threats—from resurfacing past traumas to powerful enemies like Centipede and the Clairvoyant—while uncovering deeper secrets about Skye, Coulson, and S.H.I.E.L.D. itself.",
     "poster": "agents_of_shield_s1_ep8-16.webp",
-    "colors": "#282221 #e4a768"
+    "colors": "#171412 #45352f"
   },
   {
     "title": "Marvel One-Shot: All Hail The King",
@@ -301,7 +301,7 @@
     "duration": 136,
     "description": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
     "poster": "captain_america_the_winter_soldier.webp",
-    "colors": "#354244 #cfc6a7"
+    "colors": "#354244 #8d8b78"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 1 Episodes 17-22",
@@ -309,7 +309,7 @@
     "duration": 247,
     "description": "As the battle intensifies, the team finds themselves hunted and forced into hiding. With S.H.I.E.L.D.'s future in jeopardy, they must confront hidden truths and navigate a world where loyalty is no longer certain.",
     "poster": "agents_of_shield_s1_ep17-22.webp",
-    "colors": "#282221 #e4a768"
+    "colors": "#171412 #45352f"
   },
   {
     "title": "The Amazing Spider-Man 2",
@@ -325,7 +325,7 @@
     "duration": 151,
     "description": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
     "poster": "x-men-days-of-future-past.webp",
-    "colors": "#5a6066 #bba67f"
+    "colors": "#8e5033 #5a6066"
   },
   {
     "title": "Guardians of the Galaxy",
@@ -333,7 +333,7 @@
     "duration": 122,
     "description": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
     "poster": "guardians_of_the_galaxy.webp",
-    "colors": "#1e3d67 #3d2b30"
+    "colors": "#131a26 #1e3d67"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 2 Episodes 1-10",
@@ -341,7 +341,7 @@
     "duration": 411,
     "description": "As Hydra resurfaces with powerful new weapons and hidden agendas, Coulson's team must confront rising threats, personal struggles, and mysterious alien symbols—all while racing to uncover ancient secrets that could change everything.",
     "poster": "agents_of_shield_s2_ep1-10.webp",
-    "colors": "#200a09 #d32f1f"
+    "colors": "#791f18 #200a09"
   },
   {
     "title": "Agent Carter season 1",
@@ -349,7 +349,7 @@
     "duration": 340,
     "description": "In 1946, Peggy Carter is relegated to secretarial duties in the Strategic Scientific Reserve (SSR). When Howard Stark is accused of treason, he secretly recruits Peggy to clear his name with the help of his butler, Edwin Jarvis.",
     "poster": "agent_carter_s1.webp",
-    "colors": "#7c6a4a #9a9c85"
+    "colors": "#432812 #7a5832"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 2 Episodes 11-19",
@@ -357,7 +357,7 @@
     "duration": 368,
     "description": "As the dust settles from Hydra’s war, S.H.I.E.L.D. faces internal fractures, new enemies, and the rise of powerful Inhumans. While Coulson fights to hold the team together, Skye begins to embrace her transformation—and the future of S.H.I.E.L.D. hangs in the balance.",
     "poster": "agents_of_shield_s2_ep11-19.webp",
-    "colors": "#200a09 #d32f1f"
+    "colors": "#791f18 #200a09"
   },
   {
     "title": "Daredevil season 1",
@@ -365,7 +365,7 @@
     "duration": 721,
     "description": "A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.",
     "poster": "daredevil_s1.webp",
-    "colors": "#171420 #3e62b1"
+    "colors": "#1d1826 #344a79"
   },
   {
     "title": "Avengers: Age of Ultron",
@@ -373,7 +373,7 @@
     "duration": 141,
     "description": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
     "poster": "avengers_age_of_altron.webp",
-    "colors": "#6c88aa #7a5962"
+    "colors": "#51242e #47617a"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 2 Episodes 20-22",
@@ -381,7 +381,7 @@
     "duration": 124,
     "description": "As tensions escalate between S.H.I.E.L.D. and the Inhumans, loyalties are tested and secrets come to light. With war looming, Skye must choose her path as Coulson’s team faces their most personal and world-altering conflict yet.",
     "poster": "agents_of_shield_s2_ep20-22.webp",
-    "colors": "#200a09 #d32f1f"
+    "colors": "#791f18 #200a09"
   },
   {
     "title": "Ant-Man",
@@ -397,15 +397,15 @@
     "duration": 100,
     "description": "Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy.",
     "poster": "fantastic_four_2015.webp",
-    "colors": "#18171c #80939e"
+    "colors": "#18171c #3b3439"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 3 Episodes 1-19",
     "date": "2015-09-29",
     "duration": 833,
-    "description": "",
+    "description": "In the wake of a global shift, S.H.I.E.L.D. expands its mission to track down emerging powered individuals. As the team navigates new alliances, hidden agendas, and mysterious forces, they face escalating threats that test their strength, loyalty, and trust in one another. With the fate of many hanging in the balance, S.H.I.E.L.D. must adapt quickly to confront dangers that grow more unpredictable with every step.",
     "poster": "agents_of_shield_s3_ep1-19.webp",
-    "colors": "#595c5d #d7d7d6"
+    "colors": "#19191a #909295"
   },
   {
     "title": "Jessica Jones season 1",
@@ -413,7 +413,7 @@
     "duration": 656,
     "description": "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases involving people with extraordinary abilities in New York City.",
     "poster": "jessica_jones_s1.webp",
-    "colors": "#1f152e #7c69a6"
+    "colors": "#1f152e #8463a2"
   },
   {
     "title": "",

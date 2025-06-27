@@ -62,7 +62,7 @@ body {
     list-style: none;
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: 20px;
     row-gap: 40px;
 
@@ -76,15 +76,6 @@ body {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       cursor: pointer;
       transition: scale 0.1s ease, outline-color 1s ease;
-      /* filter: contrast(1.03) saturate(1.03) brightness(1.1); */
-
-      /* &:hover {
-        scale: 1.2;
-      } */
-
-      &:active {
-        scale: 0.95;
-      }
     }
 
     .number {

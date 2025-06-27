@@ -61,9 +61,9 @@ async function fillMovieList() {
 
       const bigImg = new Image();
       const titleEl = overviewContainer.querySelector(".title");
-      const dateEl = overviewContainer.querySelector(".date-value");
-      const durationEl = overviewContainer.querySelector(".duration-value");
-      const descEl = overviewContainer.querySelector(".description-value");
+      const dateEl = overviewContainer.querySelector(".date");
+      const durationEl = overviewContainer.querySelector(".duration");
+      const descEl = overviewContainer.querySelector(".description");
 
       // Replace the old poster
       bigImg.classList.add("poster");
@@ -310,7 +310,7 @@ function getPosterPath() {
   // return "new-posters";
 
   // if (width < 600) return "posters-100-150";
-  if (width < 1200) return "small-posters";
+  if (width < 900) return "small-posters";
   return "new-posters";
 }
 
