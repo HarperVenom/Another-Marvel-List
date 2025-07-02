@@ -3,9 +3,10 @@ let titles = [];
 let overviewOpened = false;
 let transitioning = false;
 
-const postersPath = "new-posters";
+const postersPath = "posters";
 
 const main = document.querySelector("main");
+const titleListContainer = document.querySelector(".title-list-container");
 const overview = document.querySelector("#overview");
 const overviewContainer = document.querySelector("#overview-container");
 const posterContainer = document.querySelector("#poster-container");
@@ -129,6 +130,19 @@ async function fillMovieList() {
     li.movie = movie;
     titles.push(li);
   });
+
+  restoreScroll();
+}
+
+window.addEventListener("beforeunload", () => {
+  sessionStorage.setItem("scrollY", main.scrollTop);
+});
+
+function restoreScroll() {
+  const scrollY = sessionStorage.getItem("scrollY");
+  if (scrollY !== null) {
+    main.scrollTo(0, parseInt(scrollY, 10));
+  }
 }
 
 overview.addEventListener("click", () => {
@@ -311,7 +325,7 @@ function getPosterPath() {
 
   // if (width < 600) return "posters-100-150";
   if (width < 900) return "small-posters";
-  return "new-posters";
+  return "posters";
 }
 
 let currentPostersPath = "";
