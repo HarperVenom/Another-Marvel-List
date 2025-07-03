@@ -5,7 +5,7 @@
     "duration": 120,
     "description": "Deacon Frost, a vampire, kills the elders of the underground vampiric society in order to gain control over his kind. To cement his powers, he needs the blood of Blade, a half-human vampire hunter.",
     "poster": "blade.webp",
-    "colors": "#2f0906 #8a1604"
+    "colors": "#0e0505 #6b1f17"
   },
   {
     "title": "X-Men",
@@ -29,7 +29,7 @@
     "duration": 121,
     "description": "After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.",
     "poster": "spider-man.webp",
-    "colors": "#c13b23 #cb8323"
+    "colors": "#22110b #cb8323"
   },
   {
     "title": "Daredevil",
@@ -69,7 +69,7 @@
     "duration": 127,
     "description": "Peter Parker is beset with troubles in his failing personal life as he battles a former brilliant scientist named Otto Octavius.",
     "poster": "spider-man_2.webp",
-    "colors": "#e52c27 #e89c3a"
+    "colors": "#591f1a #c87b4f"
   },
   {
     "title": "Blade: Trinity",
@@ -77,7 +77,7 @@
     "duration": 113,
     "description": "Blade, now a wanted man by the FBI, must join forces with the Nightstalkers to face his most challenging enemy yet: Dracula.",
     "poster": "blade_trinity.webp",
-    "colors": "#203648 #567788"
+    "colors": "#06090d #567788"
   },
   {
     "title": "Elektra",
@@ -85,7 +85,7 @@
     "duration": 97,
     "description": "An assassin's change of heart leads her into a war against an evil crime syndicate.",
     "poster": "elektra.webp",
-    "colors": "#6a0d08 #9c838c"
+    "colors": "#2b0705 #6a0d08"
   },
   {
     "title": "Fantastic Four",
@@ -125,7 +125,7 @@
     "duration": 92,
     "description": "The Fantastic Four learn that they aren't the only super-powered beings in the universe when they square off against the powerful Silver Surfer and the planet-eating Galactus.",
     "poster": "fantastic_four_rise_of_the_silver_surfer.webp",
-    "colors": "#0e3d60 #abbac4"
+    "colors": "#0c090d #236796"
   },
   {
     "title": "Iron Man",
@@ -157,7 +157,7 @@
     "duration": 107,
     "description": "The early years of James Logan, featuring his rivalry with his brother Victor Creed, his service in the special forces team Weapon X, and his experimentation into the metal-lined mutant Wolverine.",
     "poster": "x-men_origins_wolverine.webp",
-    "colors": "#060505 #93613a"
+    "colors": "#060505 #5f4234"
   },
   {
     "title": "Iron Man 2",
@@ -165,7 +165,7 @@
     "duration": 125,
     "description": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
     "poster": "iron_man_2.webp",
-    "colors": "#274659 #aa3227"
+    "colors": "#46261d #274659"
   },
   {
     "title": "Thor",
@@ -197,7 +197,7 @@
     "duration": 4,
     "description": "Agents Coulson and Sitwell plan to derail General Thaddeus \"Thunderbolt\" Ross from interfering with S.H.I.E.L.D. affairs with a very special person.",
     "poster": "the_consultant.webp",
-    "colors": "#2250a6 #c98ba0"
+    "colors": "#360b19 #1c0c5c"
   },
   {
     "title": "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
@@ -205,7 +205,7 @@
     "duration": 4,
     "description": "Agent Coulson stops at a convenience store and deals with a coincidental robbery during his visit.",
     "poster": "a_funny_thing_happened_on_the_way_to_thors_hammer.webp",
-    "colors": "#693151 #eeb553"
+    "colors": "#1c0e2b #693151"
   },
   {
     "title": "Ghost Rider: Spirit of Vengeance",
@@ -213,7 +213,7 @@
     "duration": 96,
     "description": "Johnny Blaze, tortured by the Ghost Rider's curse, gets a chance of redemption through protecting the Devil's son, whose father is pursuing him.",
     "poster": "ghost_rider_spirit_of_vengeance.webp",
-    "colors": "#1b1514 #ce3421"
+    "colors": "#1b1514 #454a4c"
   },
   {
     "title": "The Avengers",
@@ -221,7 +221,7 @@
     "duration": 143,
     "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "poster": "the_avengers.webp",
-    "colors": "#224b50 #458ca0"
+    "colors": "#162128 #224b50"
   },
   {
     "title": "The Amazing Spider-Man",
@@ -237,7 +237,7 @@
     "duration": 12,
     "description": "S.H.I.E.L.D. agent Sitwell is assigned to recover an abandoned Chitauri weapon being used by a young couple robbing a bank.",
     "poster": "item_47.webp",
-    "colors": "#dc4772 #10c8bc"
+    "colors": "#885276 #556a96"
   },
   {
     "title": "Iron Man 3",
@@ -245,7 +245,7 @@
     "duration": 130,
     "description": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
     "poster": "iron_man_3.webp",
-    "colors": "#91551f #1a475b"
+    "colors": "#0b1315 #1a475b"
   },
   {
     "title": "The Wolverine",
@@ -253,7 +253,7 @@
     "duration": 126,
     "description": "Wolverine comes to Japan to meet an old friend whose life he saved years ago, and gets embroiled in a conspiracy involving yakuza and mutants.",
     "poster": "the_wolverine.webp",
-    "colors": "#1c1f1f #83909e"
+    "colors": "#1c1f1f #494f52"
   },
   {
     "title": "Marvel One-Shot: Agent Carter",
@@ -261,7 +261,7 @@
     "duration": 15,
     "description": "Frustrated at being marginalized at work, Peggy Carter goes on an unauthorized solo field mission.",
     "poster": "agent_carter.webp",
-    "colors": "#494278 #db1f30"
+    "colors": "#1c112c #494278"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 1 Episodes 1-7",
@@ -277,7 +277,7 @@
     "duration": 112,
     "description": "When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.",
     "poster": "thor_the_dark_world.webp",
-    "colors": "#1e3134 #476f7e"
+    "colors": "#1e3134 #466468"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 1 Episodes 8-16",
@@ -293,7 +293,7 @@
     "duration": 14,
     "description": "A documentary filmmaker interviews the now-famous Trevor Slattery from behind bars.",
     "poster": "all_hail_the_king.webp",
-    "colors": "#5579b4 #f33555"
+    "colors": "#0c264e #6f422f"
   },
   {
     "title": "Captain America: The Winter Soldier",
@@ -301,7 +301,7 @@
     "duration": 136,
     "description": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
     "poster": "captain_america_the_winter_soldier.webp",
-    "colors": "#354244 #8d8b78"
+    "colors": "#14191f #354244"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 1 Episodes 17-22",
@@ -317,7 +317,7 @@
     "duration": 142,
     "description": "When New York is put under siege by Oscorp, it is up to Spider-Man to save the city he swore to protect as well as his loved ones.",
     "poster": "the_amazing_spider-man_2.webp",
-    "colors": "#3169a3 #c43647"
+    "colors": "#38151d #254067"
   },
   {
     "title": "X-Men: Days of Future Past",
@@ -325,7 +325,7 @@
     "duration": 151,
     "description": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
     "poster": "x-men-days-of-future-past.webp",
-    "colors": "#8e5033 #5a6066"
+    "colors": "#1a1b21 #553d38"
   },
   {
     "title": "Guardians of the Galaxy",
@@ -341,7 +341,7 @@
     "duration": 411,
     "description": "As Hydra resurfaces with powerful new weapons and hidden agendas, Coulson's team must confront rising threats, personal struggles, and mysterious alien symbols—all while racing to uncover ancient secrets that could change everything.",
     "poster": "agents_of_shield_s2_ep1-10.webp",
-    "colors": "#791f18 #200a09"
+    "colors": "#200a09 #791f18"
   },
   {
     "title": "Agent Carter season 1",
@@ -357,7 +357,7 @@
     "duration": 368,
     "description": "As the dust settles from Hydra’s war, S.H.I.E.L.D. faces internal fractures, new enemies, and the rise of powerful Inhumans. While Coulson fights to hold the team together, Skye begins to embrace her transformation—and the future of S.H.I.E.L.D. hangs in the balance.",
     "poster": "agents_of_shield_s2_ep11-19.webp",
-    "colors": "#791f18 #200a09"
+    "colors": "#200a09 #791f18"
   },
   {
     "title": "Daredevil season 1",
@@ -373,7 +373,7 @@
     "duration": 141,
     "description": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
     "poster": "avengers_age_of_altron.webp",
-    "colors": "#51242e #47617a"
+    "colors": "#18202f #47617a"
   },
   {
     "title": "Agents of S.H.I.E.L.D.<br>Season 2 Episodes 20-22",
@@ -381,7 +381,7 @@
     "duration": 124,
     "description": "As tensions escalate between S.H.I.E.L.D. and the Inhumans, loyalties are tested and secrets come to light. With war looming, Skye must choose her path as Coulson’s team faces their most personal and world-altering conflict yet.",
     "poster": "agents_of_shield_s2_ep20-22.webp",
-    "colors": "#791f18 #200a09"
+    "colors": "#200a09 #791f18"
   },
   {
     "title": "Ant-Man",
@@ -405,7 +405,7 @@
     "duration": 833,
     "description": "In the wake of a global shift, S.H.I.E.L.D. expands its mission to track down emerging powered individuals. As the team navigates new alliances, hidden agendas, and mysterious forces, they face escalating threats that test their strength, loyalty, and trust in one another. With the fate of many hanging in the balance, S.H.I.E.L.D. must adapt quickly to confront dangers that grow more unpredictable with every step.",
     "poster": "agents_of_shield_s3_ep1-19.webp",
-    "colors": "#19191a #909295"
+    "colors": "#19191a #44413f"
   },
   {
     "title": "Jessica Jones season 1",
@@ -413,7 +413,7 @@
     "duration": 656,
     "description": "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases involving people with extraordinary abilities in New York City.",
     "poster": "jessica_jones_s1.webp",
-    "colors": "#1f152e #8463a2"
+    "colors": "#1f152e #634a72"
   },
   {
     "title": "Agent Carter season 2",
@@ -421,15 +421,15 @@
     "duration": 425,
     "description": "Dedicated to the fight against new Atomic Age threats in the wake of World War II, Peggy must now journey from New York City to Los Angeles and she's about to find out that the bright lights of the post-war Hollywood mask a more sinister threat to everyone she is sworn to protect.",
     "poster": "agent_carter_s2.webp",
-    "colors": "#58505c #7f5c4b"
+    "colors": "#2a2429 #7f5c4b"
   },
   {
-    "title": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "poster": ".webp",
-    "colors": ""
+    "title": "Deadpool",
+    "date": "2016-02-12",
+    "duration": 108,
+    "description": "The origin story of former Special Forces operative turned mercenary Wade Wilson, who, after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.",
+    "poster": "deadpool.webp",
+    "colors": "#1f1316 #5d1219"
   },
   {
     "title": "",

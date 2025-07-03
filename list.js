@@ -27,6 +27,7 @@ async function fillMovieList() {
 
   movies.forEach((movie, index) => {
     if (movie.title == "") return;
+
     const li = document.createElement("li");
     li.innerHTML = `
         <img class="poster" 
@@ -132,17 +133,6 @@ async function fillMovieList() {
   });
 
   restoreScroll();
-}
-
-window.addEventListener("beforeunload", () => {
-  sessionStorage.setItem("scrollY", main.scrollTop);
-});
-
-function restoreScroll() {
-  const scrollY = sessionStorage.getItem("scrollY");
-  if (scrollY !== null) {
-    main.scrollTo(0, parseInt(scrollY, 10));
-  }
 }
 
 overview.addEventListener("click", () => {
@@ -333,8 +323,6 @@ let currentPostersPath = "";
 function updatePostersOnResize() {
   const newPostersPath = getPosterPath();
   if (newPostersPath === currentPostersPath) return;
-
-  console.log(newPostersPath);
 
   currentPostersPath = newPostersPath;
 

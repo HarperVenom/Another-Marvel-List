@@ -1,21 +1,11 @@
-// Save scroll position before unload
 window.addEventListener("beforeunload", () => {
-  localStorage.setItem("scrollY", window.scrollY);
+  console.log(main.scrollTop);
+  localStorage.setItem("scrollY", main.scrollTop);
 });
 
-// Restore scroll position on load
-window.addEventListener("load", () => {
+function restoreScroll() {
   const scrollY = localStorage.getItem("scrollY");
-
-  // Use double rAF to wait for layout and rendering
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      if (scrollY !== null) {
-        window.scrollTo(0, parseInt(scrollY));
-      }
-
-      // Reveal the page
-      document.body.classList.remove("hidden");
-    });
-  });
-});
+  if (scrollY !== null) {
+    main.scrollTo(0, parseInt(scrollY, 10));
+  }
+}

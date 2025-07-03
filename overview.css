@@ -118,7 +118,7 @@
       /* height: 100%; */
       max-height: 2000px;
       max-width: min(1000px, 100vw);
-      gap: 1.5rem;
+      gap: 2rem;
 
       .poster {
         background: black;
@@ -156,6 +156,7 @@
           }
 
           .description {
+            margin-top: 2rem;
             font-size: 1.5rem;
           }
         }
