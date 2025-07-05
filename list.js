@@ -150,6 +150,8 @@ async function fillMovieList() {
 
   updateTitles();
   restoreScroll();
+
+  document.body.classList.remove("hidden");
 }
 
 overview.addEventListener("click", () => {
