@@ -1,11 +1,18 @@
-const hideButton = document.querySelector("#hide-button");
+const menuWrapper = document.querySelector(".menu-wrapper");
+
+const settingsButton = document.querySelector("#hide-button");
+const backButton = document.querySelector("#back-button");
 
 let activeIndex;
 let nextTitleIndex;
 
-hideButton.addEventListener("click", () => {
+settingsButton.addEventListener("click", () => {
   storage.setHideMode(!storage.isHideMode());
+  updateTitles();
+});
 
+backButton.addEventListener("click", () => {
+  storage.lock(titles[activeIndex].movie.id);
   updateTitles();
 });
 
@@ -14,6 +21,8 @@ function indexOf(movie) {
 }
 
 function updateTitles() {
+  activeIndex = -1;
+
   if (storage.isHideMode()) {
     for (let i = 0; i < titles.length; i++) {
       if (storage.isLocked(titles[i].movie)) {
@@ -24,9 +33,17 @@ function updateTitles() {
     }
   }
 
+  if (activeIndex != -1) {
+    backButton.classList.remove("hidden");
+    settingsButton.classList.remove("center");
+  } else {
+    backButton.classList.add("hidden");
+    settingsButton.classList.add("center");
+  }
+
   nextTitleIndex = activeIndex + 1;
 
-  if (isNaN(nextTitleIndex)) nextTitleIndex = 0;
+  // if (isNaN(nextTitleIndex)) nextTitleIndex = 0;
 
   titles.forEach((title) => {
     updateLock(title);
@@ -56,5 +73,28 @@ function updateLock(title) {
   } else {
     lock.querySelector("svg").classList.add("hidden");
     lock.classList.remove("next");
+  }
+}
+
+function getScrollbarWidth(element) {
+  return element.offsetWidth - element.clientWidth;
+}
+window.addEventListener("load", () => {
+  updateMenuShift();
+});
+
+window.addEventListener("resize", () => {
+  updateMenuShift();
+});
+
+function updateMenuShift() {
+  menuWrapper.style.width = `calc(100vw - ${getScrollbarWidth(main)}px)`;
+}
+
+function toggleMenu() {
+  if (menuWrapper.classList.contains("hidden")) {
+    menuWrapper.classList.remove("hidden");
+  } else {
+    menuWrapper.classList.add("hidden");
   }
 }

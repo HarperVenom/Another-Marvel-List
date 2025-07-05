@@ -70,7 +70,7 @@ async function fillMovieList() {
       const [color1, color2] = movie.colors.split(" ");
 
       glow.style.background = `linear-gradient(
-      45deg,
+      ${window.innerWidth > 800 ? 45 : 135}deg,
       ${color1},
       ${color2} 100%
       )`;
@@ -159,6 +159,7 @@ overview.addEventListener("click", () => {
 function toggleOverview() {
   if (transitioning) return;
   overviewOpened = !overviewOpened;
+  toggleMenu();
 
   if (overviewOpened) {
     document.body.classList.add("noscroll");

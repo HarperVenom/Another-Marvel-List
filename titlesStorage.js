@@ -41,6 +41,10 @@ class TitlesStorage {
     this.add(id);
   }
 
+  lock(id) {
+    this.remove(id);
+  }
+
   isLocked(movie) {
     return !this._getIDs().includes(movie.id);
   }
