@@ -1,4 +1,4 @@
-.menu {
+.menu-wrapper {
   position: fixed;
   /* background: black; */
   pointer-events: none;
@@ -7,9 +7,26 @@
   transform: translate(-50%, -50%);
   width: 100vw;
   max-width: 2000px;
-  height: 100dvh;
+  height: 100svh;
   overflow: hidden;
-  z-index: 0;
+  z-index: 1;
+
+  .menu {
+  }
+
+  .bar {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    /* translate: -50%; */
+    width: 100%;
+    max-width: min(85vw, 600px);
+    height: 75px;
+    border-radius: 100px;
+    margin-block: 1rem;
+    background-color: rgb(60, 60, 60);
+  }
 
   /* transition: all ease 1s; */
 
@@ -28,9 +45,5 @@
     margin: 1rem 2rem;
 
     transition: scale 0.05s ease;
-
-    &:active {
-      scale: 0.95;
-    }
   }
 }

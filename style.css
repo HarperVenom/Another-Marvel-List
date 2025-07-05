@@ -19,7 +19,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(15, 15, 15);
   width: 100vw;
   height: 100dvh;
 
@@ -54,48 +54,113 @@ body {
 .title-list-container {
   width: 100%;
   height: fit-content;
-  padding: 20px;
+  padding: 40px 20px;
+  margin-top: 1rem;
+  margin-bottom: 40svh;
 
   .list {
     width: 100%;
-    max-width: 680px;
+    /* max-width: 630px; */
     list-style: none;
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(25vw, 180px), 1fr));
     gap: 20px;
     row-gap: 40px;
 
-    .poster {
-      width: 100%;
-      border-radius: 5px;
-      aspect-ratio: 2 / 3;
-      object-fit: cover;
-      user-select: none;
-      background-color: black;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-      cursor: pointer;
-      transition: scale 0.1s ease, outline-color 1s ease;
-    }
+    li {
+      position: relative;
 
-    .number {
-      font-size: 2rem;
+      .year-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        color: rgba(255, 255, 255, 0.3);
+        padding: 0.1rem 0.2rem;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .poster-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+      .poster {
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        user-select: none;
+        background-color: black;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: scale 0.1s ease, outline-color 1s ease;
+        -webkit-user-drag: none;
+        scale: 0.99;
+      }
+
+      .lock {
+        width: 100%;
+        position: absolute;
+        inset: 0;
+        background-color: rgba(30, 30, 30);
+        z-index: 0;
+        pointer-events: all;
+        transition: opacity 0.5s ease;
+        scale: 1.02;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.hidden {
+          pointer-events: none;
+        }
+
+        &.next {
+          pointer-events: none;
+        }
+
+        svg {
+          text-align: center;
+          color: rgba(255, 255, 255, 0.4);
+          font-weight: 100;
+          width: 50%;
+          transition: opacity 0.5s ease;
+        }
+      }
     }
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   .title-list-container {
-    padding: 40px;
+    padding: 30px;
 
     .list {
       max-width: min(75vw, 1200px);
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 40px;
-      row-gap: 80px;
+      /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+      gap: 30px;
+      row-gap: 60px;
 
-      .poster {
-        border-radius: 8px;
+      li {
+        .year-label {
+          font-size: 1.3rem;
+
+          padding: 0.2rem 0.3rem;
+        }
+
+        .poster-wrapper {
+          border-radius: 8px;
+        }
+
+        .poster {
+          border-radius: 8px;
+        }
       }
     }
   }
