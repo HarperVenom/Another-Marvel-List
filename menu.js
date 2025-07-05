@@ -9,11 +9,15 @@ let nextTitleIndex;
 settingsButton.addEventListener("click", () => {
   storage.setHideMode(!storage.isHideMode());
   updateTitles();
+
+  if (storage.isHideMode()) scrollToActive(true);
 });
 
 backButton.addEventListener("click", () => {
   storage.lock(titles[activeIndex].movie.id);
   updateTitles();
+
+  scrollToActive(true);
 });
 
 function indexOf(movie) {
@@ -47,8 +51,6 @@ function updateTitles() {
   titles.forEach((title) => {
     updateLock(title);
   });
-
-  if (storage.isHideMode()) scrollToActive(true);
 }
 
 function scrollToActive(smooth = false) {
@@ -105,9 +107,17 @@ window.addEventListener("load", () => {
   updateMenuShift();
 });
 
+let previousWidth = window.innerWidth;
+
 window.addEventListener("resize", () => {
-  updateMenuShift();
-  scrollToActive();
+  if (!storage.isHideMode()) return;
+  const currentWidth = window.innerWidth;
+
+  if (currentWidth !== previousWidth) {
+    previousWidth = currentWidth;
+    updateMenuShift();
+    scrollToActive();
+  }
 });
 
 function updateMenuShift() {
