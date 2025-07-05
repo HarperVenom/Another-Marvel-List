@@ -21,19 +21,20 @@ function indexOf(movie) {
 }
 
 function updateTitles() {
-  activeIndex = -1;
-
+  activeIndex = titles.length - 1;
   if (storage.isHideMode()) {
     for (let i = 0; i < titles.length; i++) {
       if (storage.isLocked(titles[i].movie)) {
-        if (i == 0) break;
-        else activeIndex = i - 1;
+        if (i == 0) {
+          activeIndex = -1;
+          break;
+        } else activeIndex = i - 1;
         break;
       }
     }
   }
 
-  if (activeIndex != -1) {
+  if (storage.isHideMode() && activeIndex != -1) {
     backButton.classList.remove("hidden");
     settingsButton.classList.remove("center");
   } else {
@@ -43,11 +44,32 @@ function updateTitles() {
 
   nextTitleIndex = activeIndex + 1;
 
-  // if (isNaN(nextTitleIndex)) nextTitleIndex = 0;
-
   titles.forEach((title) => {
     updateLock(title);
   });
+
+  if (storage.isHideMode()) scrollToActive(true);
+}
+
+function scrollToActive(smooth = false) {
+  if (activeIndex == -1) {
+    main.scrollTo(0, 0);
+    return;
+  }
+  const title = titles[activeIndex];
+
+  if (smooth) {
+    main.style.scrollBehavior = "smooth";
+  } else {
+    main.style.scrollBehavior = "auto";
+  }
+  main.scrollTo(0, getScrollChangeTo(title));
+}
+
+function getScrollChangeTo(title) {
+  const rect = title.getBoundingClientRect();
+
+  return main.scrollTop + rect.top - (window.innerHeight / 3 - rect.height / 2);
 }
 
 function isActive(id) {
@@ -85,6 +107,7 @@ window.addEventListener("load", () => {
 
 window.addEventListener("resize", () => {
   updateMenuShift();
+  scrollToActive();
 });
 
 function updateMenuShift() {

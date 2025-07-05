@@ -51,6 +51,10 @@ body {
   opacity: 0;
 }
 
+main {
+  scroll-behavior: auto;
+}
+
 .title-list-container {
   width: 100%;
   height: fit-content;
