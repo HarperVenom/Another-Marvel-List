@@ -1,12 +1,25 @@
 const menuWrapper = document.querySelector(".menu-wrapper");
+const menu = document.querySelector("#menu");
 
-const settingsButton = document.querySelector("#hide-button");
+const gradient = document.querySelector("#gradient");
+const settingButton = document.querySelector("#settings-button");
+const hideSwitch = document.querySelector("#hide-button");
 const backButton = document.querySelector("#back-button");
 
 let activeIndex;
 let nextTitleIndex;
 
-settingsButton.addEventListener("click", () => {
+settingButton.addEventListener("click", () => {
+  if (menu.classList.contains("open")) {
+    menu.classList.remove("open");
+    gradient.classList.remove("hidden");
+  } else {
+    menu.classList.add("open");
+    gradient.classList.add("hidden");
+  }
+});
+
+hideSwitch.addEventListener("click", () => {
   storage.setHideMode(!storage.isHideMode());
   updateTitles();
 
@@ -40,10 +53,10 @@ function updateTitles() {
 
   if (storage.isHideMode() && activeIndex != -1) {
     backButton.classList.remove("hidden");
-    settingsButton.classList.remove("center");
+    settingButton.classList.remove("center");
   } else {
     backButton.classList.add("hidden");
-    settingsButton.classList.add("center");
+    settingButton.classList.add("center");
   }
 
   nextTitleIndex = activeIndex + 1;
@@ -100,9 +113,6 @@ function updateLock(title) {
   }
 }
 
-function getScrollbarWidth(element) {
-  return element.offsetWidth - element.clientWidth;
-}
 window.addEventListener("load", () => {
   updateMenuShift();
 });
@@ -110,18 +120,23 @@ window.addEventListener("load", () => {
 let previousWidth = window.innerWidth;
 
 window.addEventListener("resize", () => {
-  if (!storage.isHideMode()) return;
   const currentWidth = window.innerWidth;
 
   if (currentWidth !== previousWidth) {
     previousWidth = currentWidth;
     updateMenuShift();
-    scrollToActive();
+
+    if (storage.isHideMode()) {
+      scrollToActive();
+    }
   }
 });
 
 function updateMenuShift() {
-  menuWrapper.style.width = `calc(100vw - ${getScrollbarWidth(main)}px)`;
+  const scrollBarWidth =
+    main.getBoundingClientRect().width -
+    titleListContainer.getBoundingClientRect().width;
+  menuWrapper.style.width = `calc(100vw - ${scrollBarWidth}px)`;
 }
 
 function toggleMenu() {

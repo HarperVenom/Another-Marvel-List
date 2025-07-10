@@ -1,13 +1,30 @@
 .menu-wrapper {
   position: fixed;
   pointer-events: none;
-  width: 100vw;
-  max-width: 2000px;
+  /* width: 100vw; */
+  /* max-width: 2000px; */
   height: 100svh;
   bottom: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 2;
   transition: opacity 0.3s ease;
+
+  .menu {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    transform: translate(0, 100%);
+    background-color: rgba(30, 30, 30);
+    transition: transform 0.5s ease, border-radius 0.7s ease;
+    pointer-events: all;
+    border-top-left-radius: 20vmax;
+    border-top-right-radius: 20vmax;
+
+    &.open {
+      border-radius: 0;
+      transform: translate(0, 0);
+    }
+  }
 
   .bar {
     position: absolute;
@@ -29,9 +46,10 @@
     height: 15vh;
     bottom: -10px;
     background: linear-gradient(to top, rgb(15, 15, 15), transparent);
+    transition: opacity 0.3s ease;
   }
 
-  .hide-button,
+  .settings-button,
   #back-button {
     background-color: rgb(60, 60, 60);
     cursor: pointer;
