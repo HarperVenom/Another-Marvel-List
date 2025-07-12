@@ -1,9 +1,10 @@
 const menuWrapper = document.querySelector(".menu-wrapper");
 const menu = document.querySelector("#menu");
+const menuPanel = menu.querySelector(".panel");
 
 const gradient = document.querySelector("#gradient");
 const settingButton = document.querySelector("#settings-button");
-const hideSwitch = document.querySelector("#hide-button");
+const hideModeSwitch = document.querySelector("#hide-button");
 const backButton = document.querySelector("#back-button");
 
 let activeIndex;
@@ -12,18 +13,24 @@ let nextTitleIndex;
 settingButton.addEventListener("click", () => {
   if (menu.classList.contains("open")) {
     menu.classList.remove("open");
+    menuPanel.classList.add("hidden");
     gradient.classList.remove("hidden");
+
+    updateTitles();
+    if (storage.isHideMode()) scrollToActive(true);
   } else {
     menu.classList.add("open");
+    menuPanel.classList.remove("hidden");
     gradient.classList.add("hidden");
   }
+
+  updateHotBar();
 });
 
-hideSwitch.addEventListener("click", () => {
+hideModeSwitch.addEventListener("click", () => {
   storage.setHideMode(!storage.isHideMode());
-  updateTitles();
 
-  if (storage.isHideMode()) scrollToActive(true);
+  updateHideModeSwitchIcon();
 });
 
 backButton.addEventListener("click", () => {
@@ -51,13 +58,8 @@ function updateTitles() {
     }
   }
 
-  if (storage.isHideMode() && activeIndex != -1) {
-    backButton.classList.remove("hidden");
-    settingButton.classList.remove("center");
-  } else {
-    backButton.classList.add("hidden");
-    settingButton.classList.add("center");
-  }
+  updateHotBar();
+  updateHideModeSwitchIcon();
 
   nextTitleIndex = activeIndex + 1;
 
@@ -104,6 +106,13 @@ function updateLock(title) {
     lock.classList.add("hidden");
   }
 
+  // const highlight = title.querySelector(".highlight");
+  // if (indexOf(title.movie) == activeIndex) {
+  //   highlight.classList.remove("hidden");
+  // } else {
+  //   highlight.classList.add("hidden");
+  // }
+
   if (indexOf(title.movie) == nextTitleIndex) {
     lock.classList.add("next");
     lock.querySelector("svg").classList.remove("hidden");
@@ -144,5 +153,32 @@ function toggleMenu() {
     menuWrapper.classList.remove("hidden");
   } else {
     menuWrapper.classList.add("hidden");
+  }
+}
+
+function updateHotBar() {
+  if (
+    storage.isHideMode() &&
+    activeIndex != -1 &&
+    !menu.classList.contains("open")
+  ) {
+    backButton.classList.remove("hidden");
+    settingButton.classList.remove("center");
+  } else {
+    backButton.classList.add("hidden");
+    settingButton.classList.add("center");
+  }
+}
+
+function updateHideModeSwitchIcon() {
+  const visibleIcon = hideModeSwitch.querySelector(".visible");
+  const notVisibleIcon = hideModeSwitch.querySelector(".not-visible");
+
+  if (storage.isHideMode()) {
+    visibleIcon.classList.add("hidden");
+    notVisibleIcon.classList.remove("hidden");
+  } else {
+    visibleIcon.classList.remove("hidden");
+    notVisibleIcon.classList.add("hidden");
   }
 }

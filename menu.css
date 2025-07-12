@@ -12,7 +12,7 @@
   .menu {
     position: absolute;
     width: 100vw;
-    height: 100%;
+    height: 101%;
     transform: translate(0, 100%);
     background-color: rgba(30, 30, 30);
     transition: transform 0.5s ease, border-radius 0.7s ease;
@@ -23,6 +23,47 @@
     &.open {
       border-radius: 0;
       transform: translate(0, 0);
+    }
+
+    .panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-block: 5rem;
+      transition: opacity 0.5s ease;
+
+      h1 {
+        font-size: 1.5rem;
+        color: rgb(150, 150, 150);
+        margin-bottom: 1rem;
+      }
+
+      .hide-button {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgb(50, 50, 50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        svg {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          width: 70%;
+          height: 70%;
+          transition: opacity 0.2s ease;
+
+          path {
+            fill: rgba(150, 150, 150);
+          }
+        }
+      }
     }
   }
 
@@ -64,7 +105,6 @@
     transform: translateX(-50%);
     translate: 3rem;
     margin-block: 2rem;
-    /* opacity: 0.9; */
     transition: opacity 0.2s ease, translate 0.2s ease;
 
     display: flex;
@@ -108,7 +148,7 @@
 
 @media screen and (max-width: 800px) {
   .menu-wrapper {
-    .hide-button,
+    .settings-button,
     #back-button {
       margin-block: 1.5rem;
     }

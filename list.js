@@ -31,6 +31,7 @@ async function fillMovieList() {
 
     const li = document.createElement("li");
     li.innerHTML = `
+     <div class="highlight hidden"></div>
      <div class="poster-wrapper">
       <img class="poster" 
           src = "${getPosterPath() + "/" + movie.id + ".webp"}";
@@ -51,6 +52,11 @@ async function fillMovieList() {
     </div>
       `;
 
+    const [color1, color2] = movie.colors.split(" ");
+
+    const highlight = li.querySelector(".highlight");
+    highlight.style.backgroundColor = color2;
+
     const img = li.querySelector(".poster");
     img.addEventListener("click", () => {
       if (overviewOpened || transitioning) return;
@@ -67,7 +73,6 @@ async function fillMovieList() {
       toggleOverview();
 
       const glow = document.querySelector("#glow");
-      const [color1, color2] = movie.colors.split(" ");
 
       glow.style.background = `linear-gradient(
       ${window.innerWidth > 800 ? 45 : 135}deg,

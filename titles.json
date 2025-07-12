@@ -365,7 +365,7 @@
     "date": "2015-04-10",
     "duration": 721,
     "description": "A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.",
-    "colors": "#1d1826 #344a79"
+    "colors": "#171420 #1e2546"
   },
   {
     "id": "avengers_age_of_ultron",
@@ -432,59 +432,83 @@
     "colors": "#1f1316 #5d1219"
   },
   {
+    "id": "daredevil_s2",
+    "title": "Daredevil season 2",
+    "date": "2016-03-18",
+    "duration": 721,
+    "description": "Dark forces are tearing Hell's Kitchen apart once again, but this time Daredevil may have to choose between the city and his friends.",
+    "colors": "#160f11 #3c2b2e"
+  },
+  {
+    "id": "",
     "title": "",
     "date": "",
     "duration": 0,
     "description": "",
-    "poster": ".webp",
     "colors": ""
   },
   {
+    "id": "",
     "title": "",
     "date": "",
     "duration": 0,
     "description": "",
-    "poster": ".webp",
     "colors": ""
   },
   {
+    "id": "",
     "title": "",
     "date": "",
     "duration": 0,
     "description": "",
-    "poster": ".webp",
     "colors": ""
   },
   {
+    "id": "",
     "title": "",
     "date": "",
     "duration": 0,
     "description": "",
-    "poster": ".webp",
     "colors": ""
   },
   {
+    "id": "",
     "title": "",
     "date": "",
     "duration": 0,
     "description": "",
-    "poster": ".webp",
     "colors": ""
   },
   {
+    "id": "",
     "title": "",
     "date": "",
     "duration": 0,
     "description": "",
-    "poster": ".webp",
     "colors": ""
   },
   {
+    "id": "",
     "title": "",
     "date": "",
     "duration": 0,
     "description": "",
-    "poster": ".webp",
+    "colors": ""
+  },
+  {
+    "id": "",
+    "title": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": ""
+  },
+  {
+    "id": "",
+    "title": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
     "colors": ""
   }
 ]
