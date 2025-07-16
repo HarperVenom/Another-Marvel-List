@@ -5,7 +5,9 @@
     "date": "1998-08-21",
     "duration": 120,
     "description": "Deacon Frost, a vampire, kills the elders of the underground vampiric society in order to gain control over his kind. To cement his powers, he needs the blood of Blade, a half-human vampire hunter.",
-    "colors": "#2b1010 #6b1f17"
+    "colors": "#2b1010 #6b1f17",
+    "type": "Movie",
+    "tags": ["Old"]
   },
   {
     "id": "x_men",
@@ -265,7 +267,7 @@
   },
   {
     "id": "agents_of_shield_s1_ep1_7",
-    "title": "Agents of S.H.I.E.L.D.<br>Season 1 Episodes 1-7",
+    "title": "Agents of S.H.I.E.L.D.<br>season 1 episodes 1-7",
     "date": "2013-09-24",
     "duration": 287,
     "description": "The missions of the Strategic Homeland Intervention, Enforcement and Logistics Division.",
@@ -281,7 +283,7 @@
   },
   {
     "id": "agents_of_shield_s1_ep8_16",
-    "title": "Agents of S.H.I.E.L.D.<br>Season 1 Episodes 8-16",
+    "title": "Agents of S.H.I.E.L.D.<br>season 1 episodes 8-16",
     "date": "2013-11-20",
     "duration": 366,
     "description": "The team faces new threats—from resurfacing past traumas to powerful enemies like Centipede and the Clairvoyant—while uncovering deeper secrets about Skye, Coulson, and S.H.I.E.L.D. itself.",
@@ -305,7 +307,7 @@
   },
   {
     "id": "agents_of_shield_s1_ep17_22",
-    "title": "Agents of S.H.I.E.L.D.<br>Season 1 Episodes 17-22",
+    "title": "Agents of S.H.I.E.L.D.<br>season 1 episodes 17-22",
     "date": "2014-04-09",
     "duration": 247,
     "description": "As the battle intensifies, the team finds themselves hunted and forced into hiding. With S.H.I.E.L.D.'s future in jeopardy, they must confront hidden truths and navigate a world where loyalty is no longer certain.",
@@ -337,7 +339,7 @@
   },
   {
     "id": "agents_of_shield_s2_ep1_10",
-    "title": "Agents of S.H.I.E.L.D.<br>Season 2 Episodes 1-10",
+    "title": "Agents of S.H.I.E.L.D.<br>season 2 episodes 1-10",
     "date": "2014-09-23",
     "duration": 411,
     "description": "As Hydra resurfaces with powerful new weapons and hidden agendas, Coulson's team must confront rising threats, personal struggles, and mysterious alien symbols—all while racing to uncover ancient secrets that could change everything.",
@@ -353,7 +355,7 @@
   },
   {
     "id": "agents_of_shield_s2_ep11_19",
-    "title": "Agents of S.H.I.E.L.D.<br>Season 2 Episodes 11-19",
+    "title": "Agents of S.H.I.E.L.D.<br>season 2 episodes 11-19",
     "date": "2015-03-04",
     "duration": 368,
     "description": "As the dust settles from Hydra's war, S.H.I.E.L.D. faces internal fractures, new enemies, and the rise of powerful Inhumans. While Coulson fights to hold the team together, Skye begins to embrace her transformation—and the future of S.H.I.E.L.D. hangs in the balance.",
@@ -377,7 +379,7 @@
   },
   {
     "id": "agents_of_shield_s2_ep20_22",
-    "title": "Agents of S.H.I.E.L.D.<br>Season 2 Episodes 20-22",
+    "title": "Agents of S.H.I.E.L.D.<br>season 2 episodes 20-22",
     "date": "2015-05-06",
     "duration": 124,
     "description": "As tensions escalate between S.H.I.E.L.D. and the Inhumans, loyalties are tested and secrets come to light. With war looming, Skye must choose her path as Coulson's team faces their most personal and world-altering conflict yet.",
@@ -401,7 +403,7 @@
   },
   {
     "id": "agents_of_shield_s3_ep1_19",
-    "title": "Agents of S.H.I.E.L.D.<br>Season 3 Episodes 1-19",
+    "title": "Agents of S.H.I.E.L.D.<br>season 3 episodes 1-19",
     "date": "2015-09-29",
     "duration": 833,
     "description": "In the wake of a global shift, S.H.I.E.L.D. expands its mission to track down emerging powered individuals. As the team navigates new alliances, hidden agendas, and mysterious forces, they face escalating threats that test their strength, loyalty, and trust in one another. With the fate of many hanging in the balance, S.H.I.E.L.D. must adapt quickly to confront dangers that grow more unpredictable with every step.",
@@ -448,36 +450,36 @@
     "colors": "#1d1e29 #4e6274"
   },
   {
-    "id": "",
-    "title": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": ""
+    "id": "agents_of_shield_s3_ep20_22",
+    "title": "Agents of S.H.I.E.L.D.<br>season 3 episodes 20-22",
+    "date": "2016-05-11",
+    "duration": 124,
+    "description": "In the aftermath of Civil War, S.H.I.E.L.D. faces mounting pressure over its involvement with Inhumans, while Hive’s growing power forces the team into a high-stakes showdown that will test them like never before.",
+    "colors": "#19191a #44413f"
   },
   {
-    "id": "",
-    "title": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": ""
+    "id": "x-men_apocalypse",
+    "title": "X-Men: Apocalypse",
+    "date": "2016-05-27",
+    "duration": 144,
+    "description": "After the re-emergence of the world's first mutant, world-destroyer Apocalypse, the X-Men must unite to defeat his extinction level plan.",
+    "colors": "#24303a #4f6f7c"
   },
   {
-    "id": "",
-    "title": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": ""
+    "id": "team_thor_part_1",
+    "title": "Team Thor",
+    "date": "2016-08-28",
+    "duration": 3,
+    "description": "Discover what Thor was up to during the events of Captain America: Civil War.",
+    "colors": "#451d46 #97325c"
   },
   {
-    "id": "",
-    "title": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": ""
+    "id": "agents_of_shield_s4_ep1_4",
+    "title": "Agents of S.H.I.E.L.D.<br>season 4 episodes 1-6",
+    "date": "2016-09-20",
+    "duration": 164,
+    "description": "Daisy, now on her own, investigates a string of serial killings in Los Angeles while being hunted by her former S.H.I.E.L.D. teammates. As tensions rise, Ghost Rider emerges, leading to deadly confrontations, shocking alliances, and a race to stop anti-Inhuman forces threatening the world.",
+    "colors": "#3c1c16 #6a3b2c"
   },
   {
     "id": "",

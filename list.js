@@ -45,7 +45,7 @@ async function fillMovieList() {
             this.src = '';
           };" 
           />
-
+        
       <div class="lock">
         ${clickSvg("rgba(50, 50, 50)")}
       </div>
@@ -238,17 +238,17 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
     width: `${fromRect.width}px`,
     height: `${fromRect.height}px`,
     borderRadius: fromStyle.borderRadius,
+    filter: fromStyle.filter,
     margin: 0,
     zIndex: 9999,
     pointerEvents: "none",
     willChange: "top, left, width, height",
     transition:
-      "top 0.3s ease, left 0.3s ease, width 0.3s ease, height 0.3s ease, border-radius 0.3s ease",
+      "top 0.3s ease, left 0.3s ease, width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, filter 0.3s ease",
     objectFit: "cover",
   });
 
   overview.appendChild(clone);
-  // document.body.appendChild(clone);
   clone.getBoundingClientRect();
   currentClone = clone;
 
@@ -262,6 +262,7 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
       clone.style.width = `${toRect.width}px`;
       clone.style.height = `${toRect.height}px`;
       clone.style.borderRadius = toStyle.borderRadius; // or adapt dynamically if needed
+      clone.style.filter = toStyle.filter;
     });
 
     clone.addEventListener(

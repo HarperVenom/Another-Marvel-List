@@ -1,11 +1,8 @@
 .menu-wrapper {
   position: fixed;
   pointer-events: none;
-  /* width: 100vw; */
-  /* max-width: 2000px; */
   height: 100svh;
   bottom: 0;
-  /* overflow: hidden; */
   z-index: 2;
   transition: opacity 0.3s ease;
 
@@ -15,7 +12,7 @@
     height: 101%;
     transform: translate(0, 100%);
     background-color: rgba(30, 30, 30);
-    transition: transform 0.5s ease, border-radius 0.7s ease;
+    transition: transform 0.3s ease, border-radius 0.5s ease;
     pointer-events: all;
     border-top-left-radius: 20vmax;
     border-top-right-radius: 20vmax;

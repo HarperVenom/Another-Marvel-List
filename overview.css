@@ -23,10 +23,8 @@
     .poster-container {
       position: relative;
       width: 100%;
-      /* margin: auto; */
       border-radius: 10px;
       user-select: none;
-      /* max-width: 400px; */
       min-width: 40%;
 
       aspect-ratio: 2 / 3;

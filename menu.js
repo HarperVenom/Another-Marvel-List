@@ -64,6 +64,7 @@ function updateTitles() {
   nextTitleIndex = activeIndex + 1;
 
   titles.forEach((title) => {
+    updateFade(title);
     updateLock(title);
   });
 }
@@ -91,6 +92,19 @@ function getScrollChangeTo(title) {
 
 function isActive(id) {
   return titles[activeIndex].id == id;
+}
+
+function updateFade(title) {
+  const poster = title.querySelector(".poster");
+  if (
+    storage.isHideMode() &&
+    !storage.isLocked(title.movie) &&
+    indexOf(title.movie) != activeIndex
+  ) {
+    poster.classList.add("fade");
+  } else {
+    poster.classList.remove("fade");
+  }
 }
 
 function updateLock(title) {

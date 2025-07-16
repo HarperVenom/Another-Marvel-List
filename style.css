@@ -115,12 +115,16 @@ main {
         border-radius: 5px;
         object-fit: cover;
         user-select: none;
-        /* background-color: black; */
-        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
         cursor: pointer;
         transition: scale 0.1s ease, outline-color 1s ease;
         -webkit-user-drag: none;
         scale: 0.99;
+        transition: filter 0.3s ease;
+
+        &.fade {
+          filter: brightness(0.5);
+          /* scale: 0.9; */
+        }
       }
 
       .lock {
@@ -130,7 +134,7 @@ main {
         background-color: rgba(30, 30, 30);
         z-index: 0;
         pointer-events: all;
-        transition: opacity 0.5s ease;
+        transition: opacity 0.3s ease;
         scale: 1.02;
 
         display: flex;
