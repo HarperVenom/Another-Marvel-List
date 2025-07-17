@@ -1,3 +1,5 @@
+const apiKey = "AIzaSyBiX_qsY5BjHcb42_u9nfhR0du4ZkZMKdo";
+
 let titles = [];
 const storage = new TitlesStorage();
 
@@ -45,7 +47,7 @@ async function fillMovieList() {
             this.src = '';
           };" 
           />
-        
+
       <div class="lock">
         ${clickSvg("rgba(50, 50, 50)")}
       </div>
@@ -99,9 +101,27 @@ async function fillMovieList() {
       durationEl.textContent = formatDuration(movie.duration);
       descEl.textContent = movie.description;
 
-      const info = overviewContainer.querySelector(".info");
-      info.addEventListener("click", (e) => {
-        e.stopPropagation();
+      const additional = overviewContainer.querySelector(".additional");
+      const arrow = overviewContainer.querySelector(".arrow-down");
+      if (movie.links !== undefined) {
+        arrow.classList.remove("inactive");
+        additional.classList.remove("inactive");
+
+        let allBlocks = "";
+
+        loadAndRenderVideos(additional, movie.links);
+
+        additional.innerHTML = allBlocks;
+      } else {
+        arrow.classList.add("inactive");
+        additional.classList.add("inactive");
+      }
+
+      const contents = overviewContainer.querySelectorAll(".content");
+      contents.forEach((content) => {
+        content.addEventListener("click", (e) => {
+          e.stopPropagation();
+        });
       });
 
       overview.style.overflow = "hidden";
@@ -120,7 +140,9 @@ async function fillMovieList() {
             bigImg.src = `${postersPath + "/" + movie.id + ".webp"}`;
 
             transitioning = false;
-            info.classList.remove("hidden");
+            contents.forEach((content) => {
+              content.classList.remove("hidden");
+            });
             overview.style.overflow = "auto";
 
             const finishTransition = () => {
@@ -195,7 +217,11 @@ function toggleOverview() {
           bigImg.style.visibility = "hidden";
 
           setIsGlowing(false);
-          overview.querySelector(".info").classList.add("hidden");
+
+          const contents = overviewContainer.querySelectorAll(".content");
+          contents.forEach((content) => {
+            content.classList.add("hidden");
+          });
         },
         // on transition end
         (clone) => {
@@ -404,4 +430,75 @@ function clickSvg(color = "#000000") {
   <path d="M 31.413 18.441 c -0.512 0 -1.024 -0.195 -1.414 -0.586 L 21.37 9.226 c -0.781 -0.781 -0.781 -2.047 0 -2.828 c 0.78 -0.781 2.048 -0.781 2.828 0 l 8.629 8.629 c 0.781 0.781 0.781 2.047 0 2.828 C 32.437 18.246 31.925 18.441 31.413 18.441 z" style="fill: ${color};"/>
 </g>
 </svg>`;
+}
+
+function youtubeSvg() {
+  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+              <path d="M 88.119 23.338 c -1.035 -3.872 -4.085 -6.922 -7.957 -7.957 C 73.144 13.5 45 13.5 45 13.5 s -28.144 0 -35.162 1.881 c -3.872 1.035 -6.922 4.085 -7.957 7.957 C 0 30.356 0 45 0 45 s 0 14.644 1.881 21.662 c 1.035 3.872 4.085 6.922 7.957 7.957 C 16.856 76.5 45 76.5 45 76.5 s 28.144 0 35.162 -1.881 c 3.872 -1.035 6.922 -4.085 7.957 -7.957 C 90 59.644 90 45 90 45 S 90 30.356 88.119 23.338 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+              <polygon points="36,58.5 59.38,45 36,31.5 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+            </g>
+          </svg>`;
+}
+
+async function loadVideos(links) {
+  const titles = await Promise.all(
+    links.map(async (link) => {
+      const response = await fetch(
+        `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${link}&key=${apiKey}`
+      );
+      const data = await response.json();
+      const snippet = data.items[0]?.snippet;
+
+      const thumbnails = snippet?.thumbnails ?? {};
+      const thumbnailUrl =
+        thumbnails.maxres?.url ||
+        thumbnails.standard?.url ||
+        thumbnails.high?.url ||
+        thumbnails.medium?.url ||
+        thumbnails.default?.url ||
+        null;
+
+      return {
+        link: link,
+        title: snippet?.title ?? "Unknown Title",
+        thumbnailUrl: thumbnailUrl,
+      };
+    })
+  );
+
+  return titles;
+}
+
+function makeYoutubeBlock(video) {
+  return `<div class="video-container content">
+            
+            <a class="screen" target="_blank" href="https://www.youtube.com/watch?v=${
+              video.link
+            }">
+              <img src="${video.thumbnailUrl}"/>
+              ${youtubeSvg()}
+            </a>
+            <h3>${video.title}</h3>
+          </div>`;
+}
+
+async function loadAndRenderVideos(container, links) {
+  try {
+    const videos = await loadVideos(links);
+
+    videos.forEach((video) => {
+      const html = makeYoutubeBlock(video);
+      container.insertAdjacentHTML("beforeend", html);
+
+      const insertedElement = container.querySelector(
+        ".video-container:last-child"
+      );
+      insertedElement.addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
+    });
+  } catch (error) {
+    console.error("Failed to load videos:", error);
+  }
 }

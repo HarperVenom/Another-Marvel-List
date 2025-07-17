@@ -13,12 +13,23 @@
   scrollbar-gutter: stable;
   cursor: pointer;
 
+  &.hidden {
+    visibility: hidden;
+  }
+
   .container {
     top: 0;
     width: 100%;
     max-width: 450px;
-    padding: 2rem;
-    overflow: visible;
+    padding: 0 2rem;
+
+    .main {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2rem;
+    }
 
     .poster-container {
       position: relative;
@@ -26,7 +37,6 @@
       border-radius: 10px;
       user-select: none;
       min-width: 40%;
-
       aspect-ratio: 2 / 3;
     }
 
@@ -102,6 +112,80 @@
         }
       }
     }
+
+    .arrow-down {
+      margin-top: auto;
+      padding: 1rem;
+      opacity: 0.4;
+      transition: opacity 0.3s ease;
+
+      svg {
+        height: 100%;
+        width: 40px;
+        path {
+          fill: white;
+        }
+      }
+
+      &.inactive {
+        visibility: hidden;
+      }
+    }
+
+    .additional {
+      width: 100%;
+      margin-bottom: 10svh;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      transition: opacity 0.3s ease;
+      padding: 5rem 0;
+
+      .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        pointer-events: all;
+        cursor: auto;
+        margin-inline: auto;
+
+        h3 {
+          padding: 0.8rem 0;
+          font-weight: 300;
+          font-size: 1.5rem;
+        }
+
+        a {
+          position: relative;
+          display: block;
+          width: 100%;
+          aspect-ratio: 16 / 9;
+          border-radius: 10px;
+          overflow: hidden;
+          background-color: black;
+          display: flex;
+          justify-content: center;
+
+          img {
+            object-fit: cover;
+            width: 100%;
+          }
+
+          svg {
+            position: absolute;
+            height: fit-content;
+            width: 10%;
+            bottom: 0;
+            right: 0;
+            margin: 10px 20px;
+          }
+        }
+      }
+
+      &.inactive {
+        display: none;
+      }
+    }
   }
 }
 
@@ -110,23 +194,28 @@
     max-height: 100vh;
 
     .container {
-      margin-block: auto;
-      display: flex;
-      flex-direction: row;
-      align-items: self-start;
-      /* height: 100%; */
-      max-height: 2000px;
       max-width: min(1000px, 100vw);
-      gap: 2rem;
+      padding: 0 2rem;
+
+      .main {
+        padding: 2rem 0;
+
+        .block {
+          margin-top: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: self-start;
+          gap: 2rem;
+        }
+      }
 
       .poster-container {
         position: relative;
         width: 100%;
-        /* margin: auto; */
         border-radius: 10px;
         user-select: none;
         max-width: 400px;
-        min-width: 40%;
+        width: 40%;
 
         aspect-ratio: 2 / 3;
 
@@ -170,6 +259,14 @@
 
           .description {
             font-size: 1.5rem;
+          }
+        }
+      }
+
+      .additional {
+        .video-container {
+          h3 {
+            font-size: 130%;
           }
         }
       }

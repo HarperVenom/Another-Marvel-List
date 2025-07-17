@@ -135,7 +135,8 @@
     "date": "2008-05-02",
     "duration": 126,
     "description": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
-    "colors": "#05060b #0f2d50"
+    "colors": "#05060b #0f2d50",
+    "links": ["C7kmm16PoDY"]
   },
   {
     "id": "the_incredible_hulk",
@@ -143,7 +144,8 @@
     "date": "2008-06-13",
     "duration": 112,
     "description": "Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he turns into whenever he loses his temper.",
-    "colors": "#090b0d #1f2b24"
+    "colors": "#090b0d #1f2b24",
+    "links": ["JzSWaMAcMbg"]
   },
   {
     "id": "punisher_war_zone",
@@ -167,7 +169,17 @@
     "date": "2010-04-30",
     "duration": 125,
     "description": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
-    "colors": "#46261d #274659"
+    "colors": "#46261d #274659",
+    "links": [
+      "xRQnJyP77tY",
+      "2LnT-cGCGqk",
+      "hPXlMfAil04",
+      "ZLlHWdKlGjQ",
+      "IRcp7EKReDs",
+      "IkucjK1fDmc",
+      "IgKcAlFp-wo",
+      "a_x3Dc1kAKA"
+    ]
   },
   {
     "id": "thor",
@@ -175,7 +187,8 @@
     "date": "2011-05-06",
     "duration": 114,
     "description": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
-    "colors": "#0c0d15 #152b45"
+    "colors": "#0c0d15 #152b45",
+    "links": ["mpHQ5Rfid1c"]
   },
   {
     "id": "x_men_first_class",
@@ -223,7 +236,8 @@
     "date": "2012-05-04",
     "duration": 143,
     "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "colors": "#162128 #224b50"
+    "colors": "#162128 #224b50",
+    "links": ["s3EMSCwOafg", "FcLdR7Z2f9Q", "D3ZNtOcY_1A"]
   },
   {
     "id": "the_amazing_spider_man",
@@ -247,7 +261,8 @@
     "date": "2013-05-03",
     "duration": 130,
     "description": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
-    "colors": "#0b1315 #1a475b"
+    "colors": "#0b1315 #1a475b",
+    "links": ["0szL2xEKL2Y"]
   },
   {
     "id": "the_wolverine",
@@ -271,7 +286,8 @@
     "date": "2013-09-24",
     "duration": 287,
     "description": "The missions of the Strategic Homeland Intervention, Enforcement and Logistics Division.",
-    "colors": "#171412 #45352f"
+    "colors": "#171412 #45352f",
+    "links": ["ZFho0Tn-8GU"]
   },
   {
     "id": "thor_the_dark_world",
@@ -279,7 +295,8 @@
     "date": "2013-11-08",
     "duration": 112,
     "description": "When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.",
-    "colors": "#1e3134 #466468"
+    "colors": "#1e3134 #466468",
+    "links": ["ALUCl2p4aFc"]
   },
   {
     "id": "agents_of_shield_s1_ep8_16",
@@ -298,12 +315,21 @@
     "colors": "#0c264e #6f422f"
   },
   {
+    "id": "marvel_studios_assembling_a_universe",
+    "title": "Marvel Studios: Assembling a Universe",
+    "date": "2014-03-18",
+    "duration": 43,
+    "description": "A look at the story behind Marvel Studios and the Marvel Cinematic Universe, featuring interviews and behind-the-scenes footage from all of the Marvel films, the Marvel One-Shots and \"Marvel's Agents of S.H.I.E.L.D.\"!",
+    "colors": "#0a2555 #245b84"
+  },
+  {
     "id": "captain_america_the_winter_soldier",
     "title": "Captain America: The Winter Soldier",
     "date": "2014-04-04",
     "duration": 136,
     "description": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
-    "colors": "#14191f #354244"
+    "colors": "#14191f #354244",
+    "links": ["OlEuShTEC6I"]
   },
   {
     "id": "agents_of_shield_s1_ep17_22",
@@ -312,6 +338,14 @@
     "duration": 247,
     "description": "As the battle intensifies, the team finds themselves hunted and forced into hiding. With S.H.I.E.L.D.'s future in jeopardy, they must confront hidden truths and navigate a world where loyalty is no longer certain.",
     "colors": "#171412 #45352f"
+  },
+  {
+    "id": "marvel_75_years_from_pulp_to_pop",
+    "title": "Marvel: 75 Years, from Pulp to Pop!",
+    "date": "2014-04-11",
+    "duration": 42,
+    "description": "In celebration of the publisher's 75th anniversary, the hour-long special will take a detailed look at the company's journey from fledgling comics publisher to multi-media juggernaut. Hosted by Emily VanCamp (S.H.I.E.L.D. Agent Sharon Carter), the documentary-style feature will include interviews with comic book icons, pop culture authorities, and Hollywood stars. The special also promises an \"extraordinary peek into Marvel's future!\" Might Marvel release the first official footage from next year's Avengers: Age of Ultron or Ant-Man? If they do, you'll know about it here.",
+    "colors": "#4e3416 #7a6244"
   },
   {
     "id": "the_amazing_spider_man_2",
@@ -335,7 +369,8 @@
     "date": "2014-08-01",
     "duration": 122,
     "description": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
-    "colors": "#131a26 #1e3d67"
+    "colors": "#131a26 #1e3d67",
+    "links": ["CdgCleQNdb0"]
   },
   {
     "id": "agents_of_shield_s2_ep1_10",
@@ -384,6 +419,14 @@
     "duration": 124,
     "description": "As tensions escalate between S.H.I.E.L.D. and the Inhumans, loyalties are tested and secrets come to light. With war looming, Skye must choose her path as Coulson's team faces their most personal and world-altering conflict yet.",
     "colors": "#4d1610 #791f18"
+  },
+  {
+    "id": "whih_newsfront_s1",
+    "title": "WHiH Newsfront season 1",
+    "date": "2015-07-02",
+    "duration": 15,
+    "description": "WHIH Newsfront is a television program presented by Christine Everhart in the WHIH World News network, informing about major events from political, scientific, and entertainment news, in the Marvel Cinematic Universe.",
+    "colors": "#101e4b #213663"
   },
   {
     "id": "ant_man",
@@ -442,12 +485,21 @@
     "colors": "#160f11 #3c2b2e"
   },
   {
+    "id": "whih_newsfront_s2",
+    "title": "WHiH Newsfront season 2",
+    "date": "2016-04-22",
+    "duration": 15,
+    "description": "Christine Everhart and political correspondent Will Adams return with a hard-hitting news series examining the global aftermath of the Avengers' actions. From the costs of superhero battles and political accountability to exclusive interviews and breaking news, WHIH investigates the world the heroes leave behind.",
+    "colors": "#1f2435 #445464"
+  },
+  {
     "id": "captain_america_civil_war",
     "title": "Captain America: Civil War",
     "date": "2016-05-06",
     "duration": 148,
     "description": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
-    "colors": "#1d1e29 #4e6274"
+    "colors": "#1d1e29 #4e6274",
+    "links": ["rpMClVCcgWM", "OvHNcULsL3s", "tahjluBe--E"]
   },
   {
     "id": "agents_of_shield_s3_ep20_22",

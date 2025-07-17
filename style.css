@@ -13,7 +13,7 @@
 }
 
 * {
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: auto; /* Firefox */
   scrollbar-color: #444 #111; /* Firefox */
 }
 
@@ -47,8 +47,8 @@ body {
 }
 
 .hidden {
-  pointer-events: none;
-  opacity: 0;
+  pointer-events: none !important;
+  opacity: 0 !important;
 }
 
 main {
@@ -92,14 +92,8 @@ main {
         width: 100%;
         height: 100%;
         filter: blur(5px) brightness(200%);
-        /* opacity: 0.8; */
         transition: opacity 0.7s ease;
         animation: bounce 3s infinite ease-in-out;
-
-        &.hidden {
-          /* animation: none; */
-          opacity: 0;
-        }
       }
 
       .poster-wrapper {
@@ -123,7 +117,6 @@ main {
 
         &.fade {
           filter: brightness(0.5);
-          /* scale: 0.9; */
         }
       }
 
@@ -140,10 +133,6 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        &.hidden {
-          pointer-events: none;
-        }
 
         &.next {
           pointer-events: none;
@@ -168,14 +157,12 @@ main {
 
     .list {
       max-width: min(75vw, 1200px);
-      /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
       gap: 30px;
       row-gap: 60px;
 
       li {
         .year-label {
           font-size: 1.3rem;
-
           padding: 0.2rem 0.3rem;
         }
 
