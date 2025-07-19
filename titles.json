@@ -1,7 +1,7 @@
 [
   {
     "id": "blade",
-    "title": "Blade",
+    "name": "Blade",
     "date": "1998-08-21",
     "duration": 120,
     "description": "Deacon Frost, a vampire, kills the elders of the underground vampiric society in order to gain control over his kind. To cement his powers, he needs the blood of Blade, a half-human vampire hunter.",
@@ -11,7 +11,7 @@
   },
   {
     "id": "x_men",
-    "title": "X-Men",
+    "name": "X-Men",
     "date": "2000-07-14",
     "duration": 104,
     "description": "In a world where mutants (evolved super-powered humans) exist and are discriminated against, two groups form for an inevitable clash: the supremacist Brotherhood, and the pacifist X-Men.",
@@ -19,7 +19,7 @@
   },
   {
     "id": "blade_ii",
-    "title": "Blade II",
+    "name": "Blade II",
     "date": "2002-03-22",
     "duration": 117,
     "description": "Blade forms an uneasy alliance with the vampire council in order to combat the Reapers, who are feeding on vampires.",
@@ -27,7 +27,7 @@
   },
   {
     "id": "spider_man",
-    "title": "Spider-Man",
+    "name": "Spider-Man",
     "date": "2002-05-03",
     "duration": 121,
     "description": "After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.",
@@ -35,7 +35,7 @@
   },
   {
     "id": "daredevil",
-    "title": "Daredevil",
+    "name": "Daredevil",
     "date": "2003-02-14",
     "duration": 103,
     "description": "A man blinded by toxic waste which also enhanced his remaining senses fights crime as an acrobatic martial arts superhero.",
@@ -43,7 +43,7 @@
   },
   {
     "id": "x2",
-    "title": "X2",
+    "name": "X2",
     "date": "2003-05-02",
     "duration": 134,
     "description": "When anti-mutant Colonel William Stryker kidnaps Professor X and attacks his school, the X-Men must ally with their archenemy Magneto to stop him.",
@@ -51,7 +51,7 @@
   },
   {
     "id": "hulk",
-    "title": "Hulk",
+    "name": "Hulk",
     "date": "2003-06-17",
     "duration": 138,
     "description": "Bruce Banner, a genetics researcher with a tragic past, suffers a lab accident that makes him transform into a raging, giant green monster when angered, making him a target of forces seeking to abuse his power.",
@@ -59,7 +59,7 @@
   },
   {
     "id": "the_punisher",
-    "title": "The Punisher",
+    "name": "The Punisher",
     "date": "2004-04-16",
     "duration": 124,
     "description": "An undercover FBI agent becomes a vigilante and sets out to unleash his wrath upon the corrupt businessman who slaughtered his entire family at a reunion.",
@@ -67,7 +67,7 @@
   },
   {
     "id": "spider_man_2",
-    "title": "Spider Man 2",
+    "name": "Spider Man 2",
     "date": "2004-07-16",
     "duration": 127,
     "description": "Peter Parker is beset with troubles in his failing personal life as he battles a former brilliant scientist named Otto Octavius.",
@@ -75,7 +75,7 @@
   },
   {
     "id": "blade_trinity",
-    "title": "Blade: Trinity",
+    "name": "Blade: Trinity",
     "date": "2004-12-08",
     "duration": 113,
     "description": "Blade, now a wanted man by the FBI, must join forces with the Nightstalkers to face his most challenging enemy yet: Dracula.",
@@ -83,7 +83,7 @@
   },
   {
     "id": "elektra",
-    "title": "Elektra",
+    "name": "Elektra",
     "date": "2005-01-14",
     "duration": 97,
     "description": "An assassin's change of heart leads her into a war against an evil crime syndicate.",
@@ -91,7 +91,7 @@
   },
   {
     "id": "fantastic_four",
-    "title": "Fantastic Four",
+    "name": "Fantastic Four",
     "date": "2005-07-08",
     "duration": 106,
     "description": "A group of astronauts gain superpowers after a cosmic radiation exposure and must use them to oppose the plans of their enemy, Doctor Victor Von Doom.",
@@ -99,7 +99,7 @@
   },
   {
     "id": "x_men_the_last_stand",
-    "title": "X-Men: The Last Stand",
+    "name": "X-Men: The Last Stand",
     "date": "2006-05-25",
     "duration": 104,
     "description": "The human government develops a cure for mutations, and Jean Grey becomes a darker uncontrollable persona called the Phoenix who allies with Magneto, causing escalation into an all-out battle for the X-Men.",
@@ -107,7 +107,7 @@
   },
   {
     "id": "ghost_rider",
-    "title": "Ghost Rider",
+    "name": "Ghost Rider",
     "date": "2007-02-16",
     "duration": 110,
     "description": "A motorcycle stuntman who sold his soul becomes a supernatural agent of vengeance.",
@@ -115,7 +115,7 @@
   },
   {
     "id": "spider_man_3",
-    "title": "Spider-Man 3",
+    "name": "Spider-Man 3",
     "date": "2007-05-04",
     "duration": 139,
     "description": "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
@@ -123,7 +123,7 @@
   },
   {
     "id": "fantastic_four_rise_of_the_silver_surfer",
-    "title": "Fantastic Four: Rise of the Silver Surfer",
+    "name": "Fantastic Four: Rise of the Silver Surfer",
     "date": "2007-06-15",
     "duration": 92,
     "description": "The Fantastic Four learn that they aren't the only super-powered beings in the universe when they square off against the powerful Silver Surfer and the planet-eating Galactus.",
@@ -131,7 +131,7 @@
   },
   {
     "id": "iron_man",
-    "title": "Iron Man",
+    "name": "Iron Man",
     "date": "2008-05-02",
     "duration": 126,
     "description": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
@@ -140,7 +140,7 @@
   },
   {
     "id": "the_incredible_hulk",
-    "title": "The Incredible Hulk",
+    "name": "The Incredible Hulk",
     "date": "2008-06-13",
     "duration": 112,
     "description": "Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he turns into whenever he loses his temper.",
@@ -149,7 +149,7 @@
   },
   {
     "id": "punisher_war_zone",
-    "title": "Punisher: War Zone",
+    "name": "Punisher: War Zone",
     "date": "2008-12-05",
     "duration": 107,
     "description": "Frank Castle, known as the Punisher, ruthlessly demolishes organized crime, but it starts an even bigger war.",
@@ -157,7 +157,7 @@
   },
   {
     "id": "x_men_origins_wolverine",
-    "title": "X-Men Origins: Wolverine",
+    "name": "X-Men Origins: Wolverine",
     "date": "2009-05-01",
     "duration": 107,
     "description": "The early years of James Logan, featuring his rivalry with his brother Victor Creed, his service in the special forces team Weapon X, and his experimentation into the metal-lined mutant Wolverine.",
@@ -165,7 +165,7 @@
   },
   {
     "id": "iron_man_2",
-    "title": "Iron Man 2",
+    "name": "Iron Man 2",
     "date": "2010-04-30",
     "duration": 125,
     "description": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
@@ -183,7 +183,7 @@
   },
   {
     "id": "thor",
-    "title": "Thor",
+    "name": "Thor",
     "date": "2011-05-06",
     "duration": 114,
     "description": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
@@ -192,7 +192,7 @@
   },
   {
     "id": "x_men_first_class",
-    "title": "X-Men: First Class",
+    "name": "X-Men: First Class",
     "date": "2011-05-25",
     "duration": 132,
     "description": "In the 1960s, superpowered humans Charles Xavier and Erik Lensherr work together to find others like them, but Erik's vengeful pursuit of an ambitious mutant who ruined his life causes a schism to divide them.",
@@ -200,7 +200,7 @@
   },
   {
     "id": "captain_america_the_first_avenger",
-    "title": "Captain America: The First Avenger",
+    "name": "Captain America: The First Avenger",
     "date": "2011-07-22",
     "duration": 124,
     "description": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\". But being Captain America comes at a price as he attempts to take down a warmonger and a terrorist organization.",
@@ -208,7 +208,7 @@
   },
   {
     "id": "the_consultant",
-    "title": "Marvel One-Shot: The Consultant",
+    "name": "Marvel One-Shot: The Consultant",
     "date": "2011-09-11",
     "duration": 4,
     "description": "Agents Coulson and Sitwell plan to derail General Thaddeus \"Thunderbolt\" Ross from interfering with S.H.I.E.L.D. affairs with a very special person.",
@@ -216,7 +216,7 @@
   },
   {
     "id": "a_funny_thing_happened_on_the_way_to_thors_hammer",
-    "title": "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
+    "name": "Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer",
     "date": "2011-10-25",
     "duration": 4,
     "description": "Agent Coulson stops at a convenience store and deals with a coincidental robbery during his visit.",
@@ -224,7 +224,7 @@
   },
   {
     "id": "ghost_rider_spirit_of_vengeance",
-    "title": "Ghost Rider: Spirit of Vengeance",
+    "name": "Ghost Rider: Spirit of Vengeance",
     "date": "2012-02-17",
     "duration": 96,
     "description": "Johnny Blaze, tortured by the Ghost Rider's curse, gets a chance of redemption through protecting the Devil's son, whose father is pursuing him.",
@@ -232,7 +232,7 @@
   },
   {
     "id": "the_avengers",
-    "title": "The Avengers",
+    "name": "The Avengers",
     "date": "2012-05-04",
     "duration": 143,
     "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
@@ -241,7 +241,7 @@
   },
   {
     "id": "the_amazing_spider_man",
-    "title": "The Amazing Spider-Man",
+    "name": "The Amazing Spider-Man",
     "date": "2012-07-03",
     "duration": 136,
     "description": "After Peter Parker is bitten by a genetically altered spider, he gains newfound, spider-like powers and ventures out to save the city from the machinations of a mysterious reptilian foe.",
@@ -249,7 +249,7 @@
   },
   {
     "id": "item_47",
-    "title": "Marvel One-Shot: Item 47",
+    "name": "Marvel One-Shot: Item 47",
     "date": "2012-09-25",
     "duration": 12,
     "description": "S.H.I.E.L.D. agent Sitwell is assigned to recover an abandoned Chitauri weapon being used by a young couple robbing a bank.",
@@ -257,7 +257,7 @@
   },
   {
     "id": "iron_man_3",
-    "title": "Iron Man 3",
+    "name": "Iron Man 3",
     "date": "2013-05-03",
     "duration": 130,
     "description": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
@@ -266,7 +266,7 @@
   },
   {
     "id": "the_wolverine",
-    "title": "The Wolverine",
+    "name": "The Wolverine",
     "date": "2013-07-26",
     "duration": 126,
     "description": "Wolverine comes to Japan to meet an old friend whose life he saved years ago, and gets embroiled in a conspiracy involving yakuza and mutants.",
@@ -274,24 +274,136 @@
   },
   {
     "id": "agent_carter",
-    "title": "Marvel One-Shot: Agent Carter",
+    "name": "Marvel One-Shot: Agent Carter",
     "date": "2013-09-23",
     "duration": 15,
     "description": "Frustrated at being marginalized at work, Peggy Carter goes on an unauthorized solo field mission.",
     "colors": "#1c112c #494278"
   },
   {
-    "id": "agents_of_shield_s1_ep1_7",
-    "title": "Agents of S.H.I.E.L.D.<br>season 1 episodes 1-7",
+    "id": "agents_of_shield_s1",
+    "name": "Agents of S.H.I.E.L.D. season 1",
     "date": "2013-09-24",
     "duration": 287,
     "description": "The missions of the Strategic Homeland Intervention, Enforcement and Logistics Division.",
     "colors": "#171412 #45352f",
-    "links": ["ZFho0Tn-8GU"]
+    "links": ["ZFho0Tn-8GU"],
+    "episodes": [
+      {
+        "name": "Pilot",
+        "date": "2013-09-24",
+        "duration": 45
+      },
+      {
+        "name": "0-8-4",
+        "date": "2013-10-01",
+        "duration": 42
+      },
+      {
+        "name": "The Asset",
+        "date": "2013-10-08",
+        "duration": 44
+      },
+      {
+        "name": "Eye Spy",
+        "date": "2013-10-15",
+        "duration": 43
+      },
+      {
+        "name": "Girl in the Flower Dress",
+        "date": "2013-10-22",
+        "duration": 43
+      },
+      {
+        "name": "FZZT",
+        "date": "2013-11-05",
+        "duration": 43
+      },
+      {
+        "name": "The Hub",
+        "date": "2013-11-12",
+        "duration": 43
+      },
+      {
+        "name": "The Well",
+        "date": "2013-11-18",
+        "duration": 43
+      },
+      {
+        "name": "Repairs",
+        "date": "2013-11-26",
+        "duration": 44
+      },
+      {
+        "name": "The Bridge",
+        "date": "2013-12-10",
+        "duration": 42
+      },
+      {
+        "name": "The Magical Place",
+        "date": "2014-01-07",
+        "duration": 43
+      },
+      {
+        "name": "Seeds",
+        "date": "2014-01-14",
+        "duration": 44
+      },
+      {
+        "name": "T.R.A.C.K.S.",
+        "date": "2014-02-04",
+        "duration": 43
+      },
+      {
+        "name": "T.A.H.I.T.I.",
+        "date": "2014-03-04",
+        "duration": 43
+      },
+      {
+        "name": "Yes Men",
+        "date": "2014-03-11",
+        "duration": 44
+      },
+      {
+        "name": "End of the Beginning",
+        "date": "2014-04-01",
+        "duration": 42
+      },
+      {
+        "name": "Turn, Turn, Turn",
+        "date": "2014-04-08",
+        "duration": 44
+      },
+      {
+        "name": "Providence",
+        "date": "2014-04-15",
+        "duration": 44
+      },
+      {
+        "name": "The Only Light in the Darkness",
+        "date": "2014-04-22",
+        "duration": 43
+      },
+      {
+        "name": "Nothing Personal",
+        "date": "2014-04-29",
+        "duration": 44
+      },
+      {
+        "name": "Ragtag",
+        "date": "2014-05-06",
+        "duration": 43
+      },
+      {
+        "name": "Beginning of the End",
+        "date": "2014-05-13",
+        "duration": 43
+      }
+    ]
   },
   {
     "id": "thor_the_dark_world",
-    "title": "Thor: The Dark World",
+    "name": "Thor: The Dark World",
     "date": "2013-11-08",
     "duration": 112,
     "description": "When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.",
@@ -299,16 +411,8 @@
     "links": ["ALUCl2p4aFc"]
   },
   {
-    "id": "agents_of_shield_s1_ep8_16",
-    "title": "Agents of S.H.I.E.L.D.<br>season 1 episodes 8-16",
-    "date": "2013-11-20",
-    "duration": 366,
-    "description": "The team faces new threats—from resurfacing past traumas to powerful enemies like Centipede and the Clairvoyant—while uncovering deeper secrets about Skye, Coulson, and S.H.I.E.L.D. itself.",
-    "colors": "#171412 #45352f"
-  },
-  {
     "id": "all_hail_the_king",
-    "title": "Marvel One-Shot: All Hail The King",
+    "name": "Marvel One-Shot: All Hail The King",
     "date": "2014-02-04",
     "duration": 14,
     "description": "A documentary filmmaker interviews the now-famous Trevor Slattery from behind bars.",
@@ -316,7 +420,7 @@
   },
   {
     "id": "marvel_studios_assembling_a_universe",
-    "title": "Marvel Studios: Assembling a Universe",
+    "name": "Marvel Studios: Assembling a Universe",
     "date": "2014-03-18",
     "duration": 43,
     "description": "A look at the story behind Marvel Studios and the Marvel Cinematic Universe, featuring interviews and behind-the-scenes footage from all of the Marvel films, the Marvel One-Shots and \"Marvel's Agents of S.H.I.E.L.D.\"!",
@@ -324,7 +428,7 @@
   },
   {
     "id": "captain_america_the_winter_soldier",
-    "title": "Captain America: The Winter Soldier",
+    "name": "Captain America: The Winter Soldier",
     "date": "2014-04-04",
     "duration": 136,
     "description": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
@@ -332,16 +436,8 @@
     "links": ["OlEuShTEC6I"]
   },
   {
-    "id": "agents_of_shield_s1_ep17_22",
-    "title": "Agents of S.H.I.E.L.D.<br>season 1 episodes 17-22",
-    "date": "2014-04-09",
-    "duration": 247,
-    "description": "As the battle intensifies, the team finds themselves hunted and forced into hiding. With S.H.I.E.L.D.'s future in jeopardy, they must confront hidden truths and navigate a world where loyalty is no longer certain.",
-    "colors": "#171412 #45352f"
-  },
-  {
     "id": "marvel_75_years_from_pulp_to_pop",
-    "title": "Marvel: 75 Years, from Pulp to Pop!",
+    "name": "Marvel: 75 Years, from Pulp to Pop!",
     "date": "2014-04-11",
     "duration": 42,
     "description": "In celebration of the publisher's 75th anniversary, the hour-long special will take a detailed look at the company's journey from fledgling comics publisher to multi-media juggernaut. Hosted by Emily VanCamp (S.H.I.E.L.D. Agent Sharon Carter), the documentary-style feature will include interviews with comic book icons, pop culture authorities, and Hollywood stars. The special also promises an \"extraordinary peek into Marvel's future!\" Might Marvel release the first official footage from next year's Avengers: Age of Ultron or Ant-Man? If they do, you'll know about it here.",
@@ -349,7 +445,7 @@
   },
   {
     "id": "the_amazing_spider_man_2",
-    "title": "The Amazing Spider-Man 2",
+    "name": "The Amazing Spider-Man 2",
     "date": "2014-05-02",
     "duration": 142,
     "description": "When New York is put under siege by Oscorp, it is up to Spider-Man to save the city he swore to protect as well as his loved ones.",
@@ -357,7 +453,7 @@
   },
   {
     "id": "x_men_days_of_future_past",
-    "title": "X-Men: Days of Future Past",
+    "name": "X-Men: Days of Future Past",
     "date": "2014-05-23",
     "duration": 151,
     "description": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
@@ -365,7 +461,7 @@
   },
   {
     "id": "guardians_of_the_galaxy",
-    "title": "Guardians of the Galaxy",
+    "name": "Guardians of the Galaxy",
     "date": "2014-08-01",
     "duration": 122,
     "description": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
@@ -374,7 +470,7 @@
   },
   {
     "id": "agents_of_shield_s2_ep1_10",
-    "title": "Agents of S.H.I.E.L.D.<br>season 2 episodes 1-10",
+    "name": "Agents of S.H.I.E.L.D.<br>season 2 episodes 1-10",
     "date": "2014-09-23",
     "duration": 411,
     "description": "As Hydra resurfaces with powerful new weapons and hidden agendas, Coulson's team must confront rising threats, personal struggles, and mysterious alien symbols—all while racing to uncover ancient secrets that could change everything.",
@@ -382,7 +478,7 @@
   },
   {
     "id": "agent_carter_s1",
-    "title": "Agent Carter season 1",
+    "name": "Agent Carter season 1",
     "date": "2015-01-06",
     "duration": 340,
     "description": "In 1946, Peggy Carter is relegated to secretarial duties in the Strategic Scientific Reserve (SSR). When Howard Stark is accused of treason, he secretly recruits Peggy to clear his name with the help of his butler, Edwin Jarvis.",
@@ -390,7 +486,7 @@
   },
   {
     "id": "agents_of_shield_s2_ep11_19",
-    "title": "Agents of S.H.I.E.L.D.<br>season 2 episodes 11-19",
+    "name": "Agents of S.H.I.E.L.D.<br>season 2 episodes 11-19",
     "date": "2015-03-04",
     "duration": 368,
     "description": "As the dust settles from Hydra's war, S.H.I.E.L.D. faces internal fractures, new enemies, and the rise of powerful Inhumans. While Coulson fights to hold the team together, Skye begins to embrace her transformation—and the future of S.H.I.E.L.D. hangs in the balance.",
@@ -398,7 +494,7 @@
   },
   {
     "id": "daredevil_s1",
-    "title": "Daredevil season 1",
+    "name": "Daredevil season 1",
     "date": "2015-04-10",
     "duration": 721,
     "description": "A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.",
@@ -406,7 +502,7 @@
   },
   {
     "id": "avengers_age_of_ultron",
-    "title": "Avengers: Age of Ultron",
+    "name": "Avengers: Age of Ultron",
     "date": "2015-05-01",
     "duration": 141,
     "description": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
@@ -414,7 +510,7 @@
   },
   {
     "id": "agents_of_shield_s2_ep20_22",
-    "title": "Agents of S.H.I.E.L.D.<br>season 2 episodes 20-22",
+    "name": "Agents of S.H.I.E.L.D.<br>season 2 episodes 20-22",
     "date": "2015-05-06",
     "duration": 124,
     "description": "As tensions escalate between S.H.I.E.L.D. and the Inhumans, loyalties are tested and secrets come to light. With war looming, Skye must choose her path as Coulson's team faces their most personal and world-altering conflict yet.",
@@ -422,7 +518,7 @@
   },
   {
     "id": "whih_newsfront_s1",
-    "title": "WHiH Newsfront season 1",
+    "name": "WHiH Newsfront season 1",
     "date": "2015-07-02",
     "duration": 15,
     "description": "WHIH Newsfront is a television program presented by Christine Everhart in the WHIH World News network, informing about major events from political, scientific, and entertainment news, in the Marvel Cinematic Universe.",
@@ -430,7 +526,7 @@
   },
   {
     "id": "ant_man",
-    "title": "Ant-Man",
+    "name": "Ant-Man",
     "date": "2015-06-15",
     "duration": 118,
     "description": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, pull off a plan that will save the world.",
@@ -438,7 +534,7 @@
   },
   {
     "id": "fantastic_four_2015",
-    "title": "Fantastic Four",
+    "name": "Fantastic Four",
     "date": "2015-08-06",
     "duration": 100,
     "description": "Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy.",
@@ -446,7 +542,7 @@
   },
   {
     "id": "agents_of_shield_s3_ep1_19",
-    "title": "Agents of S.H.I.E.L.D.<br>season 3 episodes 1-19",
+    "name": "Agents of S.H.I.E.L.D.<br>season 3 episodes 1-19",
     "date": "2015-09-29",
     "duration": 833,
     "description": "In the wake of a global shift, S.H.I.E.L.D. expands its mission to track down emerging powered individuals. As the team navigates new alliances, hidden agendas, and mysterious forces, they face escalating threats that test their strength, loyalty, and trust in one another. With the fate of many hanging in the balance, S.H.I.E.L.D. must adapt quickly to confront dangers that grow more unpredictable with every step.",
@@ -454,7 +550,7 @@
   },
   {
     "id": "jessica_jones_s1",
-    "title": "Jessica Jones season 1",
+    "name": "Jessica Jones season 1",
     "date": "2015-11-20",
     "duration": 656,
     "description": "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases involving people with extraordinary abilities in New York City.",
@@ -462,7 +558,7 @@
   },
   {
     "id": "agent_carter_s2",
-    "title": "Agent Carter season 2",
+    "name": "Agent Carter season 2",
     "date": "2016-01-19",
     "duration": 425,
     "description": "Dedicated to the fight against new Atomic Age threats in the wake of World War II, Peggy must now journey from New York City to Los Angeles and she's about to find out that the bright lights of the post-war Hollywood mask a more sinister threat to everyone she is sworn to protect.",
@@ -470,7 +566,7 @@
   },
   {
     "id": "deadpool",
-    "title": "Deadpool",
+    "name": "Deadpool",
     "date": "2016-02-12",
     "duration": 108,
     "description": "The origin story of former Special Forces operative turned mercenary Wade Wilson, who, after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.",
@@ -478,7 +574,7 @@
   },
   {
     "id": "daredevil_s2",
-    "title": "Daredevil season 2",
+    "name": "Daredevil season 2",
     "date": "2016-03-18",
     "duration": 721,
     "description": "Dark forces are tearing Hell's Kitchen apart once again, but this time Daredevil may have to choose between the city and his friends.",
@@ -486,7 +582,7 @@
   },
   {
     "id": "whih_newsfront_s2",
-    "title": "WHiH Newsfront season 2",
+    "name": "WHiH Newsfront season 2",
     "date": "2016-04-22",
     "duration": 15,
     "description": "Christine Everhart and political correspondent Will Adams return with a hard-hitting news series examining the global aftermath of the Avengers' actions. From the costs of superhero battles and political accountability to exclusive interviews and breaking news, WHIH investigates the world the heroes leave behind.",
@@ -494,7 +590,7 @@
   },
   {
     "id": "captain_america_civil_war",
-    "title": "Captain America: Civil War",
+    "name": "Captain America: Civil War",
     "date": "2016-05-06",
     "duration": 148,
     "description": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
@@ -503,7 +599,7 @@
   },
   {
     "id": "agents_of_shield_s3_ep20_22",
-    "title": "Agents of S.H.I.E.L.D.<br>season 3 episodes 20-22",
+    "name": "Agents of S.H.I.E.L.D.<br>season 3 episodes 20-22",
     "date": "2016-05-11",
     "duration": 124,
     "description": "In the aftermath of Civil War, S.H.I.E.L.D. faces mounting pressure over its involvement with Inhumans, while Hive’s growing power forces the team into a high-stakes showdown that will test them like never before.",
@@ -511,7 +607,7 @@
   },
   {
     "id": "x-men_apocalypse",
-    "title": "X-Men: Apocalypse",
+    "name": "X-Men: Apocalypse",
     "date": "2016-05-27",
     "duration": 144,
     "description": "After the re-emergence of the world's first mutant, world-destroyer Apocalypse, the X-Men must unite to defeat his extinction level plan.",
@@ -519,7 +615,7 @@
   },
   {
     "id": "team_thor_part_1",
-    "title": "Team Thor",
+    "name": "Team Thor",
     "date": "2016-08-28",
     "duration": 3,
     "description": "Discover what Thor was up to during the events of Captain America: Civil War.",
@@ -527,7 +623,7 @@
   },
   {
     "id": "agents_of_shield_s4_ep1_4",
-    "title": "Agents of S.H.I.E.L.D.<br>season 4 episodes 1-6",
+    "name": "Agents of S.H.I.E.L.D.<br>season 4 episodes 1-6",
     "date": "2016-09-20",
     "duration": 164,
     "description": "Daisy, now on her own, investigates a string of serial killings in Los Angeles while being hunted by her former S.H.I.E.L.D. teammates. As tensions rise, Ghost Rider emerges, leading to deadly confrontations, shocking alliances, and a race to stop anti-Inhuman forces threatening the world.",
@@ -535,7 +631,7 @@
   },
   {
     "id": "",
-    "title": "",
+    "name": "",
     "date": "",
     "duration": 0,
     "description": "",
@@ -543,7 +639,7 @@
   },
   {
     "id": "",
-    "title": "",
+    "name": "",
     "date": "",
     "duration": 0,
     "description": "",
@@ -551,7 +647,7 @@
   },
   {
     "id": "",
-    "title": "",
+    "name": "",
     "date": "",
     "duration": 0,
     "description": "",
@@ -559,7 +655,7 @@
   },
   {
     "id": "",
-    "title": "",
+    "name": "",
     "date": "",
     "duration": 0,
     "description": "",

@@ -2,7 +2,7 @@
   position: fixed;
   pointer-events: none;
   height: 100svh;
-  bottom: 0;
+  top: 0;
   z-index: 2;
   transition: opacity 0.3s ease;
 

@@ -58,7 +58,7 @@ main {
 .title-list-container {
   width: 100%;
   height: fit-content;
-  padding: 40px 20px;
+  padding: 30px 15px;
   margin-top: 1rem;
   margin-bottom: 40svh;
 
@@ -69,8 +69,8 @@ main {
     display: grid;
     margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(min(25vw, 180px), 1fr));
-    gap: 20px;
-    row-gap: 40px;
+    gap: 10px;
+    row-gap: 30px;
 
     li {
       position: relative;

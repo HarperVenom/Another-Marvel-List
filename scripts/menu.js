@@ -34,21 +34,23 @@ hideModeSwitch.addEventListener("click", () => {
 });
 
 backButton.addEventListener("click", () => {
-  storage.lock(titles[activeIndex].movie.id);
+  storage.lock(titleElements[activeIndex].titleData.id);
   updateTitles();
 
   scrollToActive(true);
 });
 
-function indexOf(movie) {
-  return titles.findIndex((currentTitle) => currentTitle.movie.id === movie.id);
+function indexOf(titleData) {
+  return titleElements.findIndex(
+    (currentTitle) => currentTitle.titleData.id === titleData.id
+  );
 }
 
 function updateTitles() {
-  activeIndex = titles.length - 1;
+  activeIndex = titleElements.length - 1;
   if (storage.isHideMode()) {
-    for (let i = 0; i < titles.length; i++) {
-      if (storage.isLocked(titles[i].movie)) {
+    for (let i = 0; i < titleElements.length; i++) {
+      if (storage.isLocked(titleElements[i].titleData)) {
         if (i == 0) {
           activeIndex = -1;
           break;
@@ -63,7 +65,7 @@ function updateTitles() {
 
   nextTitleIndex = activeIndex + 1;
 
-  titles.forEach((title) => {
+  titleElements.forEach((title) => {
     updateFade(title);
     updateLock(title);
   });
@@ -74,7 +76,7 @@ function scrollToActive(smooth = false) {
     main.scrollTo(0, 0);
     return;
   }
-  const title = titles[activeIndex];
+  const title = titleElements[activeIndex];
 
   if (smooth) {
     main.style.scrollBehavior = "smooth";
@@ -91,15 +93,15 @@ function getScrollChangeTo(title) {
 }
 
 function isActive(id) {
-  return titles[activeIndex].id == id;
+  return titleElements[activeIndex].id == id;
 }
 
 function updateFade(title) {
   const poster = title.querySelector(".poster");
   if (
     storage.isHideMode() &&
-    !storage.isLocked(title.movie) &&
-    indexOf(title.movie) != activeIndex
+    !storage.isLocked(title.titleData) &&
+    indexOf(title.titleData) != activeIndex
   ) {
     poster.classList.add("fade");
   } else {
@@ -111,7 +113,7 @@ function updateLock(title) {
   const lock = title.querySelector(".lock");
 
   if (storage.isHideMode()) {
-    if (storage.isLocked(title.movie)) {
+    if (storage.isLocked(title.titleData)) {
       lock.classList.remove("hidden");
     } else {
       lock.classList.add("hidden");
@@ -121,13 +123,13 @@ function updateLock(title) {
   }
 
   // const highlight = title.querySelector(".highlight");
-  // if (indexOf(title.movie) == activeIndex) {
+  // if (indexOf(title.titleData) == activeIndex) {
   //   highlight.classList.remove("hidden");
   // } else {
   //   highlight.classList.add("hidden");
   // }
 
-  if (indexOf(title.movie) == nextTitleIndex) {
+  if (indexOf(title.titleData) == nextTitleIndex) {
     lock.classList.add("next");
     lock.querySelector("svg").classList.remove("hidden");
   } else {
