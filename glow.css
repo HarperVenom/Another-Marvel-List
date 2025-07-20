@@ -19,7 +19,7 @@
 
   .glow {
     /* rotate: 45deg; */
-    background: linear-gradient(to left, white, black);
+    /* background: linear-gradient(to left, white, black); */
     position: absolute;
     width: 100%;
     height: 100%;

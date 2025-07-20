@@ -10,8 +10,13 @@ const titleListContainer = document.querySelector(".title-list-container");
 const overview = document.querySelector("#overview");
 const overviewContainer = document.querySelector("#overview-container");
 const posterContainer = document.querySelector("#poster-container");
+const shadow = posterContainer.querySelector(".shadow");
+const infoContainer = overviewContainer.querySelector(".info");
 
 const glowContainer = document.querySelector("#glow-container");
+
+const linksContainer = overviewContainer.querySelector(".additional");
+const episodesContainer = document.querySelector(".episodes");
 
 let lastClickedThumbnail = null;
 
@@ -172,15 +177,15 @@ function makeYoutubeBlock(video) {
           </div>`;
 }
 
-async function loadAndRenderVideos(container, links) {
+async function loadAndRenderLinks(links) {
   try {
     const videos = await loadVideos(links);
 
     videos.forEach((video) => {
       const html = makeYoutubeBlock(video);
-      container.insertAdjacentHTML("beforeend", html);
+      linksContainer.insertAdjacentHTML("beforeend", html);
 
-      const insertedElement = container.querySelector(
+      const insertedElement = linksContainer.querySelector(
         ".video-container:last-child"
       );
       insertedElement.addEventListener("click", (e) => {
@@ -190,4 +195,65 @@ async function loadAndRenderVideos(container, links) {
   } catch (error) {
     console.error("Failed to load videos:", error);
   }
+}
+
+function updateLinks(links, isFirstBlock) {
+  if (links !== undefined && isFirstBlock) {
+    linksContainer.classList.remove("inactive");
+    linksContainer.innerHTML = "";
+    loadAndRenderLinks(links);
+    return true;
+  } else {
+    linksContainer.classList.add("inactive");
+    return false;
+  }
+}
+
+function makeEpisodeBlock(episode, color) {
+  return `
+    <div class="episode" style="background-color: ${color};">
+      <div class="info">
+        <h4 class="name"> <span>${episode.episodeIndex + 1 + "."}</span> ${
+    episode.name
+  }</h4>
+        <div class="details">
+          <span class="date">${formatDate(episode.date)}</span>
+          <span class="dot"></span>
+          <span class="duration">${formatDuration(episode.duration)}</span>
+        </div>
+      </div>
+      <button class="check"></button>
+    </div>
+  `;
+}
+
+function updateEpisodes(titleElement, colors) {
+  const title = titleElement.titleData;
+  const episodes = title.episodes;
+
+  episodesContainer.innerHTML = "";
+
+  if (!episodes) {
+    episodesContainer.classList.add("inactive");
+    return;
+  }
+
+  episodesContainer.classList.remove("inactive");
+
+  const [color1, color2] = colors.split(" ");
+
+  const color = adjustColorHSV(color1, 10, -5);
+
+  episodes.forEach((episode) => {
+    const html = makeEpisodeBlock(episode, color);
+    episodesContainer.insertAdjacentHTML("beforeend", html);
+  });
+}
+
+function getShadow(colors) {
+  const [color1, color2] = colors.split(" ");
+  const color = adjustColorHSV(adjustColor(color1), 10, -5);
+  const windowWidth = window.innerWidth;
+  if (windowWidth < 700) return `0 -15px 30px ${color}`;
+  return `-15px 15px 30px ${color}`;
 }

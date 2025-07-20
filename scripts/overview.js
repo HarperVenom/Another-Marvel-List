@@ -9,7 +9,9 @@ function onPosterClick(img, titleElement) {
   const name = title.name;
   let colors, date, duration, description, links;
 
-  if (title.type === "episodeBlock") {
+  const isSeries = title.type === "episodeBlock";
+
+  if (isSeries) {
     colors = title.commonData.colors;
     date = "";
     duration = "";
@@ -38,14 +40,15 @@ function onPosterClick(img, titleElement) {
 
   const [color1, color2] = colors.split(" ");
 
-  glow.style.background = `linear-gradient(
-      ${window.innerWidth > 800 ? 45 : 135}deg,
-      ${color1},
-      ${color2} 100%
-      )`;
+  const color = adjustColor(color1);
+
+  glow.style.backgroundColor = color;
+  // poster;
 
   const bigImg = new Image();
   const titleEl = overviewContainer.querySelector(".title");
+
+  const details = overviewContainer.querySelector(".details");
   const dateEl = overviewContainer.querySelector(".date");
   const durationEl = overviewContainer.querySelector(".duration");
   const descEl = overviewContainer.querySelector(".description");
@@ -53,35 +56,41 @@ function onPosterClick(img, titleElement) {
   // Replace the old poster
   bigImg.classList.add("poster");
   bigImg.classList.add("hidden");
+  bigImg.style.boxShadow = getShadow(colors);
 
   const oldImg = posterContainer.querySelector(".poster");
   if (oldImg) oldImg.remove();
-  // overview.append(bigImg);
   posterContainer.prepend(bigImg);
 
   titleEl.innerHTML = name;
-  dateEl.textContent = formatDate(date);
-  durationEl.textContent = formatDuration(duration);
-  descEl.textContent = description;
 
-  const additional = overviewContainer.querySelector(".additional");
-  // const arrow = overviewContainer.querySelector(".arrow-down");
-  if (links !== undefined) {
-    // arrow.classList.remove("inactive");
-    additional.classList.remove("inactive");
+  const isFirstBlock =
+    !isSeries || (isSeries && title.episodes[0].episodeIndex === 0);
 
-    let allBlocks = "";
+  if (!isSeries) {
+    details.classList.remove("inactive");
+    dateEl.textContent = formatDate(date);
+    durationEl.textContent = formatDuration(duration);
 
-    loadAndRenderVideos(additional, links);
-
-    additional.innerHTML = allBlocks;
+    descEl.classList.remove("inactive");
+    descEl.textContent = description;
   } else {
-    // arrow.classList.add("inactive");
-    additional.classList.add("inactive");
+    if (isFirstBlock) {
+      descEl.classList.remove("inactive");
+      descEl.textContent = description;
+    } else {
+      descEl.classList.add("inactive");
+    }
+    details.classList.add("inactive");
   }
 
+  updateLinks(links, isFirstBlock);
+  updateEpisodes(titleElement, colors);
+
   const contents = overviewContainer.querySelectorAll(".content");
-  contents.forEach((content) => {
+
+  const noPropagation = [titleEl, details, descEl, episodesContainer];
+  noPropagation.forEach((content) => {
     content.addEventListener("click", (e) => {
       e.stopPropagation();
     });
@@ -95,6 +104,7 @@ function onPosterClick(img, titleElement) {
       bigImg,
       // on clone load
       () => {
+        // shadow.classList.remove("hidden");
         img.style.visibility = "hidden";
         setIsGlowing(true);
       },
@@ -121,6 +131,8 @@ function onPosterClick(img, titleElement) {
         } else {
           bigImg.onload = finishTransition;
         }
+
+        // posterContainer.classList.add("shadow");
       }
     );
 
@@ -148,6 +160,8 @@ function toggleOverview() {
     if (!bigImg || !lastClickedThumbnail) return;
 
     const closeTransition = () => {
+      // posterContainer.classList.remove("shadow");
+
       let fromEl = bigImg;
       if (!fromEl.complete) {
         bigImg.src = "";
@@ -217,10 +231,13 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
     filter: fromStyle.filter,
     margin: 0,
     zIndex: 9999,
+    boxShadow: fromStyle.boxShadow
+      ? fromStyle.boxShadow
+      : "-15px 15px 20px rgba(0, 0, 0, 0)",
     pointerEvents: "none",
     willChange: "top, left, width, height",
     transition:
-      "top 0.3s ease, left 0.3s ease, width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, filter 0.3s ease",
+      "top 0.3s ease, left 0.3s ease, width 0.3s ease, height 0.3s ease, border-radius 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease",
     objectFit: "cover",
   });
 
@@ -239,6 +256,7 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
       clone.style.height = `${toRect.height}px`;
       clone.style.borderRadius = toStyle.borderRadius; // or adapt dynamically if needed
       clone.style.filter = toStyle.filter;
+      clone.style.boxShadow = toStyle.boxShadow;
     });
 
     clone.addEventListener(
