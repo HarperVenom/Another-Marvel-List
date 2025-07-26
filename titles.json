@@ -31,7 +31,7 @@
     "date": "2002-05-03",
     "duration": 121,
     "description": "After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.",
-    "colors": "#4f2110"
+    "colors": "#804800"
   },
   {
     "id": "daredevil",
@@ -470,7 +470,7 @@
     "id": "agents_of_shield_s2",
     "name": "Agents of S.H.I.E.L.D.<br>Season 2",
     "description": "As Hydra resurfaces with powerful new weapons and hidden agendas, Coulson's team must confront rising threats, personal struggles, and mysterious alien symbols—all while racing to uncover ancient secrets that could change everything.",
-    "colors": "#4d0b08",
+    "colors": "#4d120f",
     "episodes": [
       {
         "name": "Shadows",
@@ -586,19 +586,124 @@
   },
   {
     "id": "agent_carter_s1",
-    "name": "Agent Carter season 1",
-    "date": "2015-01-06",
-    "duration": 340,
+    "name": "Agent Carter Season 1",
     "description": "In 1946, Peggy Carter is relegated to secretarial duties in the Strategic Scientific Reserve (SSR). When Howard Stark is accused of treason, he secretly recruits Peggy to clear his name with the help of his butler, Edwin Jarvis.",
-    "colors": "#4d3d1f"
+    "colors": "#4d3d1f",
+    "episodes": [
+      {
+        "name": "Now Is Not the End",
+        "date": "2015-01-06",
+        "duration": 43
+      },
+      {
+        "name": "Bridge and Tunnel",
+        "date": "2015-01-06",
+        "duration": 42
+      },
+      {
+        "name": "Time and Tide",
+        "date": "2015-01-13",
+        "duration": 43
+      },
+      {
+        "name": "The Blitzkrieg Button",
+        "date": "2015-01-27",
+        "duration": 43
+      },
+      {
+        "name": "The Iron Ceiling",
+        "date": "2015-02-03",
+        "duration": 43
+      },
+      {
+        "name": "A Sin to Err",
+        "date": "2015-02-10",
+        "duration": 43
+      },
+      {
+        "name": "SNAFU",
+        "date": "2015-02-17",
+        "duration": 43
+      },
+      {
+        "name": "Valediction",
+        "date": "2015-02-24",
+        "duration": 43
+      }
+    ]
   },
   {
     "id": "daredevil_s1",
     "name": "Daredevil season 1",
-    "date": "2015-04-10",
-    "duration": 721,
     "description": "A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.",
-    "colors": "#171420 #1e2546"
+    "colors": "#1b1826",
+    "episodes": [
+      {
+        "name": "Into the Ring",
+        "date": "2015-04-10",
+        "duration": 53
+      },
+      {
+        "name": "Cut Man",
+        "date": "2015-04-10",
+        "duration": 53
+      },
+      {
+        "name": "Rabbit in a Snowstorm",
+        "date": "2015-04-10",
+        "duration": 53
+      },
+      {
+        "name": "In the Blood",
+        "date": "2015-04-10",
+        "duration": 53
+      },
+      {
+        "name": "World on Fire",
+        "date": "2015-04-10",
+        "duration": 56
+      },
+      {
+        "name": "Condemned",
+        "date": "2015-04-10",
+        "duration": 49
+      },
+      {
+        "name": "Stick",
+        "date": "2015-04-10",
+        "duration": 51
+      },
+      {
+        "name": "Shadows in the Glass",
+        "date": "2015-04-10",
+        "duration": 54
+      },
+      {
+        "name": "Speak of the Devil",
+        "date": "2015-04-10",
+        "duration": 58
+      },
+      {
+        "name": "Nelson v. Murdock",
+        "date": "2015-04-10",
+        "duration": 57
+      },
+      {
+        "name": "The Path of the Righteous",
+        "date": "2015-04-10",
+        "duration": 59
+      },
+      {
+        "name": "The Ones We Leave Behind",
+        "date": "2015-04-10",
+        "duration": 60
+      },
+      {
+        "name": "Daredevil",
+        "date": "2015-04-10",
+        "duration": 56
+      }
+    ]
   },
   {
     "id": "avengers_age_of_ultron",
@@ -606,15 +711,40 @@
     "date": "2015-05-01",
     "duration": 141,
     "description": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
-    "colors": "#18202f #47617a"
+    "colors": "#32384d"
   },
   {
     "id": "whih_newsfront_s1",
-    "name": "WHiH Newsfront season 1",
-    "date": "2015-07-02",
-    "duration": 15,
+    "name": "WHiH Newsfront Season 1",
     "description": "WHIH Newsfront is a television program presented by Christine Everhart in the WHIH World News network, informing about major events from political, scientific, and entertainment news, in the Marvel Cinematic Universe.",
-    "colors": "#101e4b #213663"
+    "colors": "#1b2140",
+    "episodes": [
+      {
+        "name": "WHIH Newsfront Promo",
+        "date": "2015-07-02",
+        "duration": 3
+      },
+      {
+        "name": "WHIH Newsfront Top Stories",
+        "date": "2015-07-07",
+        "duration": 3
+      },
+      {
+        "name": "WHIH EXCLUSIVE: 2012 VistaCorp break-in security footage involving cyber-criminal Scott Lang",
+        "date": "2015-07-11",
+        "duration": 3
+      },
+      {
+        "name": "WIRED Insider Interviews Darren Cross, CEO of Pym Technologies",
+        "date": "2015-07-13",
+        "duration": 3
+      },
+      {
+        "name": "WHIH Exclusive: Scott Lang Interview",
+        "date": "2015-07-16",
+        "duration": 3
+      }
+    ]
   },
   {
     "id": "ant_man",
@@ -622,7 +752,7 @@
     "date": "2015-06-15",
     "duration": 118,
     "description": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, pull off a plan that will save the world.",
-    "colors": "#1e202d #5f6c7d"
+    "colors": "#3a424d"
   },
   {
     "id": "fantastic_four_2015",
@@ -630,31 +760,172 @@
     "date": "2015-08-06",
     "duration": 100,
     "description": "Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy.",
-    "colors": "#18171c #3b3439"
+    "colors": "#3b3439"
   },
   {
-    "id": "agents_of_shield_s3_ep1_19",
-    "name": "Agents of S.H.I.E.L.D.<br>season 3 episodes 1-19",
-    "date": "2015-09-29",
-    "duration": 833,
+    "id": "agents_of_shield_s3",
+    "name": "Agents of S.H.I.E.L.D. Season 3",
     "description": "In the wake of a global shift, S.H.I.E.L.D. expands its mission to track down emerging powered individuals. As the team navigates new alliances, hidden agendas, and mysterious forces, they face escalating threats that test their strength, loyalty, and trust in one another. With the fate of many hanging in the balance, S.H.I.E.L.D. must adapt quickly to confront dangers that grow more unpredictable with every step.",
-    "colors": "#19191a #44413f"
+    "colors": "#252626",
+    "episodes": [
+      { "name": "Laws of Nature", "date": "2015-09-29", "duration": 44 },
+      {
+        "name": "Purpose in the Machine",
+        "date": "2015-10-06",
+        "duration": 43
+      },
+      { "name": "A Wanted (Inhu)man", "date": "2015-10-13", "duration": 42 },
+      { "name": "Devils You Know", "date": "2015-10-20", "duration": 43 },
+      { "name": "4,722 Hours", "date": "2015-10-27", "duration": 44 },
+      { "name": "Among Us Hide...", "date": "2015-11-03", "duration": 43 },
+      { "name": "Chaos Theory", "date": "2015-11-10", "duration": 44 },
+      { "name": "Many Heads, One Tale", "date": "2015-11-17", "duration": 44 },
+      { "name": "Closure", "date": "2015-12-01", "duration": 44 },
+      { "name": "Maveth", "date": "2015-12-08", "duration": 43 },
+      { "name": "Bouncing Back", "date": "2016-03-08", "duration": 44 },
+      { "name": "The Inside Man", "date": "2016-03-15", "duration": 44 },
+      { "name": "Parting Shot", "date": "2016-03-22", "duration": 43 },
+      { "name": "Watchdogs", "date": "2016-03-29", "duration": 42 },
+      { "name": "Spacetime", "date": "2016-04-05", "duration": 44 },
+      { "name": "Paradise Lost", "date": "2016-04-12", "duration": 44 },
+      { "name": "The Team", "date": "2016-04-19", "duration": 44 },
+      { "name": "The Singularity", "date": "2016-04-26", "duration": 43 },
+      { "name": "Failed Experiments", "date": "2016-05-03", "duration": 42 },
+      { "name": "Emancipation", "date": "2016-05-10", "duration": 43 },
+      { "name": "Absolution (1)", "date": "2016-05-17", "duration": 43 },
+      { "name": "Ascension (2)", "date": "2016-05-17", "duration": 44 }
+    ]
   },
   {
     "id": "jessica_jones_s1",
-    "name": "Jessica Jones season 1",
-    "date": "2015-11-20",
-    "duration": 656,
+    "name": "Jessica Jones Season 1",
     "description": "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases involving people with extraordinary abilities in New York City.",
-    "colors": "#1f152e #634a72"
+    "colors": "#38284c",
+    "episodes": [
+      {
+        "name": "AKA Ladies Night",
+        "date": "2015-11-20",
+        "duration": 53
+      },
+      {
+        "name": "AKA Crush Syndrome",
+        "date": "2015-11-20",
+        "duration": 52
+      },
+      {
+        "name": "AKA It's Called Whiskey",
+        "date": "2015-11-20",
+        "duration": 50
+      },
+      {
+        "name": "AKA 99 Friends",
+        "date": "2015-11-20",
+        "duration": 52
+      },
+      {
+        "name": "AKA The Sandwich Saved Me",
+        "date": "2015-11-20",
+        "duration": 55
+      },
+      {
+        "name": "AKA You're a Winner!",
+        "date": "2015-11-20",
+        "duration": 57
+      },
+      {
+        "name": "AKA Top Shelf Perverts",
+        "date": "2015-11-20",
+        "duration": 52
+      },
+      {
+        "name": "AKA WWJD?",
+        "date": "2015-11-20",
+        "duration": 57
+      },
+      {
+        "name": "AKA Sin Bin",
+        "date": "2015-11-20",
+        "duration": 48
+      },
+      {
+        "name": "AKA 1,000 Cuts",
+        "date": "2015-11-20",
+        "duration": 52
+      },
+      {
+        "name": "AKA I've Got the Blues",
+        "date": "2015-11-20",
+        "duration": 55
+      },
+      {
+        "name": "AKA Take a Bloody Number",
+        "date": "2015-11-20",
+        "duration": 54
+      },
+      {
+        "name": "AKA Smile",
+        "date": "2015-11-20",
+        "duration": 54
+      }
+    ]
   },
   {
     "id": "agent_carter_s2",
-    "name": "Agent Carter season 2",
-    "date": "2016-01-19",
-    "duration": 425,
+    "name": "Agent Carter Season 2",
     "description": "Dedicated to the fight against new Atomic Age threats in the wake of World War II, Peggy must now journey from New York City to Los Angeles and she's about to find out that the bright lights of the post-war Hollywood mask a more sinister threat to everyone she is sworn to protect.",
-    "colors": "#2a2429 #7f5c4b"
+    "colors": "#2a2429",
+    "episodes": [
+      {
+        "name": "The Lady in the Lake",
+        "date": "2016-01-19",
+        "duration": 44
+      },
+      {
+        "name": "A View in the Dark",
+        "date": "2016-01-19",
+        "duration": 44
+      },
+      {
+        "name": "Better Angels",
+        "date": "2016-01-26",
+        "duration": 44
+      },
+      {
+        "name": "Smoke and Mirrors",
+        "date": "2016-02-02",
+        "duration": 44
+      },
+      {
+        "name": "The Atomic Job",
+        "date": "2016-02-09",
+        "duration": 43
+      },
+      {
+        "name": "Life of the Party",
+        "date": "2016-02-16",
+        "duration": 44
+      },
+      {
+        "name": "Monsters",
+        "date": "2016-02-16",
+        "duration": 43
+      },
+      {
+        "name": "The Edge of Mystery",
+        "date": "2016-02-23",
+        "duration": 43
+      },
+      {
+        "name": "A Little Song and Dance",
+        "date": "2016-02-23",
+        "duration": 43
+      },
+      {
+        "name": "Hollywood Ending",
+        "date": "2016-03-01",
+        "duration": 42
+      }
+    ]
   },
   {
     "id": "deadpool",
@@ -662,23 +933,113 @@
     "date": "2016-02-12",
     "duration": 108,
     "description": "The origin story of former Special Forces operative turned mercenary Wade Wilson, who, after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.",
-    "colors": "#1f1316 #5d1219"
+    "colors": "#400c11"
   },
   {
     "id": "daredevil_s2",
     "name": "Daredevil season 2",
-    "date": "2016-03-18",
-    "duration": 721,
     "description": "Dark forces are tearing Hell's Kitchen apart once again, but this time Daredevil may have to choose between the city and his friends.",
-    "colors": "#160f11 #3c2b2e"
+    "colors": "#160f11",
+    "episodes": [
+      {
+        "name": "Bang",
+        "date": "2016-03-18",
+        "duration": 49
+      },
+      {
+        "name": "Dogs to a Gunfight",
+        "date": "2016-03-18",
+        "duration": 50
+      },
+      {
+        "name": "New York's Finest",
+        "date": "2016-03-18",
+        "duration": 48
+      },
+      {
+        "name": "Penny and Dime",
+        "date": "2016-03-18",
+        "duration": 60
+      },
+      {
+        "name": "Kinbaku",
+        "date": "2016-03-18",
+        "duration": 56
+      },
+      {
+        "name": "Regrets Only",
+        "date": "2016-03-18",
+        "duration": 56
+      },
+      {
+        "name": "Semper Fidelis",
+        "date": "2016-03-18",
+        "duration": 57
+      },
+      {
+        "name": "Guilty as Sin",
+        "date": "2016-03-18",
+        "duration": 55
+      },
+      {
+        "name": "Seven Minutes in Heaven",
+        "date": "2016-03-18",
+        "duration": 60
+      },
+      {
+        "name": "The Man in the Box",
+        "date": "2016-03-18",
+        "duration": 53
+      },
+      {
+        "name": ".380",
+        "date": "2016-03-18",
+        "duration": 56
+      },
+      {
+        "name": "The Dark at the End of the Tunnel",
+        "date": "2016-03-18",
+        "duration": 53
+      },
+      {
+        "name": "A Cold Day in Hell's Kitchen",
+        "date": "2016-03-18",
+        "duration": 59
+      }
+    ]
   },
   {
     "id": "whih_newsfront_s2",
     "name": "WHiH Newsfront season 2",
-    "date": "2016-04-22",
-    "duration": 15,
     "description": "Christine Everhart and political correspondent Will Adams return with a hard-hitting news series examining the global aftermath of the Avengers' actions. From the costs of superhero battles and political accountability to exclusive interviews and breaking news, WHIH investigates the world the heroes leave behind.",
-    "colors": "#1f2435 #445464"
+    "colors": "#1f2435",
+    "episodes": [
+      {
+        "name": "AVENGERS IMPACT: A WHIH Newsfront Special Report",
+        "date": "2016-04-22",
+        "duration": 3
+      },
+      {
+        "name": "WHIH Newsfront: The Cost of Saving The World",
+        "date": "2016-04-26",
+        "duration": 3
+      },
+      {
+        "name": "WHIH Newsfront: The Avengers and The White House",
+        "date": "2016-04-28",
+        "duration": 3
+      },
+      {
+        "name": "WHIH Newsfront Exclusive: President Ellis Discusses the Avengers",
+        "date": "2016-05-03",
+        "duration": 3
+      },
+      {
+        "name": "WHIH Breaking News: Attack In Lagos",
+        "date": "2016-05-03",
+        "duration": 3
+      }
+    ]
   },
   {
     "id": "captain_america_civil_war",
@@ -686,16 +1047,8 @@
     "date": "2016-05-06",
     "duration": 148,
     "description": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
-    "colors": "#1d1e29 #4e6274",
+    "colors": "#3d454d",
     "links": ["rpMClVCcgWM", "OvHNcULsL3s", "tahjluBe--E"]
-  },
-  {
-    "id": "agents_of_shield_s3_ep20_22",
-    "name": "Agents of S.H.I.E.L.D.<br>season 3 episodes 20-22",
-    "date": "2016-05-11",
-    "duration": 124,
-    "description": "In the aftermath of Civil War, S.H.I.E.L.D. faces mounting pressure over its involvement with Inhumans, while Hive’s growing power forces the team into a high-stakes showdown that will test them like never before.",
-    "colors": "#19191a #44413f"
   },
   {
     "id": "x-men_apocalypse",
@@ -703,7 +1056,7 @@
     "date": "2016-05-27",
     "duration": 144,
     "description": "After the re-emergence of the world's first mutant, world-destroyer Apocalypse, the X-Men must unite to defeat his extinction level plan.",
-    "colors": "#24303a #4f6f7c"
+    "colors": "#31454d"
   },
   {
     "id": "team_thor_part_1",
@@ -711,23 +1064,198 @@
     "date": "2016-08-28",
     "duration": 3,
     "description": "Discover what Thor was up to during the events of Captain America: Civil War.",
-    "colors": "#451d46 #97325c"
+    "colors": "#4d0f29"
   },
   {
-    "id": "agents_of_shield_s4_ep1_4",
-    "name": "Agents of S.H.I.E.L.D.<br>season 4 episodes 1-6",
-    "date": "2016-09-20",
-    "duration": 164,
+    "id": "agents_of_shield_s4",
+    "name": "Agents of S.H.I.E.L.D. Season 4",
     "description": "Daisy, now on her own, investigates a string of serial killings in Los Angeles while being hunted by her former S.H.I.E.L.D. teammates. As tensions rise, Ghost Rider emerges, leading to deadly confrontations, shocking alliances, and a race to stop anti-Inhuman forces threatening the world.",
-    "colors": "#3c1c16 #6a3b2c"
+    "colors": "#3c1c16",
+    "episodes": [
+      {
+        "name": "The Ghost",
+        "date": "2016-09-20",
+        "duration": 44
+      },
+      {
+        "name": "Meet the New Boss",
+        "date": "2016-09-27",
+        "duration": 44
+      },
+      {
+        "name": "Uprising",
+        "date": "2016-10-11",
+        "duration": 44
+      },
+      {
+        "name": "Let Me Stand Next to Your Fire",
+        "date": "2016-10-18",
+        "duration": 44
+      },
+      {
+        "name": "Lockup",
+        "date": "2016-10-25",
+        "duration": 43
+      },
+      {
+        "name": "The Good Samaritan",
+        "date": "2016-11-01",
+        "duration": 43
+      },
+      {
+        "name": "Deals with Our Devils",
+        "date": "2016-11-29",
+        "duration": 43
+      },
+      {
+        "name": "The Laws of Inferno Dynamics",
+        "date": "2016-12-06",
+        "duration": 44
+      },
+      {
+        "name": "Broken Promises",
+        "date": "2017-01-10",
+        "duration": 44
+      },
+      {
+        "name": "The Patriot",
+        "date": "2017-01-17",
+        "duration": 44
+      },
+      {
+        "name": "Wake Up",
+        "date": "2017-01-24",
+        "duration": 44
+      },
+      {
+        "name": "Hot Potato Soup",
+        "date": "2017-01-31",
+        "duration": 44
+      },
+      {
+        "name": "BOOM",
+        "date": "2017-02-07",
+        "duration": 44
+      },
+      {
+        "name": "The Man Behind the Shield",
+        "date": "2017-02-14",
+        "duration": 44
+      },
+      {
+        "name": "Self Control",
+        "date": "2017-02-21",
+        "duration": 44
+      },
+      {
+        "name": "What If...",
+        "date": "2017-04-04",
+        "duration": 44
+      },
+      {
+        "name": "Identity and Change",
+        "date": "2017-04-11",
+        "duration": 44
+      },
+      {
+        "name": "No Regrets",
+        "date": "2017-04-18",
+        "duration": 44
+      },
+      {
+        "name": "All the Madame's Men",
+        "date": "2017-04-25",
+        "duration": 44
+      },
+      {
+        "name": "Farewell, Cruel World!",
+        "date": "2017-05-02",
+        "duration": 43
+      },
+      {
+        "name": "The Return",
+        "date": "2017-05-09",
+        "duration": 44
+      },
+      {
+        "name": "World's End",
+        "date": "2017-05-16",
+        "duration": 40
+      }
+    ]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": ""
+    "id": "luke_cage_s1",
+    "name": "Luke Cage Season 1",
+    "description": "As the bulletproof defender of Harlem, Luke Cage battles corrupt politicians, ruthless gangsters and demons from his own past.",
+    "colors": "#3e2e1b",
+    "episodes": [
+      {
+        "name": "Moment of Truth",
+        "date": "2016-09-30",
+        "duration": 55
+      },
+      {
+        "name": "Code of the Streets",
+        "date": "2016-09-30",
+        "duration": 59
+      },
+      {
+        "name": "Who's Gonna Take the Weight?",
+        "date": "2016-09-30",
+        "duration": 57
+      },
+      {
+        "name": "Step in the Arena",
+        "date": "2016-09-30",
+        "duration": 53
+      },
+      {
+        "name": "Just to Get a Rep",
+        "date": "2016-09-30",
+        "duration": 52
+      },
+      {
+        "name": "Suckas Need Bodyguards",
+        "date": "2016-09-30",
+        "duration": 54
+      },
+      {
+        "name": "Manifest",
+        "date": "2016-09-30",
+        "duration": 52
+      },
+      {
+        "name": "Blowin' Up the Spot",
+        "date": "2016-09-30",
+        "duration": 49
+      },
+      {
+        "name": "DWYCK",
+        "date": "2016-09-30",
+        "duration": 66
+      },
+      {
+        "name": "Take It Personal",
+        "date": "2016-09-30",
+        "duration": 48
+      },
+      {
+        "name": "Now You're Mine",
+        "date": "2016-09-30",
+        "duration": 51
+      },
+      {
+        "name": "Soliloquy of Chaos",
+        "date": "2016-09-30",
+        "duration": 62
+      },
+      {
+        "name": "You Know My Steez",
+        "date": "2016-09-30",
+        "duration": 46
+      }
+    ]
   },
   {
     "id": "",

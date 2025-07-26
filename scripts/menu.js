@@ -3,14 +3,14 @@ const menu = document.querySelector("#menu");
 const menuPanel = menu.querySelector(".panel");
 
 const gradient = document.querySelector("#gradient");
-const settingButton = document.querySelector("#settings-button");
+const settingsButton = document.querySelector("#settings-button");
 const hideModeSwitch = document.querySelector("#hide-button");
 const backButton = document.querySelector("#back-button");
 
 let activeIndex;
 let nextTitleIndex;
 
-settingButton.addEventListener("click", () => {
+settingsButton.addEventListener("click", () => {
   if (menu.classList.contains("open")) {
     menu.classList.remove("open");
     menuPanel.classList.add("hidden");
@@ -179,10 +179,10 @@ function updateHotBar() {
     !menu.classList.contains("open")
   ) {
     backButton.classList.remove("hidden");
-    settingButton.classList.remove("center");
+    settingsButton.classList.remove("center");
   } else {
     backButton.classList.add("hidden");
-    settingButton.classList.add("center");
+    settingsButton.classList.add("center");
   }
 }
 

@@ -1,3 +1,10 @@
+const posterContainer = document.querySelector("#poster-container");
+const shadow = posterContainer.querySelector(".shadow");
+const infoContainer = overviewContainer.querySelector(".info");
+const completeButtonContainer = overview.querySelector(".button-container");
+const completeButton =
+  completeButtonContainer.querySelector("#complete-button");
+
 let overviewOpened = false;
 let transitioning = false;
 
@@ -43,11 +50,12 @@ function onPosterClick(img, titleElement) {
   const color = adjustColor(color1);
 
   glow.style.backgroundColor = color;
+  completeButtonContainer.style.background = `linear-gradient(to top, ${color} 80%, transparent)`;
+  // completeButton.querySelector("path").style.fill = color;
   // poster;
 
   const bigImg = new Image();
   const titleEl = overviewContainer.querySelector(".title");
-
   const details = overviewContainer.querySelector(".details");
   const dateEl = overviewContainer.querySelector(".date");
   const durationEl = overviewContainer.querySelector(".duration");
@@ -74,6 +82,8 @@ function onPosterClick(img, titleElement) {
 
     descEl.classList.remove("inactive");
     descEl.textContent = description;
+
+    completeButtonContainer.classList.remove("inactive");
   } else {
     if (isFirstBlock) {
       descEl.classList.remove("inactive");
@@ -82,12 +92,17 @@ function onPosterClick(img, titleElement) {
       descEl.classList.add("inactive");
     }
     details.classList.add("inactive");
+
+    completeButtonContainer.classList.add("inactive");
   }
 
   updateLinks(links, isFirstBlock);
   updateEpisodes(titleElement, colors);
 
-  const contents = overviewContainer.querySelectorAll(".content");
+  settingsButton.classList.add("hidden");
+
+  const contents = Array.from(overviewContainer.querySelectorAll(".content"));
+  // contents.push(completeButtonContainer)
 
   const noPropagation = [titleEl, details, descEl, episodesContainer];
   noPropagation.forEach((content) => {
@@ -143,7 +158,8 @@ function onPosterClick(img, titleElement) {
   startTransition();
 }
 
-overview.addEventListener("click", () => {
+overview.addEventListener("click", (e) => {
+  e.stopPropagation();
   toggleOverview();
 });
 
@@ -182,10 +198,11 @@ function toggleOverview() {
 
           setIsGlowing(false);
 
-          const contents = overviewContainer.querySelectorAll(".content");
+          const contents = overview.querySelectorAll(".content");
           contents.forEach((content) => {
             content.classList.add("hidden");
           });
+          settingsButton.classList.remove("hidden");
         },
         // on transition end
         (clone) => {
