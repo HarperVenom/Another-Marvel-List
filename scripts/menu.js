@@ -7,7 +7,7 @@ const settingsButton = document.querySelector("#settings-button");
 const hideModeSwitch = document.querySelector("#hide-button");
 const backButton = document.querySelector("#back-button");
 
-let activeIndex;
+let activeTitle;
 let nextTitleIndex;
 
 settingsButton.addEventListener("click", () => {
@@ -24,20 +24,13 @@ settingsButton.addEventListener("click", () => {
     gradient.classList.add("hidden");
   }
 
-  updateHotBar();
+  // updateHotBar();
 });
 
 hideModeSwitch.addEventListener("click", () => {
   storage.setHideMode(!storage.isHideMode());
 
   updateHideModeSwitchIcon();
-});
-
-backButton.addEventListener("click", () => {
-  storage.lock(titleElements[activeIndex].titleData.id);
-  updateTitles();
-
-  scrollToActive(true);
 });
 
 function indexOf(titleData) {
@@ -47,43 +40,31 @@ function indexOf(titleData) {
 }
 
 function updateTitles() {
-  activeIndex = titleElements.length - 1;
-  if (storage.isHideMode()) {
-    for (let i = 0; i < titleElements.length; i++) {
-      if (storage.isLocked(titleElements[i].titleData)) {
-        if (i == 0) {
-          activeIndex = -1;
-          break;
-        } else activeIndex = i - 1;
-        break;
-      }
+  activeTitle = titleElements[0];
+
+  for (let i = 0; i < titleElements.length; i++) {
+    if (!storage.isCompleted(titleElements[i].titleData)) {
+      activeTitle = titleElements[i];
+      break;
     }
   }
 
-  updateHotBar();
   updateHideModeSwitchIcon();
 
-  nextTitleIndex = activeIndex + 1;
-
   titleElements.forEach((title) => {
-    updateFade(title);
+    // updateFade(title);
     updateLock(title);
   });
 }
 
 function scrollToActive(smooth = false) {
-  if (activeIndex == -1) {
-    main.scrollTo(0, 0);
-    return;
-  }
-  const title = titleElements[activeIndex];
-
+  if (!storage.isHideMode()) return;
   if (smooth) {
     main.style.scrollBehavior = "smooth";
   } else {
     main.style.scrollBehavior = "auto";
   }
-  main.scrollTo(0, getScrollChangeTo(title));
+  main.scrollTo(0, getScrollChangeTo(activeTitle));
 }
 
 function getScrollChangeTo(title) {
@@ -93,16 +74,12 @@ function getScrollChangeTo(title) {
 }
 
 function isActive(id) {
-  return titleElements[activeIndex].id == id;
+  return titleElements[activeTitle].id == id;
 }
 
 function updateFade(title) {
   const poster = title.querySelector(".poster");
-  if (
-    storage.isHideMode() &&
-    !storage.isLocked(title.titleData) &&
-    indexOf(title.titleData) != activeIndex
-  ) {
+  if (storage.isHideMode() && storage.isCompleted(title.titleData)) {
     poster.classList.add("fade");
   } else {
     poster.classList.remove("fade");
@@ -113,28 +90,13 @@ function updateLock(title) {
   const lock = title.querySelector(".lock");
 
   if (storage.isHideMode()) {
-    if (storage.isLocked(title.titleData)) {
+    if (!storage.isCompleted(title.titleData) && activeTitle !== title) {
       lock.classList.remove("hidden");
     } else {
       lock.classList.add("hidden");
     }
   } else {
     lock.classList.add("hidden");
-  }
-
-  // const highlight = title.querySelector(".highlight");
-  // if (indexOf(title.titleData) == activeIndex) {
-  //   highlight.classList.remove("hidden");
-  // } else {
-  //   highlight.classList.add("hidden");
-  // }
-
-  if (indexOf(title.titleData) == nextTitleIndex) {
-    lock.classList.add("next");
-    lock.querySelector("svg").classList.remove("hidden");
-  } else {
-    lock.querySelector("svg").classList.add("hidden");
-    lock.classList.remove("next");
   }
 }
 
@@ -169,20 +131,6 @@ function toggleMenu() {
     menuWrapper.classList.remove("hidden");
   } else {
     menuWrapper.classList.add("hidden");
-  }
-}
-
-function updateHotBar() {
-  if (
-    storage.isHideMode() &&
-    activeIndex != -1 &&
-    !menu.classList.contains("open")
-  ) {
-    backButton.classList.remove("hidden");
-    settingsButton.classList.remove("center");
-  } else {
-    backButton.classList.add("hidden");
-    settingsButton.classList.add("center");
   }
 }
 

@@ -32,14 +32,6 @@ function onPosterClick(img, titleElement) {
     links = title.links;
   }
 
-  if (storage.isHideMode() && storage.isLocked(title)) {
-    if (indexOf(title) != nextTitleIndex) return;
-    storage.unlock(title.id);
-    titleElement.querySelector(".lock").classList.add("hidden");
-    updateTitles();
-    return;
-  }
-
   lastClickedThumbnail = img;
   toggleOverview();
 
@@ -51,8 +43,6 @@ function onPosterClick(img, titleElement) {
 
   glow.style.backgroundColor = color;
   completeButtonContainer.style.background = `linear-gradient(to top, ${color} 80%, transparent)`;
-  // completeButton.querySelector("path").style.fill = color;
-  // poster;
 
   const bigImg = new Image();
   const titleEl = overviewContainer.querySelector(".title");
@@ -84,6 +74,12 @@ function onPosterClick(img, titleElement) {
     descEl.textContent = description;
 
     completeButtonContainer.classList.remove("inactive");
+    if (storage.isCompleted(title)) {
+      completeButton.classList.add("checked");
+    } else {
+      completeButton.classList.remove("checked");
+    }
+    setCompleteButtonListener(title);
   } else {
     if (isFirstBlock) {
       descEl.classList.remove("inactive");
@@ -104,7 +100,13 @@ function onPosterClick(img, titleElement) {
   const contents = Array.from(overviewContainer.querySelectorAll(".content"));
   // contents.push(completeButtonContainer)
 
-  const noPropagation = [titleEl, details, descEl, episodesContainer];
+  const noPropagation = [
+    titleEl,
+    details,
+    descEl,
+    episodesContainer,
+    completeButton,
+  ];
   noPropagation.forEach((content) => {
     content.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -176,8 +178,6 @@ function toggleOverview() {
     if (!bigImg || !lastClickedThumbnail) return;
 
     const closeTransition = () => {
-      // posterContainer.classList.remove("shadow");
-
       let fromEl = bigImg;
       if (!fromEl.complete) {
         bigImg.src = "";
@@ -214,6 +214,8 @@ function toggleOverview() {
           transitioning = false;
           lastClickedThumbnail.style.visibility = "visible";
           overview.scrollTop = 0;
+
+          // scrollToActive(true);
         }
       );
 
@@ -298,4 +300,36 @@ function setIsGlowing(isGlowing) {
   } else {
     glowContainer.classList.add("hidden");
   }
+}
+
+let currentCompleteButtonClickListener = null;
+
+function setCompleteButtonListener(title) {
+  // Remove previous listener if exists
+  if (currentCompleteButtonClickListener) {
+    completeButton.removeEventListener(
+      "click",
+      currentCompleteButtonClickListener
+    );
+  }
+
+  // Define the new listener specific to this title
+  currentCompleteButtonClickListener = function () {
+    if (!storage.isCompleted(title)) {
+      storage.completeTitle(title.id);
+      completeButton.classList.add("checked");
+    } else {
+      storage.uncompleteTitle(title.id);
+      completeButton.classList.remove("checked");
+    }
+
+    updateTitles();
+
+    setTimeout(() => {
+      toggleOverview();
+    }, 100);
+  };
+
+  // Add the new listener
+  completeButton.addEventListener("click", currentCompleteButtonClickListener);
 }

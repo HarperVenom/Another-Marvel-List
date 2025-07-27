@@ -285,6 +285,26 @@ function updateEpisodes(titleElement, colors) {
   episodes.forEach((episode) => {
     const html = makeEpisodeBlock(episode, color);
     episodesContainer.insertAdjacentHTML("beforeend", html);
+
+    const lastEpisodeElement = episodesContainer.lastElementChild;
+
+    if (storage.hasCompletedEpisode(episode)) {
+      lastEpisodeElement.classList.add("checked");
+    } else {
+      lastEpisodeElement.classList.remove("checked");
+    }
+
+    lastEpisodeElement.addEventListener("click", () => {
+      if (!storage.hasCompletedEpisode(episode)) {
+        storage.completeEpisode(episode);
+        lastEpisodeElement.classList.add("checked");
+      } else {
+        storage.uncompleteEpisode(episode);
+        lastEpisodeElement.classList.remove("checked");
+      }
+
+      updateTitles();
+    });
   });
 }
 

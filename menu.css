@@ -100,7 +100,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    translate: 3rem;
+    /* translate: 3rem; */
     margin-block: 2rem;
     transition: opacity 0.2s ease, translate 0.2s ease;
 
@@ -127,7 +127,7 @@
     }
   }
 
-  #back-button {
+  /* #back-button {
     translate: -3rem;
 
     svg {
@@ -135,13 +135,12 @@
       height: 45%;
       transform: translate(-2px);
     }
-  }
+  } */
 }
 
 @media screen and (max-width: 800px) {
   .menu-wrapper {
-    .settings-button,
-    #back-button {
+    .settings-button {
       margin-block: 1.5rem;
     }
   }
