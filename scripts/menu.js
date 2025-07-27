@@ -52,7 +52,14 @@ function updateTitles() {
   updateHideModeSwitchIcon();
 
   titleElements.forEach((title) => {
-    updateFade(title);
+    // updateFade(title);
+    const checkmark = title.querySelector(".checkmark");
+    if (storage.isHideMode() && storage.isCompleted(title.titleData)) {
+      checkmark.style.display = "block";
+    } else {
+      checkmark.style.display = "none";
+    }
+
     updateLock(title);
   });
 }

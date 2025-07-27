@@ -937,9 +937,9 @@
   },
   {
     "id": "daredevil_s2",
-    "name": "Daredevil season 2",
+    "name": "Daredevil Season 2",
     "description": "Dark forces are tearing Hell's Kitchen apart once again, but this time Daredevil may have to choose between the city and his friends.",
-    "colors": "#160f11",
+    "colors": "#261a1d",
     "episodes": [
       {
         "name": "Bang",
@@ -1010,7 +1010,7 @@
   },
   {
     "id": "whih_newsfront_s2",
-    "name": "WHiH Newsfront season 2",
+    "name": "WHiH Newsfront Season 2",
     "description": "Christine Everhart and political correspondent Will Adams return with a hard-hitting news series examining the global aftermath of the Avengers' actions. From the costs of superhero battles and political accountability to exclusive interviews and breaking news, WHIH investigates the world the heroes leave behind.",
     "colors": "#1f2435",
     "episodes": [

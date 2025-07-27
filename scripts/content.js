@@ -47,11 +47,9 @@ async function fillMovieList() {
             this.src = '';
           };" 
           />
-
-      <div class="lock">
-        ${clickSvg("rgba(50, 50, 50)")}
+      <div class="lock"></div>
       </div>
-    </div>
+      ${checkMark()}
       `;
 
     const img = li.querySelector(".poster");
@@ -220,46 +218,7 @@ function makeEpisodeBlock(episode, color) {
         </div>
       </div>
       <button class="check">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            version="1.1"
-            width="256"
-            height="256"
-            viewBox="0 0 256 256"
-            xml:space="preserve"
-          >
-            <g
-              style="
-                stroke: none;
-                stroke-width: 0;
-                stroke-dasharray: none;
-                stroke-linecap: butt;
-                stroke-linejoin: miter;
-                stroke-miterlimit: 10;
-                fill: none;
-                fill-rule: nonzero;
-                opacity: 1;
-              "
-              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
-            >
-              <path
-                d="M 32 77 c -1.536 0 -3.071 -0.586 -4.243 -1.758 l -26 -26 c -2.343 -2.343 -2.343 -6.142 0 -8.485 c 2.343 -2.343 6.143 -2.343 8.485 0 L 32 62.515 l 47.758 -47.757 c 2.342 -2.343 6.143 -2.343 8.484 0 c 2.344 2.343 2.344 6.142 0 8.485 l -52 52 C 35.071 76.414 33.536 77 32 77 z"
-                style="
-                  stroke: none;
-                  stroke-width: 1;
-                  stroke-dasharray: none;
-                  stroke-linecap: butt;
-                  stroke-linejoin: miter;
-                  stroke-miterlimit: 10;
-                  fill-rule: nonzero;
-                  opacity: 1;
-                "
-                transform=" matrix(1 0 0 1 0 0) "
-                stroke-linecap="round"
-              />
-            </g>
-          </svg>
+        ${checkMark()}
       </button>
     </div>
   `;
