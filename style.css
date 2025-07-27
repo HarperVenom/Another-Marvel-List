@@ -120,7 +120,7 @@ main {
         transition: filter 0.1s ease;
 
         &.fade {
-          filter: brightness(0.5);
+          filter: brightness(0.7);
         }
       }
 

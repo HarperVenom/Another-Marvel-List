@@ -35,17 +35,23 @@
 
       .block {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
       }
     }
 
     .poster-container {
       position: relative;
       width: 100%;
+      /* max-width: min-content; */
       border-radius: 10px;
       user-select: none;
       min-width: 40%;
       aspect-ratio: 2 / 3;
       cursor: pointer;
+      /* height: 100vh; */
+      /* max-height: 60svh; */
     }
 
     .poster {
@@ -135,7 +141,7 @@
         gap: 1rem;
         padding-top: 2rem;
         width: 100%;
-        margin-bottom: 40svh;
+        margin-bottom: 10svh;
 
         &.inactive {
           display: none;
@@ -214,14 +220,9 @@
       }
 
       .button-container {
-        position: fixed;
-        width: 90%;
+        width: 100%;
         bottom: -5px;
-        left: 50%;
         z-index: 10;
-        transform: translate(-50%, 0);
-        background-color: black;
-        background: linear-gradient(to top, black 90%, transparent);
         display: flex;
         justify-content: center;
         transition: opacity 0.1s ease;

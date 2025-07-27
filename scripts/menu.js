@@ -52,7 +52,7 @@ function updateTitles() {
   updateHideModeSwitchIcon();
 
   titleElements.forEach((title) => {
-    // updateFade(title);
+    updateFade(title);
     updateLock(title);
   });
 }

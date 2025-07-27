@@ -42,7 +42,7 @@ function onPosterClick(img, titleElement) {
   const color = adjustColor(color1);
 
   glow.style.backgroundColor = color;
-  completeButtonContainer.style.background = `linear-gradient(to top, ${color} 80%, transparent)`;
+  // completeButtonContainer.style.background = `linear-gradient(to top, ${color} 80%, transparent)`;
 
   const bigImg = new Image();
   const titleEl = overviewContainer.querySelector(".title");

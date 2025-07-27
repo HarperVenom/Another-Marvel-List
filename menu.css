@@ -1,8 +1,8 @@
 .menu-wrapper {
   position: fixed;
   pointer-events: none;
-  height: 100svh;
-  top: 0;
+  height: 100lvh;
+  bottom: 0;
   z-index: 2;
   transition: opacity 0.2s ease;
 
