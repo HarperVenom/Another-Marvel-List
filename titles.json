@@ -1328,20 +1328,73 @@
     "colors": "#18191c"
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": ""
+    "id": "deadpool_no_good_deed",
+    "name": "Deadpool: No Good Deed",
+    "date": "2017-03-03",
+    "duration": 4,
+    "description": "Deadpool sees an opportunity to save the day, but it doesn't go entirely as planned.",
+    "colors": "#102f40"
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": ""
+    "id": "iron_fist_s1",
+    "name": "Iron Fist Season 1",
+    "description": "Fifteen years after being presumed dead in a plane crash, Danny Rand mysteriously returns to New York City determined to reclaim his birthright and family company. However, when a long-destined enemy rises in New York, this living weapon is forced to choose between his family’s legacy and his duties as the Iron Fist.",
+    "colors": "#261f16",
+    "episodes": [
+      { "name": "Snow Gives Way", "date": "2017-03-17", "duration": 57 },
+      {
+        "name": "Shadow Hawk Takes Flight",
+        "date": "2017-03-17",
+        "duration": 62
+      },
+      {
+        "name": "Rolling Thunder Cannon Punch",
+        "date": "2017-03-17",
+        "duration": 60
+      },
+      {
+        "name": "Eight Diagram Dragon Palm",
+        "date": "2017-03-17",
+        "duration": 54
+      },
+      {
+        "name": "Under Leaf Pluck Lotus",
+        "date": "2017-03-17",
+        "duration": 57
+      },
+      {
+        "name": "Immortal Emerges from Cave",
+        "date": "2017-03-17",
+        "duration": 53
+      },
+      {
+        "name": "Felling Tree with Roots",
+        "date": "2017-03-17",
+        "duration": 59
+      },
+      {
+        "name": "The Blessing of Many Fractures",
+        "date": "2017-03-17",
+        "duration": 55
+      },
+      {
+        "name": "The Mistress of All Agonies",
+        "date": "2017-03-17",
+        "duration": 55
+      },
+      {
+        "name": "Black Tiger Steals Heart",
+        "date": "2017-03-17",
+        "duration": 57
+      },
+      {
+        "name": "Lead Horse Back to Stable",
+        "date": "2017-03-17",
+        "duration": 53
+      },
+      { "name": "Bar the Big Boss", "date": "2017-03-17", "duration": 50 },
+      { "name": "Dragon Plays with Fire", "date": "2017-03-17", "duration": 54 }
+    ]
   },
   {
     "id": "",
