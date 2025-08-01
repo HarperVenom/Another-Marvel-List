@@ -15,8 +15,6 @@ const glowContainer = document.querySelector("#glow-container");
 const linksContainer = overviewContainer.querySelector(".additional");
 const episodesContainer = document.querySelector(".episodes");
 
-let lastClickedThumbnail = null;
-
 let currentClone;
 
 async function fillMovieList() {

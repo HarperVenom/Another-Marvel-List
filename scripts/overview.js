@@ -8,6 +8,8 @@ const completeButton =
 let overviewOpened = false;
 let transitioning = false;
 
+let lastClickedTitle = null;
+
 function onPosterClick(img, titleElement) {
   if (overviewOpened || transitioning) return;
 
@@ -32,7 +34,7 @@ function onPosterClick(img, titleElement) {
     links = title.links;
   }
 
-  lastClickedThumbnail = img;
+  lastClickedTitle = titleElement;
   toggleOverview();
 
   const glow = document.querySelector("#glow");
@@ -115,6 +117,9 @@ function onPosterClick(img, titleElement) {
 
   overview.style.overflow = "hidden";
 
+  const checkmark = titleElement.querySelector(".checkmark");
+  checkmark.style.display = "none";
+
   const startTransition = () => {
     animateImageTransition(
       img,
@@ -175,7 +180,7 @@ function toggleOverview() {
     overview.classList.remove("hidden");
   } else {
     const bigImg = overview.querySelector(".poster");
-    if (!bigImg || !lastClickedThumbnail) return;
+    if (!bigImg || !lastClickedTitle) return;
 
     const closeTransition = () => {
       let fromEl = bigImg;
@@ -188,7 +193,7 @@ function toggleOverview() {
 
       animateImageTransition(
         fromEl,
-        lastClickedThumbnail,
+        lastClickedTitle.querySelector(".poster"),
         // on clone load
         () => {
           if (fromEl != bigImg) {
@@ -212,8 +217,17 @@ function toggleOverview() {
           overview.classList.add("hidden");
 
           transitioning = false;
-          lastClickedThumbnail.style.visibility = "visible";
+          lastClickedTitle.querySelector(".poster").style.visibility =
+            "visible";
           overview.scrollTop = 0;
+
+          const checkmark = lastClickedTitle.querySelector(".checkmark");
+          if (
+            storage.isHideMode() &&
+            storage.isCompleted(lastClickedTitle.titleData)
+          ) {
+            checkmark.style.display = "block";
+          }
 
           // scrollToActive(true);
         }
