@@ -160,10 +160,13 @@ main {
         right: 0;
         top: 0;
         width: fit-content;
-        height: 6%;
+        height: 5%;
         margin: 5%;
-        filter: drop-shadow(0px 0px 2px black);
-        /* opacity: 0.2; */
+        /* filter: drop-shadow(0px 0px 2px black); */
+        /* opacity: 0.6; */
+        background-color: rgb(15, 15, 15);
+        border-radius: 50%;
+        padding: 1.5%;
         z-index: 1;
 
         path {
