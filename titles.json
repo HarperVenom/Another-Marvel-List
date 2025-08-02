@@ -760,7 +760,7 @@
     "date": "2015-08-06",
     "duration": 100,
     "description": "Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy.",
-    "colors": "#3b3439"
+    "colors": "#262125"
   },
   {
     "id": "agents_of_shield_s3",
@@ -800,7 +800,7 @@
     "id": "jessica_jones_s1",
     "name": "Jessica Jones Season 1",
     "description": "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases involving people with extraordinary abilities in New York City.",
-    "colors": "#38284c",
+    "colors": "#2b1a40",
     "episodes": [
       {
         "name": "AKA Ladies Night",
@@ -1188,7 +1188,7 @@
     "id": "luke_cage_s1",
     "name": "Luke Cage Season 1",
     "description": "As the bulletproof defender of Harlem, Luke Cage battles corrupt politicians, ruthless gangsters and demons from his own past.",
-    "colors": "#3e2e1b",
+    "colors": "#33230f",
     "episodes": [
       {
         "name": "Moment of Truth",
@@ -1339,7 +1339,7 @@
     "id": "iron_fist_s1",
     "name": "Iron Fist Season 1",
     "description": "Fifteen years after being presumed dead in a plane crash, Danny Rand mysteriously returns to New York City determined to reclaim his birthright and family company. However, when a long-destined enemy rises in New York, this living weapon is forced to choose between his family’s legacy and his duties as the Iron Fist.",
-    "colors": "#261f16",
+    "colors": "#33250f",
     "episodes": [
       { "name": "Snow Gives Way", "date": "2017-03-17", "duration": 57 },
       {

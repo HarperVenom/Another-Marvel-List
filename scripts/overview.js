@@ -287,7 +287,7 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
       clone.style.left = `${toRect.left}px`;
       clone.style.width = `${toRect.width}px`;
       clone.style.height = `${toRect.height}px`;
-      clone.style.borderRadius = toStyle.borderRadius; // or adapt dynamically if needed
+      // clone.style.borderRadius = toStyle.borderRadius; // or adapt dynamically if needed
       clone.style.filter = toStyle.filter;
       clone.style.boxShadow = toStyle.boxShadow;
     });
