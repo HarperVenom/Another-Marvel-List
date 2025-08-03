@@ -1277,7 +1277,7 @@
     "id": "marvels_agents_of_shield_slingshot",
     "name": "Marvel's Agents of S.H.I.E.L.D.: Slingshot",
     "description": "Elena \"Yo-Yo\" Rodriguez, an Inhuman with the ability to move at super-speed, is required to sign the Sokovia Accords. However, the restrictions of the Accords are in direct conflict with a personal mission she's desperate to fulfill, one that will test her abilities and will include tense encounters with S.H.I.E.L.D. team members.",
-    "colors": "#231110",
+    "colors": "#401513",
     "episodes": [
       {
         "name": "Vendetta",
@@ -1397,12 +1397,52 @@
     ]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": ""
+    "id": "legion_s1",
+    "name": "Legion Season 1",
+    "description": "Troubled by unsettling visions, young David Haller begins piecing together his fragmented memories and realizes he may have special powers.",
+    "colors": "#0f2f33",
+    "episodes": [
+      {
+        "name": "Chapter 1",
+        "date": "2017-02-08",
+        "duration": 70
+      },
+      {
+        "name": "Chapter 2",
+        "date": "2017-02-15",
+        "duration": 49
+      },
+      {
+        "name": "Chapter 3",
+        "date": "2017-02-22",
+        "duration": 46
+      },
+      {
+        "name": "Chapter 4",
+        "date": "2017-03-01",
+        "duration": 57
+      },
+      {
+        "name": "Chapter 5",
+        "date": "2017-03-08",
+        "duration": 54
+      },
+      {
+        "name": "Chapter 6",
+        "date": "2017-03-15",
+        "duration": 52
+      },
+      {
+        "name": "Chapter 7",
+        "date": "2017-03-22",
+        "duration": 46
+      },
+      {
+        "name": "Chapter 8",
+        "date": "2017-03-29",
+        "duration": 49
+      }
+    ]
   },
   {
     "id": "",
