@@ -588,7 +588,7 @@
     "id": "agent_carter_s1",
     "name": "Agent Carter Season 1",
     "description": "In 1946, Peggy Carter is relegated to secretarial duties in the Strategic Scientific Reserve (SSR). When Howard Stark is accused of treason, he secretly recruits Peggy to clear his name with the help of his butler, Edwin Jarvis.",
-    "colors": "#4d3d1f",
+    "colors": "#402e0d",
     "episodes": [
       {
         "name": "Now Is Not the End",
@@ -636,7 +636,7 @@
     "id": "daredevil_s1",
     "name": "Daredevil season 1",
     "description": "A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.",
-    "colors": "#1b1826",
+    "colors": "#171326",
     "episodes": [
       {
         "name": "Into the Ring",
@@ -873,7 +873,7 @@
     "id": "agent_carter_s2",
     "name": "Agent Carter Season 2",
     "description": "Dedicated to the fight against new Atomic Age threats in the wake of World War II, Peggy must now journey from New York City to Los Angeles and she's about to find out that the bright lights of the post-war Hollywood mask a more sinister threat to everyone she is sworn to protect.",
-    "colors": "#2a2429",
+    "colors": "#292127",
     "episodes": [
       {
         "name": "The Lady in the Lake",
@@ -939,7 +939,7 @@
     "id": "daredevil_s2",
     "name": "Daredevil Season 2",
     "description": "Dark forces are tearing Hell's Kitchen apart once again, but this time Daredevil may have to choose between the city and his friends.",
-    "colors": "#261a1d",
+    "colors": "#261318",
     "episodes": [
       {
         "name": "Bang",
@@ -1047,7 +1047,7 @@
     "date": "2016-05-06",
     "duration": 148,
     "description": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
-    "colors": "#3d454d",
+    "colors": "#26394d",
     "links": ["rpMClVCcgWM", "OvHNcULsL3s", "tahjluBe--E"]
   },
   {
@@ -1070,7 +1070,7 @@
     "id": "agents_of_shield_s4",
     "name": "Agents of S.H.I.E.L.D. Season 4",
     "description": "Daisy, now on her own, investigates a string of serial killings in Los Angeles while being hunted by her former S.H.I.E.L.D. teammates. As tensions rise, Ghost Rider emerges, leading to deadly confrontations, shocking alliances, and a race to stop anti-Inhuman forces threatening the world.",
-    "colors": "#3c1c16",
+    "colors": "#3d140c",
     "episodes": [
       {
         "name": "The Ghost",
