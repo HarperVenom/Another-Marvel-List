@@ -23,8 +23,6 @@ async function fillMovieList() {
 
   const titles = getAllTitlesReleaseOrder();
 
-  console.log(titles);
-
   titles.forEach((title, index) => {
     const name = title.name;
     if (name == "") return;

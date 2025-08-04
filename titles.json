@@ -406,7 +406,8 @@
     "duration": 112,
     "description": "When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.",
     "colors": "#1e3134",
-    "links": ["ALUCl2p4aFc"]
+    "links": ["ALUCl2p4aFc"],
+    "split": "agents_of_shield_s1"
   },
   {
     "id": "all_hail_the_king",
@@ -431,7 +432,8 @@
     "duration": 136,
     "description": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
     "colors": "#142e33",
-    "links": ["OlEuShTEC6I"]
+    "links": ["OlEuShTEC6I"],
+    "split": "agents_of_shield_s1"
   },
   {
     "id": "marvel_75_years_from_pulp_to_pop",
@@ -469,7 +471,7 @@
   {
     "id": "agents_of_shield_s2",
     "name": "Agents of S.H.I.E.L.D.<br>Season 2",
-    "description": "As Hydra resurfaces with powerful new weapons and hidden agendas, Coulson's team must confront rising threats, personal struggles, and mysterious alien symbols—all while racing to uncover ancient secrets that could change everything.",
+    "description": "In the second season, Coulson and his team look to restore trust from the government and public following S.H.I.E.L.D.'s collapse.",
     "colors": "#4d120f",
     "episodes": [
       {
@@ -711,7 +713,8 @@
     "date": "2015-05-01",
     "duration": 141,
     "description": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
-    "colors": "#32384d"
+    "colors": "#32384d",
+    "split": "agents_of_shield_s2"
   },
   {
     "id": "whih_newsfront_s1",
@@ -765,7 +768,7 @@
   {
     "id": "agents_of_shield_s3",
     "name": "Agents of S.H.I.E.L.D. Season 3",
-    "description": "In the wake of a global shift, S.H.I.E.L.D. expands its mission to track down emerging powered individuals. As the team navigates new alliances, hidden agendas, and mysterious forces, they face escalating threats that test their strength, loyalty, and trust in one another. With the fate of many hanging in the balance, S.H.I.E.L.D. must adapt quickly to confront dangers that grow more unpredictable with every step.",
+    "description": "Many months after their war with a rogue group of Inhumans, the team is still reeling. Coulson is again trying to put the pieces of his once revered organization back together while also dealing with the loss of his hand. His confidante and second in command, Agent Melinda May, has yet to return from an impromptu vacation with ex-husband Andrew; deadly superspy Agent Bobbi Morse is recovering from her traumatic torture at the hands of Grant Ward; Fitz is obsessed with discovering the truth behind the mysterious disappearance of Simmons; and all are on high-alert for the next move from Ward and Hydra.",
     "colors": "#252626",
     "episodes": [
       { "name": "Laws of Nature", "date": "2015-09-29", "duration": 44 },
@@ -1048,7 +1051,8 @@
     "duration": 148,
     "description": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
     "colors": "#26394d",
-    "links": ["rpMClVCcgWM", "OvHNcULsL3s", "tahjluBe--E"]
+    "links": ["rpMClVCcgWM", "OvHNcULsL3s", "tahjluBe--E"],
+    "split": "agents_of_shield_s3"
   },
   {
     "id": "x-men_apocalypse",
@@ -1069,7 +1073,7 @@
   {
     "id": "agents_of_shield_s4",
     "name": "Agents of S.H.I.E.L.D. Season 4",
-    "description": "Daisy, now on her own, investigates a string of serial killings in Los Angeles while being hunted by her former S.H.I.E.L.D. teammates. As tensions rise, Ghost Rider emerges, leading to deadly confrontations, shocking alliances, and a race to stop anti-Inhuman forces threatening the world.",
+    "description": "Vengeance runs rampant this season as Coulson is a mere agent again, and Daisy has gone rogue after being under Hive's control. How will S.H.I.E.L.D. deal with the arrival of The Ghost Rider?",
     "colors": "#3d140c",
     "episodes": [
       {
@@ -1182,7 +1186,8 @@
         "date": "2017-05-16",
         "duration": 40
       }
-    ]
+    ],
+    "links": ["1xgQUoVfiL8&list=PLDe0CguuqcMBVtZJk0iCNoSblixvAt4BY&index=1"]
   },
   {
     "id": "luke_cage_s1",
@@ -1272,44 +1277,6 @@
     "duration": 42,
     "description": "A full-length documentary that follows the history of Captain America from 1941 to present, and explores how \"Cap\" has been a reflection of the changing times and the world he has existed in throughout the years. Fans will hear from various Marvel luminaries including Stan Lee, Joe Quesada, Clark Gregg, Ming-Na Wen, Chloe Bennet, Jeph Loeb, Louis D'Esposito, Chris Evans and Hayley Attwell, as well as family members of Cap's creators.",
     "colors": "#375966"
-  },
-  {
-    "id": "marvels_agents_of_shield_slingshot",
-    "name": "Marvel's Agents of S.H.I.E.L.D.: Slingshot",
-    "description": "Elena \"Yo-Yo\" Rodriguez, an Inhuman with the ability to move at super-speed, is required to sign the Sokovia Accords. However, the restrictions of the Accords are in direct conflict with a personal mission she's desperate to fulfill, one that will test her abilities and will include tense encounters with S.H.I.E.L.D. team members.",
-    "colors": "#401513",
-    "episodes": [
-      {
-        "name": "Vendetta",
-        "date": "2016-12-13",
-        "duration": 5
-      },
-      {
-        "name": "John Hancock",
-        "date": "2016-12-13",
-        "duration": 4
-      },
-      {
-        "name": "Progress",
-        "date": "2016-12-13",
-        "duration": 6
-      },
-      {
-        "name": "Reunion",
-        "date": "2016-12-13",
-        "duration": 5
-      },
-      {
-        "name": "Deal Breaker",
-        "date": "2016-12-13",
-        "duration": 4
-      },
-      {
-        "name": "Justicia",
-        "date": "2016-12-13",
-        "duration": 4
-      }
-    ]
   },
   {
     "id": "team_thor_part_2",
