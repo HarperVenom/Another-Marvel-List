@@ -44,25 +44,18 @@
     .poster-container {
       position: relative;
       width: 100%;
-      /* max-width: min-content; */
-      /* border-radius: 10px; */
       user-select: none;
       min-width: 40%;
       aspect-ratio: 2 / 3;
       cursor: pointer;
-      /* height: 100vh; */
-      /* max-height: 60svh; */
     }
 
     .poster {
       position: absolute;
       width: 100%;
       height: 100%;
-      /* border-radius: 10px; */
-
       object-position: center;
       object-fit: cover;
-
       z-index: 1;
     }
 
@@ -76,7 +69,6 @@
       padding-top: 1rem;
       display: flex;
       flex-direction: column;
-      /* height: fit-content; */
       transition: opacity 0.2s ease;
       filter: drop-shadow(10px);
       padding-bottom: 8rem;
@@ -128,7 +120,6 @@
       .description {
         padding-top: 2rem;
         font-size: 1.2rem;
-        /* text-wrap: ; */
 
         @media screen and (min-width: 400px) {
           font-size: 1.3rem;
@@ -152,7 +143,6 @@
           position: relative;
           background-color: black;
           padding: 1rem;
-          /* border-radius: 5px; */
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -187,7 +177,6 @@
             background-color: transparent;
             border: none;
             border: rgba(255, 255, 255, 0.8) 3px solid;
-            /* border-radius: 3px; */
             cursor: pointer;
             margin-left: 1rem;
             display: flex;
@@ -210,8 +199,6 @@
           }
 
           &.checked {
-            /* opacity: 0.7; */
-
             svg {
               display: block;
             }
@@ -237,9 +224,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          /* border-radius: 5px; */
           padding: 1rem;
-          /* backdrop-filter: brightness(0.7); */
           margin: 1rem;
           margin-top: 2.5rem;
 
@@ -247,8 +232,6 @@
             border: rgba(255, 255, 255, 0.8) 3.5px solid;
             width: 3rem;
             aspect-ratio: 1 / 1;
-            /* border-radius: 5px; */
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -315,7 +298,7 @@
           display: block;
           width: 100%;
           aspect-ratio: 16 / 9;
-          border-radius: 10px;
+          /* border-radius: 10px; */
           overflow: hidden;
           background-color: black;
           display: flex;
