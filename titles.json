@@ -15,7 +15,7 @@
     "date": "2000-07-14",
     "duration": 104,
     "description": "In a world where mutants (evolved super-powered humans) exist and are discriminated against, two groups form for an inevitable clash: the supremacist Brotherhood, and the pacifist X-Men.",
-    "colors": "#282a2c"
+    "colors": "#23272b"
   },
   {
     "id": "blade_ii",
@@ -1410,12 +1410,12 @@
     ]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": ""
+    "id": "guardians_of_the_galaxy_vol_2",
+    "name": "Guardians of the Galaxy Vol. 2",
+    "date": "2017-04-26",
+    "duration": 137,
+    "description": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
+    "colors": "#371a40"
   },
   {
     "id": "",
