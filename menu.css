@@ -17,6 +17,8 @@
     border-top-left-radius: 20vmax;
     border-top-right-radius: 20vmax;
 
+    overflow: auto;
+
     &.open {
       border-radius: 0;
       transform: translate(0, 0);
@@ -28,11 +30,31 @@
       align-items: center;
       padding-block: 5rem;
       transition: opacity 0.5s ease;
+      gap: 3rem;
+      /* padding-bottom: 25vh; */
+      padding-bottom: 0;
+
+      .cover {
+        width: 100%;
+        height: 120px;
+        background: linear-gradient(to top, rgba(30, 30, 30) 90%, transparent);
+        position: sticky;
+        bottom: 0;
+      }
+
+      section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
       h1 {
         font-size: 1.5rem;
         color: rgb(150, 150, 150);
         margin-bottom: 1rem;
+        user-select: none;
       }
 
       .hide-button {
@@ -58,6 +80,37 @@
 
           path {
             fill: rgba(150, 150, 150);
+          }
+        }
+      }
+
+      #filters {
+        width: 85%;
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .filter {
+          display: inline-block;
+          margin: 0.2rem;
+          padding: 0.5rem 1.5rem;
+          background-color: rgba(150, 150, 150);
+          color: rgb(50, 50, 50);
+          font-size: 1.5rem;
+          font-weight: 600;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: opacity 0.1s ease;
+          user-select: none;
+          text-align: center;
+
+          &.off {
+            opacity: 0.3;
+          }
+
+          * {
+            pointer-events: none;
           }
         }
       }
@@ -127,7 +180,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1400px) {
   .menu-wrapper {
     .settings-button {
       margin-block: 1.5rem;

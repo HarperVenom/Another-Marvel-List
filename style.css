@@ -68,11 +68,11 @@ main {
 
   .list {
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     list-style: none;
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(auto-fit, minmax(min(25vw, 200px), 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     row-gap: 30px;
 
@@ -173,21 +173,19 @@ main {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .title-list-container {
     padding: 30px;
     margin-top: 2rem;
 
     .list {
-      max-width: min(75vw, 1200px);
-      gap: 20px;
-      row-gap: 40px;
-
-      grid-template-columns: repeat(auto-fit, minmax(min(25vw, 160px), 1fr));
+      gap: 15px;
+      row-gap: 30px;
+      grid-template-columns: repeat(4, 1fr);
 
       li {
         .year-label {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           padding: 0.2rem 0.3rem;
         }
       }
@@ -195,10 +193,19 @@ main {
   }
 }
 
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1200px) {
   .title-list-container {
     .list {
-      grid-template-columns: repeat(auto-fit, minmax(min(25vw, 200px), 1fr));
+      padding-inline: 0;
+      gap: 20px;
+      row-gap: 40px;
+      grid-template-columns: repeat(5, 1fr);
+
+      li {
+        .year-label {
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 }

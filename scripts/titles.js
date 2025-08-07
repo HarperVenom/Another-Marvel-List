@@ -1,5 +1,6 @@
 let titles = [];
 let titlesLoaded = false;
+let allTags = [];
 
 loadAllTitles();
 
@@ -7,6 +8,15 @@ async function loadAllTitles() {
   const response = await fetch("titles.json");
   titles = await response.json();
   titlesLoaded = true;
+
+  allTags = [
+    ...new Set(
+      titles.flatMap((item) => item.tags).filter((tag) => tag !== undefined)
+    ),
+  ];
+
+  // console.log(allTags);
+  setFilterButtons();
 
   fillMovieList();
 }
@@ -16,8 +26,12 @@ function getAllTitlesReleaseOrder() {
 
   const flattened = [];
 
+  const filters = getTagsFromURL();
+
   // Step 1: Flatten all entries
   for (const title of titles) {
+    if (!(title.tags && title.tags.some((tag) => filters.includes(tag))))
+      continue;
     if (title.episodes) {
       let completeSeasons = true;
 
@@ -116,4 +130,62 @@ function getAllTitlesReleaseOrder() {
   }
 
   return grouped;
+}
+
+function setFilterButtons() {
+  const filtersSection = document.querySelector("#filters");
+  filtersSection.innerHTML = "";
+
+  const activeTags = getTagsFromURL();
+
+  allTags.forEach((tag) => {
+    if (!tag) return;
+
+    const filter = document.createElement("div");
+    filter.className = "filter" + (!activeTags.includes(tag) ? " off" : "");
+    filter.textContent = tag;
+    filtersSection.appendChild(filter);
+
+    filter.addEventListener("click", () => {
+      filter.classList.toggle("off");
+
+      let activeFilters = Array.from(
+        filtersSection.querySelectorAll(".filter:not(.off)")
+      ).map((el) => el.textContent);
+
+      if (activeFilters.length === 0) {
+        filtersSection
+          .querySelectorAll(".filter")
+          .forEach((el) => el.classList.remove("off"));
+        activeFilters = [...allTags]; // All active
+      }
+
+      updateURL(activeFilters);
+    });
+  });
+}
+
+function getTagsFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const tags = params.get("tags");
+
+  return tags ? tags.split(",") : [...allTags]; // blank means "all active"
+}
+
+function updateURL(activeTags) {
+  const params = new URLSearchParams();
+
+  const allActive = activeTags.length === allTags.length;
+
+  if (!allActive) {
+    params.set("tags", activeTags.join(","));
+  }
+
+  const newUrl =
+    window.location.pathname +
+    (params.toString() ? "?" + params.toString() : "");
+
+  history.replaceState(null, "", newUrl);
+
+  fillMovieList();
 }

@@ -23,8 +23,6 @@ settingsButton.addEventListener("click", () => {
     menuPanel.classList.remove("hidden");
     gradient.classList.add("hidden");
   }
-
-  // updateHotBar();
 });
 
 hideModeSwitch.addEventListener("click", () => {

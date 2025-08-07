@@ -23,6 +23,8 @@ async function fillMovieList() {
 
   const titles = getAllTitlesReleaseOrder();
 
+  titleElements = [];
+
   titles.forEach((title, index) => {
     const name = title.name;
     if (name == "") return;
@@ -107,6 +109,7 @@ window.addEventListener("resize", () => {
 
 function fillYears() {
   let lastYear = 0;
+
   titleElements.forEach((titleElement) => {
     const date =
       titleElement.titleData.type === "title"
