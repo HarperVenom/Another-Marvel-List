@@ -64,7 +64,7 @@ main {
   height: fit-content;
   padding: 30px 15px;
   margin-top: 1rem;
-  margin-bottom: 40svh;
+  margin-bottom: 20svh;
 
   .list {
     width: 100%;
