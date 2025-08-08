@@ -1491,7 +1491,57 @@
     "duration": 133,
     "description": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
     "colors": "#3d5966",
+    "links": ["bGuHgRQSEuk", "BWRuzKIHVOk"],
     "tags": ["Marvel Studios"]
+  },
+  {
+    "id": "the_defenders_s1",
+    "name": "The Defenders",
+    "description": "Daredevil, Jessica Jones, Luke Cage and Iron Fist join forces to take on common enemies as a sinister conspiracy threatens New York City.",
+    "colors": "#46444c",
+    "episodes": [
+      {
+        "name": "The H Word",
+        "date": "2017-08-18",
+        "duration": 51
+      },
+      {
+        "name": "Mean Right Hook",
+        "date": "2017-08-18",
+        "duration": 44
+      },
+      {
+        "name": "Worst Behavior",
+        "date": "2017-08-18",
+        "duration": 54
+      },
+      {
+        "name": "Royal Dragon",
+        "date": "2017-08-18",
+        "duration": 44
+      },
+      {
+        "name": "Take Shelter",
+        "date": "2017-08-18",
+        "duration": 50
+      },
+      {
+        "name": "Ashes, Ashes",
+        "date": "2017-08-18",
+        "duration": 51
+      },
+      {
+        "name": "Fish in the Jailhouse",
+        "date": "2017-08-18",
+        "duration": 45
+      },
+      {
+        "name": "The Defenders",
+        "date": "2017-08-18",
+        "duration": 55
+      }
+    ],
+    "tags": ["Netflix"]
   },
   {
     "id": "",
@@ -1499,6 +1549,88 @@
     "date": "",
     "duration": 0,
     "description": "",
-    "colors": ""
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
   }
 ]
