@@ -338,6 +338,7 @@ function setCompleteButtonListener(title) {
     }
 
     updateTitles();
+    updateListInfo();
 
     setTimeout(() => {
       toggleOverview();

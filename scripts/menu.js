@@ -38,7 +38,7 @@ function indexOf(titleData) {
 }
 
 function updateTitles() {
-  activeTitle = titleElements[0];
+  activeTitle = titleElements[titleElements.length - 1];
 
   for (let i = 0; i < titleElements.length; i++) {
     if (!storage.isCompleted(titleElements[i].titleData)) {
@@ -72,6 +72,7 @@ function scrollToActive(smooth = false) {
     main.style.scrollBehavior = "auto";
   }
   main.scrollTo(0, getScrollChangeTo(activeTitle));
+  console.log(activeTitle);
 }
 
 function getScrollChangeTo(title) {

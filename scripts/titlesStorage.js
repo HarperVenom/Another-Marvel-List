@@ -6,13 +6,6 @@ class TitlesStorage {
     this._init();
   }
 
-  // static EPISODE_COUNTS = {
-  //   // Define how many episodes each block has
-  //   block_whih_avengers_whitehouse: 3,
-  //   block_loki_s1: 6,
-  //   // etc.
-  // };
-
   _init() {
     if (!localStorage.getItem(this.completedKey)) {
       localStorage.setItem(this.completedKey, JSON.stringify([]));

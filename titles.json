@@ -1498,7 +1498,7 @@
     "id": "the_defenders_s1",
     "name": "The Defenders",
     "description": "Daredevil, Jessica Jones, Luke Cage and Iron Fist join forces to take on common enemies as a sinister conspiracy threatens New York City.",
-    "colors": "#46444c",
+    "colors": "#323133",
     "episodes": [
       {
         "name": "The H Word",
@@ -1544,13 +1544,13 @@
     "tags": ["Netflix"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "thor_ragnarok",
+    "name": "Thor: Ragnarok",
+    "date": "2017-10-27",
+    "duration": 131,
+    "description": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of a powerful new threat, the ruthless Hela.",
+    "colors": "#661e0a",
+    "tags": ["Marvel Studios"]
   },
   {
     "id": "",

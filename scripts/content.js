@@ -64,6 +64,7 @@ async function fillMovieList() {
 
   updateTitles();
   restoreScroll();
+  updateListInfo();
 
   document.body.classList.remove("hidden");
 }
@@ -262,6 +263,7 @@ function updateEpisodes(titleElement, colors) {
       }
 
       updateTitles();
+      updateListInfo();
     });
   });
 }

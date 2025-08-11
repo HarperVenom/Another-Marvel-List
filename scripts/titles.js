@@ -15,11 +15,12 @@ async function loadAllTitles() {
     ),
   ];
 
-  // console.log(allTags);
   setFilterButtons();
 
   fillMovieList();
 }
+
+let currentActiveTitles = null;
 
 function getAllTitlesReleaseOrder() {
   if (!titlesLoaded) return null;
@@ -94,6 +95,18 @@ function getAllTitlesReleaseOrder() {
     }
   }
 
+  totalDuration = 0;
+  for (const item of flattened) {
+    if (item.type === "episodeBlock") {
+      totalDuration += item.episodes.reduce(
+        (sum, ep) => sum + (ep.duration || 0),
+        0
+      );
+    } else {
+      totalDuration += item.duration || 0;
+    }
+  }
+
   // Step 2: Sort all entries by date
   flattened.sort((a, b) => new Date(a.date) - new Date(b.date));
 
@@ -129,6 +142,7 @@ function getAllTitlesReleaseOrder() {
     }
   }
 
+  currentActiveTitles = grouped;
   return grouped;
 }
 
@@ -188,4 +202,39 @@ function updateURL(activeTags) {
   history.replaceState(null, "", newUrl);
 
   fillMovieList();
+}
+
+let totalDuration = 0;
+let progress = 0;
+
+function updateListInfo() {
+  menu.querySelector("#duration").innerHTML = formatDuration(totalDuration);
+
+  const completedDuration = getCompletedDuration();
+  const progressPercent =
+    totalDuration > 0 ? (completedDuration / totalDuration) * 100 : 0;
+
+  menu.querySelector("#progress").innerHTML = progressPercent.toFixed(1) + "%";
+}
+
+function getCompletedDuration() {
+  let completedDuration = 0;
+
+  for (const item of currentActiveTitles) {
+    if (item.type === "episodeBlock") {
+      completedDuration += item.episodes.reduce(
+        (sum, ep) =>
+          storage.hasCompletedEpisode(ep) ? sum + (ep.duration || 0) : sum,
+        0
+      );
+    } else if (item.type === "episode") {
+      if (storage.hasCompletedEpisode(item))
+        completedDuration += item.duration || 0;
+    } else if (item.type === "title") {
+      if (storage.hasCompletedTitle(item.id))
+        completedDuration += item.duration || 0;
+    }
+  }
+
+  return completedDuration;
 }
