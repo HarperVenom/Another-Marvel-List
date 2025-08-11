@@ -1553,13 +1553,45 @@
     "tags": ["Marvel Studios"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "inhumans_s1",
+    "name": "Inhumans",
+    "description": "After the Royal Family of Inhumans is splintered by a military coup, they barely escape to Hawaii where their surprising interactions with the lush world and humanity around them may prove to not only save them, but Earth itself.",
+    "colors": "#3d474d",
+    "episodes": [
+      { "name": "Behold...The Inhumans", "date": "2017-09-29", "duration": 44 },
+      {
+        "name": "Those Who Would Destroy Us",
+        "date": "2017-09-29",
+        "duration": 44
+      },
+      { "name": "Divide and Conquer", "date": "2017-10-06", "duration": 44 },
+      {
+        "name": "Make Way For... Medusa",
+        "date": "2017-10-13",
+        "duration": 44
+      },
+      {
+        "name": "Something Inhuman This Way Comes...",
+        "date": "2017-10-20",
+        "duration": 45
+      },
+      {
+        "name": "The Gentleman's Name is Gorgon",
+        "date": "2017-10-27",
+        "duration": 44
+      },
+      {
+        "name": "Havoc in the Hidden Land",
+        "date": "2017-11-03",
+        "duration": 44
+      },
+      {
+        "name": "...And Finally: Black Bolt",
+        "date": "2017-11-10",
+        "duration": 45
+      }
+    ],
+    "tags": ["ABC"]
   },
   {
     "id": "",
