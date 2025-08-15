@@ -1481,7 +1481,7 @@
     "date": "2017-04-26",
     "duration": 137,
     "description": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
-    "colors": "#271a40",
+    "colors": "#201a40",
     "tags": ["Marvel Studios"]
   },
   {
@@ -1594,22 +1594,48 @@
     "tags": ["ABC"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "the_gifted_s1",
+    "name": "The Gifted Season 1",
+    "description": "A suburban couple's ordinary lives are rocked by the sudden discovery that their children possess mutant powers. Forced to go on the run from a hostile government, the family joins up with an underground network of mutants and must fight to survive.",
+    "colors": "#66544d",
+    "episodes": [
+      { "name": "eXposed", "date": "2017-10-02", "duration": 46 },
+      { "name": "rX", "date": "2017-10-09", "duration": 45 },
+      { "name": "eXodus", "date": "2017-10-16", "duration": 45 },
+      { "name": "eXit strategy", "date": "2017-10-23", "duration": 44 },
+      { "name": "boXed in", "date": "2017-10-30", "duration": 45 },
+      { "name": "got your siX", "date": "2017-11-06", "duration": 45 },
+      { "name": "eXtreme measures", "date": "2017-11-13", "duration": 45 },
+      { "name": "threat of eXtinction", "date": "2017-11-20", "duration": 44 },
+      { "name": "outfoX", "date": "2017-12-04", "duration": 45 },
+      { "name": "eXploited", "date": "2017-12-11", "duration": 45 },
+      { "name": "3 X 1", "date": "2018-01-01", "duration": 44 },
+      { "name": "eXtraction", "date": "2018-01-15", "duration": 44 },
+      { "name": "X-roads", "date": "2018-01-15", "duration": 45 }
+    ],
+    "tags": ["Fox"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "the_punisher_s1",
+    "name": "The Punisher Season 1",
+    "description": "A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
+    "colors": "#262424",
+    "episodes": [
+      { "name": "3AM", "date": "2017-11-17", "duration": 52 },
+      { "name": "Two Dead Men", "date": "2017-11-17", "duration": 58 },
+      { "name": "Kandahar", "date": "2017-11-17", "duration": 58 },
+      { "name": "Resupply", "date": "2017-11-17", "duration": 50 },
+      { "name": "Gunner", "date": "2017-11-17", "duration": 56 },
+      { "name": "The Judas Goat", "date": "2017-11-17", "duration": 56 },
+      { "name": "Crosshairs", "date": "2017-11-17", "duration": 49 },
+      { "name": "Cold Steel", "date": "2017-11-17", "duration": 54 },
+      { "name": "Front Toward Enemy", "date": "2017-11-17", "duration": 55 },
+      { "name": "Virtue of the Vicious", "date": "2017-11-17", "duration": 50 },
+      { "name": "Danger Close", "date": "2017-11-17", "duration": 53 },
+      { "name": "Home", "date": "2017-11-17", "duration": 52 },
+      { "name": "Memento Mori", "date": "2017-11-17", "duration": 56 }
+    ],
+    "tags": ["Netflix"]
   },
   {
     "id": "",
