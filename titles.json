@@ -1619,7 +1619,7 @@
     "id": "the_punisher_s1",
     "name": "The Punisher Season 1",
     "description": "A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
-    "colors": "#262424",
+    "colors": "#0d0d0d",
     "episodes": [
       { "name": "3AM", "date": "2017-11-17", "duration": 52 },
       { "name": "Two Dead Men", "date": "2017-11-17", "duration": 58 },
