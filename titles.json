@@ -1638,13 +1638,63 @@
     "tags": ["Netflix"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "runaways_s1",
+    "name": "Runaways Season 1",
+    "description": "Every teenager thinks their parents are evil. What if you found out they actually were? Six diverse teenagers who can barely stand each other must unite against a common foe – their parents.",
+    "colors": "#5c5d73",
+    "episodes": [
+      {
+        "name": "Reunion",
+        "date": "2017-11-21",
+        "duration": 54
+      },
+      {
+        "name": "Rewind",
+        "date": "2017-11-21",
+        "duration": 50
+      },
+      {
+        "name": "Destiny",
+        "date": "2017-11-21",
+        "duration": 47
+      },
+      {
+        "name": "Fifteen",
+        "date": "2017-11-28",
+        "duration": 52
+      },
+      {
+        "name": "Kingdom",
+        "date": "2017-12-05",
+        "duration": 48
+      },
+      {
+        "name": "Metamorphosis",
+        "date": "2017-12-12",
+        "duration": 51
+      },
+      {
+        "name": "Refraction",
+        "date": "2017-12-19",
+        "duration": 55
+      },
+      {
+        "name": "Tsunami",
+        "date": "2017-12-26",
+        "duration": 51
+      },
+      {
+        "name": "Doomsday",
+        "date": "2018-01-02",
+        "duration": 46
+      },
+      {
+        "name": "Hostile",
+        "date": "2018-01-09",
+        "duration": 49
+      }
+    ],
+    "tags": ["Hulu"]
   },
   {
     "id": "",
