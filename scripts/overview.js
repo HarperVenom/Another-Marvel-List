@@ -46,6 +46,8 @@ function onPosterClick(img, titleElement) {
   glow.style.backgroundColor = color;
   // completeButtonContainer.style.background = `linear-gradient(to top, ${color} 80%, transparent)`;
 
+  titleElement.querySelector(".highlight").style.opacity = 0;
+
   const bigImg = new Image();
   const titleEl = overviewContainer.querySelector(".title");
   const details = overviewContainer.querySelector(".details");
@@ -220,6 +222,8 @@ function toggleOverview() {
           lastClickedTitle.querySelector(".poster").style.visibility =
             "visible";
           overview.scrollTop = 0;
+
+          lastClickedTitle.querySelector(".highlight").style.opacity = 1;
 
           // const checkmark = lastClickedTitle.querySelector(".checkmark");
           // if (
