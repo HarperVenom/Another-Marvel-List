@@ -31,7 +31,7 @@ async function fillMovieList() {
 
     const li = document.createElement("li");
     li.innerHTML = `
-     <div class="highlight hidden"></div>
+     <div class="highlight"></div>
      <div class="poster-wrapper">
       <img class="poster" 
           src = "${getPosterPath() + "/" + title.id + ".webp"}";
@@ -47,7 +47,6 @@ async function fillMovieList() {
           />
       <div class="lock"></div>
       </div>
-      ${checkMark()}
       `;
 
     const img = li.querySelector(".poster");

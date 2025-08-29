@@ -117,8 +117,8 @@ function onPosterClick(img, titleElement) {
 
   overview.style.overflow = "hidden";
 
-  const checkmark = titleElement.querySelector(".checkmark");
-  checkmark.style.display = "none";
+  // const checkmark = titleElement.querySelector(".checkmark");
+  // checkmark.style.display = "none";
 
   const startTransition = () => {
     animateImageTransition(
@@ -221,13 +221,13 @@ function toggleOverview() {
             "visible";
           overview.scrollTop = 0;
 
-          const checkmark = lastClickedTitle.querySelector(".checkmark");
-          if (
-            storage.isHideMode() &&
-            storage.isCompleted(lastClickedTitle.titleData)
-          ) {
-            checkmark.style.display = "block";
-          }
+          // const checkmark = lastClickedTitle.querySelector(".checkmark");
+          // if (
+          //   storage.isHideMode() &&
+          //   storage.isCompleted(lastClickedTitle.titleData)
+          // ) {
+          //   checkmark.style.display = "block";
+          // }
 
           // scrollToActive(true);
         }

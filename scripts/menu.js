@@ -50,14 +50,22 @@ function updateTitles() {
   updateHideModeSwitchIcon();
 
   titleElements.forEach((title) => {
-    const checkmark = title.querySelector(".checkmark");
-    if (storage.isHideMode() && storage.isCompleted(title.titleData)) {
-      checkmark.style.display = "block";
-    } else {
-      checkmark.style.display = "none";
-    }
+    // const checkmark = title.querySelector(".checkmark");
+    // if (storage.isHideMode() && storage.isCompleted(title.titleData)) {
+    //   checkmark.style.display = "block";
+    // } else {
+    //   checkmark.style.display = "none";
+    // }
 
     // checkmark.style.display = "none";
+
+    const highlight = title.querySelector(".highlight");
+    // console.log(highlight);
+    if (storage.isHideMode() && activeTitle == title) {
+      highlight.style.display = "block";
+    } else {
+      highlight.style.display = "none";
+    }
 
     updateLock(title);
     // updateFade(title);
@@ -72,7 +80,7 @@ function scrollToActive(smooth = false) {
     main.style.scrollBehavior = "auto";
   }
   main.scrollTo(0, getScrollChangeTo(activeTitle));
-  console.log(activeTitle);
+  // console.log(activeTitle);
 }
 
 function getScrollChangeTo(title) {
