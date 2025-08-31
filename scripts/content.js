@@ -51,7 +51,7 @@ async function fillMovieList() {
 
     const img = li.querySelector(".poster");
     img.addEventListener("click", () => {
-      onPosterClick(img, li);
+      openOverview(li);
     });
 
     list.appendChild(li);

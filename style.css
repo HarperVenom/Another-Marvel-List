@@ -100,8 +100,11 @@ main {
         pointer-events: none;
         outline-width: 3px;
         outline-style: solid;
-        transition: opacity 0.8s ease, outline-color 0.1s ease;
-        animation: bounce 1.5s infinite ease-in-out;
+        transition: opacity 0.1s ease, outline-color 0.1s ease;
+
+        &.pulse {
+          animation: bounce 1.5s infinite normal;
+        }
       }
 
       .poster-wrapper {
@@ -218,7 +221,7 @@ main {
 @keyframes bounce {
   0%,
   100% {
-    outline-color: rgba(255, 255, 255, 0.4);
+    outline-color: rgba(255, 255, 255, 0.5);
   }
   50% {
     outline-color: white;

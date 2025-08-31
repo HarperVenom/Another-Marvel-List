@@ -7,19 +7,32 @@ const completeButton =
 
 let overviewOpened = false;
 let transitioning = false;
-
 let lastClickedTitle = null;
+let currentCompleteButtonClickListener = null;
 
-function onPosterClick(img, titleElement) {
-  if (overviewOpened || transitioning) return;
+// ---- OPEN ----
+function openOverview(titleElement) {
+  if (transitioning || overviewOpened) return;
+  overviewOpened = true;
+  lastClickedTitle = titleElement;
 
+  document.body.classList.add("noscroll");
+  overview.classList.remove("hidden");
+  toggleMenu();
+
+  if (!history.state || !history.state.overviewOpen) {
+    history.pushState({ overviewOpen: true }, "", "");
+  }
+
+  settingsButton.classList.add("hidden");
+  overview.style.overflow = "hidden";
+
+  // your poster + text + data setup
   const title = titleElement.titleData;
-
   const name = title.name;
-  let colors, date, duration, description, links;
-
   const isSeries = title.type === "episodeBlock";
 
+  let colors, date, duration, description, links;
   if (isSeries) {
     colors = title.commonData.colors;
     date = "";
@@ -34,35 +47,24 @@ function onPosterClick(img, titleElement) {
     links = title.links;
   }
 
-  lastClickedTitle = titleElement;
-  toggleOverview();
-
   const glow = document.querySelector("#glow");
-
-  const [color1, color2] = colors.split(" ");
-
-  const color = adjustColor(color1);
-
-  glow.style.backgroundColor = color;
-  // completeButtonContainer.style.background = `linear-gradient(to top, ${color} 80%, transparent)`;
-
+  const [color1] = colors.split(" ");
+  glow.style.backgroundColor = adjustColor(color1);
   titleElement.querySelector(".highlight").style.opacity = 0;
 
   const bigImg = new Image();
-  const titleEl = overviewContainer.querySelector(".title");
-  const details = overviewContainer.querySelector(".details");
-  const dateEl = overviewContainer.querySelector(".date");
-  const durationEl = overviewContainer.querySelector(".duration");
-  const descEl = overviewContainer.querySelector(".description");
-
-  // Replace the old poster
-  bigImg.classList.add("poster");
-  bigImg.classList.add("hidden");
+  bigImg.classList.add("poster", "hidden");
   bigImg.style.boxShadow = getShadow(colors);
 
   const oldImg = posterContainer.querySelector(".poster");
   if (oldImg) oldImg.remove();
   posterContainer.prepend(bigImg);
+
+  const titleEl = overviewContainer.querySelector(".title");
+  const details = overviewContainer.querySelector(".details");
+  const dateEl = overviewContainer.querySelector(".date");
+  const durationEl = overviewContainer.querySelector(".duration");
+  const descEl = overviewContainer.querySelector(".description");
 
   titleEl.innerHTML = name;
 
@@ -92,18 +94,13 @@ function onPosterClick(img, titleElement) {
       descEl.classList.add("inactive");
     }
     details.classList.add("inactive");
-
     completeButtonContainer.classList.add("inactive");
   }
 
   updateLinks(links, isFirstBlock);
   updateEpisodes(titleElement, colors);
 
-  settingsButton.classList.add("hidden");
-
   const contents = Array.from(overviewContainer.querySelectorAll(".content"));
-  // contents.push(completeButtonContainer)
-
   const noPropagation = [
     titleEl,
     details,
@@ -112,146 +109,130 @@ function onPosterClick(img, titleElement) {
     completeButton,
   ];
   noPropagation.forEach((content) => {
-    content.addEventListener("click", (e) => {
-      e.stopPropagation();
-    });
+    content.addEventListener("click", (e) => e.stopPropagation());
   });
 
-  overview.style.overflow = "hidden";
+  animateImageTransition(
+    titleElement.querySelector(".poster"),
+    bigImg,
+    () => {
+      titleElement.querySelector(".poster").style.visibility = "hidden";
+      setIsGlowing(true);
+    },
+    (clone) => {
+      bigImg.src = `${postersPath + "/" + title.id + ".webp"}`;
+      transitioning = false;
+      contents.forEach((c) => c.classList.remove("hidden"));
+      overview.style.overflow = "auto";
 
-  // const checkmark = titleElement.querySelector(".checkmark");
-  // checkmark.style.display = "none";
+      const finishTransition = () => {
+        void bigImg.offsetHeight;
+        bigImg.classList.remove("hidden");
+        requestAnimationFrame(() => clone.remove());
+      };
+      if (bigImg.complete) finishTransition();
+      else bigImg.onload = finishTransition;
+    }
+  );
 
-  const startTransition = () => {
-    animateImageTransition(
-      img,
-      bigImg,
-      // on clone load
-      () => {
-        // shadow.classList.remove("hidden");
-        img.style.visibility = "hidden";
-        setIsGlowing(true);
-      },
-      // on transition end
-      (clone) => {
-        bigImg.src = `${postersPath + "/" + title.id + ".webp"}`;
-
-        transitioning = false;
-        contents.forEach((content) => {
-          content.classList.remove("hidden");
-        });
-        overview.style.overflow = "auto";
-
-        const finishTransition = () => {
-          void bigImg.offsetHeight;
-          bigImg.classList.remove("hidden");
-          requestAnimationFrame(() => {
-            clone.remove();
-          });
-        };
-
-        if (bigImg.complete) {
-          finishTransition();
-        } else {
-          bigImg.onload = finishTransition;
-        }
-
-        // posterContainer.classList.add("shadow");
-      }
-    );
-
-    bigImg.classList.add("hidden");
-    transitioning = true;
-  };
-
-  startTransition();
+  bigImg.classList.add("hidden");
+  transitioning = true;
 }
 
-overview.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleOverview();
-});
-
-function toggleOverview() {
-  if (transitioning) return;
-  overviewOpened = !overviewOpened;
+// ---- CLOSE ----
+function closeOverview() {
+  if (transitioning || !overviewOpened) return;
+  overviewOpened = false;
   toggleMenu();
 
-  if (overviewOpened) {
-    document.body.classList.add("noscroll");
-    overview.classList.remove("hidden");
-  } else {
-    const bigImg = overview.querySelector(".poster");
-    if (!bigImg || !lastClickedTitle) return;
+  const bigImg = overview.querySelector(".poster");
+  if (!bigImg || !lastClickedTitle) return;
 
-    const closeTransition = () => {
-      let fromEl = bigImg;
-      if (!fromEl.complete) {
-        bigImg.src = "";
-        fromEl = currentClone;
-      }
-
-      main.style.overflow = "hidden";
-
-      animateImageTransition(
-        fromEl,
-        lastClickedTitle.querySelector(".poster"),
-        // on clone load
-        () => {
-          if (fromEl != bigImg) {
-            fromEl.remove();
-          }
-          bigImg.style.visibility = "hidden";
-
-          setIsGlowing(false);
-
-          const contents = overview.querySelectorAll(".content");
-          contents.forEach((content) => {
-            content.classList.add("hidden");
-          });
-          settingsButton.classList.remove("hidden");
-        },
-        // on transition end
-        (clone) => {
-          clone.style.transition = "";
-          clone.remove();
-          main.style.overflow = "auto";
-          overview.classList.add("hidden");
-
-          transitioning = false;
-          lastClickedTitle.querySelector(".poster").style.visibility =
-            "visible";
-          overview.scrollTop = 0;
-
-          lastClickedTitle.querySelector(".highlight").style.opacity = 1;
-
-          // const checkmark = lastClickedTitle.querySelector(".checkmark");
-          // if (
-          //   storage.isHideMode() &&
-          //   storage.isCompleted(lastClickedTitle.titleData)
-          // ) {
-          //   checkmark.style.display = "block";
-          // }
-
-          // scrollToActive(true);
-        }
-      );
-
-      transitioning = true;
-    };
-
-    closeTransition();
+  let fromEl = bigImg;
+  if (!fromEl.complete) {
+    bigImg.src = "";
+    fromEl = currentClone;
   }
+
+  main.style.overflow = "hidden";
+
+  animateImageTransition(
+    fromEl,
+    lastClickedTitle.querySelector(".poster"),
+    () => {
+      if (fromEl !== bigImg) fromEl.remove();
+      bigImg.style.visibility = "hidden";
+      setIsGlowing(false);
+      const contents = overview.querySelectorAll(".content");
+      contents.forEach((c) => c.classList.add("hidden"));
+      settingsButton.classList.remove("hidden");
+    },
+    (clone) => {
+      clone.remove();
+      main.style.overflow = "auto";
+      overview.classList.add("hidden");
+
+      transitioning = false;
+      lastClickedTitle.querySelector(".poster").style.visibility = "visible";
+      overview.scrollTop = 0;
+
+      const highlight = lastClickedTitle.querySelector(".highlight");
+      highlight.style.transition = "opacity 0.5s ease, outline-color 0.1s ease";
+      void highlight.offsetWidth;
+      highlight.style.opacity = 1;
+      highlight.classList.remove("pulse");
+      void highlight.offsetWidth;
+      highlight.classList.add("pulse");
+      setTimeout(() => {
+        highlight.style.transition =
+          "opacity 0.1s ease, outline-color 0.1s ease";
+      }, 500);
+
+      if (history.state && history.state.overviewOpen) {
+        history.back(); // <--- keep back navigation
+      }
+    }
+  );
+
+  transitioning = true;
 }
 
+// ---- TOGGLE (wrapper) ----
+function toggleOverview(open) {
+  if (open === undefined) open = !overviewOpened;
+  if (open) openOverview(lastClickedTitle);
+  else closeOverview();
+}
+
+// ---- BACK/FORWARD ----
+window.addEventListener("popstate", (event) => {
+  if (event.state && event.state.overviewOpen) {
+    if (!overviewOpened) openOverview(lastClickedTitle);
+  } else {
+    if (overviewOpened) closeOverview();
+  }
+});
+
+// ---- click to close ----
+overview.addEventListener("click", (e) => {
+  e.stopPropagation();
+  closeOverview();
+});
+
+// ---- poster click ----
+function onPosterClick(img, titleElement) {
+  if (overviewOpened || transitioning) return;
+  openOverview(titleElement);
+}
+
+// ---- helpers ----
 function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
   const fromRect = fromEl.getBoundingClientRect();
   const toRect = toEl.getBoundingClientRect();
-
   const containerRect = overview.getBoundingClientRect();
+
   const top = fromRect.top - containerRect.top + overview.scrollTop;
   const left = fromRect.left - containerRect.left + overview.scrollLeft;
-
   const toRectTop = toRect.top + overview.scrollTop;
 
   const fromStyle = getComputedStyle(fromEl);
@@ -268,9 +249,7 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
     filter: fromStyle.filter,
     margin: 0,
     zIndex: 9999,
-    boxShadow: fromStyle.boxShadow
-      ? fromStyle.boxShadow
-      : "-15px 15px 20px rgba(0, 0, 0, 0)",
+    boxShadow: fromStyle.boxShadow || "-15px 15px 20px rgba(0,0,0,0)",
     pointerEvents: "none",
     willChange: "top, left, width, height",
     transition:
@@ -284,54 +263,35 @@ function animateImageTransition(fromEl, toEl, onCloneLoadCallback, onEnd) {
 
   function onCloneLoad() {
     onCloneLoadCallback();
-
-    // Ensure transition happens in next frame
     requestAnimationFrame(() => {
       clone.style.top = `${toRectTop}px`;
       clone.style.left = `${toRect.left}px`;
       clone.style.width = `${toRect.width}px`;
       clone.style.height = `${toRect.height}px`;
-      // clone.style.borderRadius = toStyle.borderRadius; // or adapt dynamically if needed
       clone.style.filter = toStyle.filter;
       clone.style.boxShadow = toStyle.boxShadow;
     });
-
-    clone.addEventListener(
-      "transitionend",
-      () => {
-        onEnd?.(clone);
-      },
-      { once: true }
-    );
+    clone.addEventListener("transitionend", () => onEnd?.(clone), {
+      once: true,
+    });
   }
 
-  if (clone.complete) {
-    onCloneLoad();
-  } else {
-    clone.onload = onCloneLoad;
-  }
+  if (clone.complete) onCloneLoad();
+  else clone.onload = onCloneLoad;
 }
 
 function setIsGlowing(isGlowing) {
-  if (isGlowing) {
-    glowContainer.classList.remove("hidden");
-  } else {
-    glowContainer.classList.add("hidden");
-  }
+  if (isGlowing) glowContainer.classList.remove("hidden");
+  else glowContainer.classList.add("hidden");
 }
 
-let currentCompleteButtonClickListener = null;
-
 function setCompleteButtonListener(title) {
-  // Remove previous listener if exists
   if (currentCompleteButtonClickListener) {
     completeButton.removeEventListener(
       "click",
       currentCompleteButtonClickListener
     );
   }
-
-  // Define the new listener specific to this title
   currentCompleteButtonClickListener = function () {
     if (!storage.isCompleted(title)) {
       storage.completeTitle(title.id);
@@ -340,15 +300,9 @@ function setCompleteButtonListener(title) {
       storage.uncompleteTitle(title.id);
       completeButton.classList.remove("checked");
     }
-
     updateTitles();
     updateListInfo();
-
-    setTimeout(() => {
-      toggleOverview();
-    }, 100);
+    setTimeout(() => closeOverview(), 100);
   };
-
-  // Add the new listener
   completeButton.addEventListener("click", currentCompleteButtonClickListener);
 }

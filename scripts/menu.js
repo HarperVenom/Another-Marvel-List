@@ -63,8 +63,10 @@ function updateTitles() {
     // console.log(highlight);
     if (storage.isHideMode() && activeTitle == title) {
       highlight.style.display = "block";
+      highlight.classList.add("pulse");
     } else {
       highlight.style.display = "none";
+      highlight.classList.remove("pulse");
     }
 
     updateLock(title);
