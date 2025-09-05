@@ -19,6 +19,7 @@ settingsButton.addEventListener("click", () => {
     updateTitles();
     if (storage.isHideMode()) scrollToActive(true);
   } else {
+    menu.scrollTop = 0;
     menu.classList.add("open");
     menuPanel.classList.remove("hidden");
     gradient.classList.add("hidden");

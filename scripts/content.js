@@ -238,7 +238,7 @@ function updateEpisodes(titleElement, colors) {
 
   const [color1, color2] = colors.split(" ");
 
-  const color = adjustColorHSV(color1, 10, -5);
+  const color = adjustColorHSV(color1, 15, -10);
 
   episodes.forEach((episode) => {
     const html = makeEpisodeBlock(episode, color);

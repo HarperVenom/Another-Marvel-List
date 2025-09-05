@@ -93,7 +93,10 @@ function openOverview(titleElement) {
     } else {
       descEl.classList.add("inactive");
     }
-    details.classList.add("inactive");
+
+    dateEl.textContent = formatEpisodeDateRange(title);
+    durationEl.textContent = formatTotalDuration(title);
+
     completeButtonContainer.classList.add("inactive");
   }
 
@@ -305,4 +308,52 @@ function setCompleteButtonListener(title) {
     setTimeout(() => closeOverview(), 100);
   };
   completeButton.addEventListener("click", currentCompleteButtonClickListener);
+}
+
+function formatEpisodeDateRange(season) {
+  if (!season.episodes || season.episodes.length === 0) return "";
+
+  const dates = season.episodes
+    .map((ep) => new Date(ep.date))
+    .sort((a, b) => a - b);
+
+  const firstDate = dates[0];
+  const lastDate = dates[dates.length - 1];
+
+  const longFormatter = new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  const shortFormatter = new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+
+  if (firstDate.getTime() === lastDate.getTime()) {
+    return longFormatter.format(firstDate);
+  } else {
+    return `${shortFormatter.format(firstDate)} - ${shortFormatter.format(
+      lastDate
+    )}`;
+  }
+}
+
+function formatTotalDuration(season) {
+  if (!season.episodes || season.episodes.length === 0) return "0m";
+
+  const totalMinutes = season.episodes.reduce(
+    (sum, ep) => sum + ep.duration,
+    0
+  );
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+
+  if (hours > 0) {
+    return minutes > 0 ? `${hours}h ${minutes}m` : `${hours}h`;
+  } else {
+    return `${minutes}m`;
+  }
 }
