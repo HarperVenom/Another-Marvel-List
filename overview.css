@@ -37,7 +37,6 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
       }
     }
 
@@ -71,7 +70,7 @@
       flex-direction: column;
       transition: opacity 0.2s ease;
       filter: drop-shadow(10px);
-      padding-bottom: 8rem;
+      padding-bottom: 1rem;
 
       * {
         cursor: auto;
@@ -97,7 +96,7 @@
       .details {
         font-weight: 200;
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         display: flex;
         align-items: center;
         opacity: 0.7;
@@ -105,13 +104,13 @@
         span {
           width: fit-content;
           font-weight: 100;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
         }
 
         .dot {
           border-radius: 50%;
-          width: 0.3rem;
-          height: 0.3rem;
+          width: 0.25rem;
+          height: 0.25rem;
           background-color: white;
           margin: 0 0.5rem;
         }
@@ -358,6 +357,7 @@
         border-radius: 10px;
         user-select: none;
         max-width: 400px;
+        /* max-height: 90vh; */
         width: 40%;
         aspect-ratio: 2 / 3;
         height: fit-content;

@@ -101,7 +101,7 @@ function openOverview(titleElement) {
   }
 
   updateLinks(links, isFirstBlock);
-  updateEpisodes(titleElement, colors);
+  // updateEpisodes(titleElement, colors);
 
   const contents = Array.from(overviewContainer.querySelectorAll(".content"));
   const noPropagation = [

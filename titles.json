@@ -1597,7 +1597,7 @@
     "id": "the_gifted_s1",
     "name": "The Gifted Season 1",
     "description": "A suburban couple's ordinary lives are rocked by the sudden discovery that their children possess mutant powers. Forced to go on the run from a hostile government, the family joins up with an underground network of mutants and must fight to survive.",
-    "colors": "#66544d",
+    "colors": "#805126",
     "episodes": [
       { "name": "eXposed", "date": "2017-10-02", "duration": 46 },
       { "name": "rX", "date": "2017-10-09", "duration": 45 },
@@ -1619,7 +1619,7 @@
     "id": "the_punisher_s1",
     "name": "The Punisher Season 1",
     "description": "A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
-    "colors": "#0d0d0d",
+    "colors": "#262626",
     "episodes": [
       { "name": "3AM", "date": "2017-11-17", "duration": 52 },
       { "name": "Two Dead Men", "date": "2017-11-17", "duration": 58 },
@@ -1641,7 +1641,7 @@
     "id": "runaways_s1",
     "name": "Runaways Season 1",
     "description": "Every teenager thinks their parents are evil. What if you found out they actually were? Six diverse teenagers who can barely stand each other must unite against a common foe – their parents.",
-    "colors": "#5c5d73",
+    "colors": "#505273",
     "episodes": [
       {
         "name": "Reunion",
@@ -1697,13 +1697,13 @@
     "tags": ["Hulu"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "black_panther",
+    "name": "Black Panther",
+    "date": "2018-02-16",
+    "duration": 135,
+    "description": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
+    "colors": "#132b4d",
+    "tags": ["Marvel Studios"]
   },
   {
     "id": "",
