@@ -849,7 +849,7 @@
     "id": "jessica_jones_s1",
     "name": "Jessica Jones Season 1",
     "description": "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases involving people with extraordinary abilities in New York City.",
-    "colors": "#2b1a40",
+    "colors": "#2c2140",
     "episodes": [
       {
         "name": "AKA Ladies Night",
@@ -1597,7 +1597,7 @@
     "id": "the_gifted_s1",
     "name": "The Gifted Season 1",
     "description": "A suburban couple's ordinary lives are rocked by the sudden discovery that their children possess mutant powers. Forced to go on the run from a hostile government, the family joins up with an underground network of mutants and must fight to survive.",
-    "colors": "#805126",
+    "colors": "#66411f",
     "episodes": [
       { "name": "eXposed", "date": "2017-10-02", "duration": 46 },
       { "name": "rX", "date": "2017-10-09", "duration": 45 },
@@ -1619,7 +1619,7 @@
     "id": "the_punisher_s1",
     "name": "The Punisher Season 1",
     "description": "A former Marine out to punish the criminals responsible for his family's murder finds himself ensnared in a military conspiracy.",
-    "colors": "#262626",
+    "colors": "#141414",
     "episodes": [
       { "name": "3AM", "date": "2017-11-17", "duration": 52 },
       { "name": "Two Dead Men", "date": "2017-11-17", "duration": 58 },
@@ -1706,22 +1706,88 @@
     "tags": ["Marvel Studios"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "team_darryl",
+    "name": "Team Darryl",
+    "date": "2018-02-20",
+    "duration": 6,
+    "description": "With Thor gone, Darryl searches for a new roommate, but only the Grandmaster responds to his ad.",
+    "colors": "#2a2e54",
+    "tags": ["Marvel One-Shot"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "jessica_jones_s2",
+    "name": "Jessica Jones Season 2",
+    "description": "Drowning in anger, Jessica Jones is forced to reckon with her past, her powers and her newfound fame as she dishes out her own messy form of justice. Finally ready to face her past, Jessica hunts down the source of her powers and uncovers a link to a shadowy killer who's terrorizing the city.",
+    "colors": "#211f0d",
+    "episodes": [
+      {
+        "name": "AKA Start at the Beginning",
+        "date": "2018-03-08",
+        "duration": 56
+      },
+      {
+        "name": "AKA Freak Accident",
+        "date": "2018-03-08",
+        "duration": 55
+      },
+      {
+        "name": "AKA Sole Survivor",
+        "date": "2018-03-08",
+        "duration": 50
+      },
+      {
+        "name": "AKA God Help the Hobo",
+        "date": "2018-03-08",
+        "duration": 53
+      },
+      {
+        "name": "AKA The Octopus",
+        "date": "2018-03-08",
+        "duration": 49
+      },
+      {
+        "name": "AKA Facetime",
+        "date": "2018-03-08",
+        "duration": 54
+      },
+      {
+        "name": "AKA I Want Your Cray Cray",
+        "date": "2018-03-08",
+        "duration": 50
+      },
+      {
+        "name": "AKA Ain't We Got Fun",
+        "date": "2018-03-08",
+        "duration": 50
+      },
+      {
+        "name": "AKA Shark in the Bathtub, Monster in the Bed",
+        "date": "2018-03-08",
+        "duration": 55
+      },
+      {
+        "name": "AKA Pork Chop",
+        "date": "2018-03-08",
+        "duration": 49
+      },
+      {
+        "name": "AKA Three Lives and Counting",
+        "date": "2018-03-08",
+        "duration": 47
+      },
+      {
+        "name": "AKA Pray for My Patsy",
+        "date": "2018-03-08",
+        "duration": 53
+      },
+      {
+        "name": "AKA Playland",
+        "date": "2018-03-08",
+        "duration": 52
+      }
+    ],
+    "links": ["KpYQJNcmCXw"],
+    "tags": ["Netflix"]
   },
   {
     "id": "",
