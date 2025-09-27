@@ -33,7 +33,7 @@
     "date": "2002-05-03",
     "duration": 121,
     "description": "After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.",
-    "colors": "#804419",
+    "colors": "#663014",
     "tags": ["Sony"]
   },
   {
@@ -150,7 +150,7 @@
     "date": "2008-05-02",
     "duration": 126,
     "description": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
-    "colors": "#001733",
+    "colors": "#05172e",
     "links": ["C7kmm16PoDY"],
     "tags": ["Marvel Studios"]
   },
@@ -813,7 +813,7 @@
   {
     "id": "agents_of_shield_s3",
     "name": "Agents of S.H.I.E.L.D. Season 3",
-    "description": "Many months after their war with a rogue group of Inhumans, the team is still reeling. Coulson is again trying to put the pieces of his once revered organization back together while also dealing with the loss of his hand. His confidante and second in command, Agent Melinda May, has yet to return from an impromptu vacation with ex-husband Andrew; deadly superspy Agent Bobbi Morse is recovering from her traumatic torture at the hands of Grant Ward; Fitz is obsessed with discovering the truth behind the mysterious disappearance of Simmons; and all are on high-alert for the next move from Ward and Hydra.",
+    "description": "Months after their war with rogue Inhumans, Coulson struggles to rebuild S.H.I.E.L.D. while coping with the loss of his hand. Agent May remains absent after leaving with her ex-husband Andrew, Bobbi Morse recovers from Ward’s brutal torture, and Fitz is consumed by Simmons’ mysterious disappearance—all as the team braces for Hydra’s next move.",
     "colors": "#252626",
     "episodes": [
       { "name": "Laws of Nature", "date": "2015-09-29", "duration": 44 },
@@ -1491,7 +1491,7 @@
     "duration": 133,
     "description": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
     "colors": "#3d5966",
-    "links": ["bGuHgRQSEuk", "BWRuzKIHVOk"],
+    "links": ["bGuHgRQSEuk", "BWRuzKIHVOk", "W5er9dI7RII"],
     "tags": ["Marvel Studios"]
   },
   {
@@ -1786,17 +1786,17 @@
         "duration": 52
       }
     ],
-    "links": ["KpYQJNcmCXw"],
+    "links": ["KpYQJNcmCXw", "tCR9Z4dq9x0"],
     "tags": ["Netflix"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "avengers_infinity_war",
+    "name": "Avengers: Infinity War",
+    "date": "2018-04-25",
+    "duration": 149,
+    "description": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+    "colors": "#2e0e2d",
+    "tags": ["Marvel Studios"]
   },
   {
     "id": "",
