@@ -376,6 +376,7 @@
         width: 100%;
         padding-inline: 0;
         padding-bottom: 2rem;
+        padding-top: 0.5rem;
 
         .curtain {
           position: sticky;

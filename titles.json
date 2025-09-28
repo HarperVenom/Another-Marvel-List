@@ -1799,6 +1799,224 @@
     "tags": ["Marvel Studios"]
   },
   {
+    "id": "deadpool_2",
+    "name": "Deadpool 2",
+    "date": "2018-05-16",
+    "duration": 120,
+    "description": "Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.",
+    "colors": "#0d2d40",
+    "tags": ["Fox"]
+  },
+  {
+    "id": "agents_of_shield_s5",
+    "name": "Agents of S.H.I.E.L.D. Season 5",
+    "description": "After defeating Aida with Ghost Rider’s help, Coulson and his team are abducted and wake up aboard a mysterious ship in deep space. Stranded and separated, they must uncover the dark truth behind their captivity, face ruthless Kree oppressors, and fight to prevent Earth’s destruction—all while struggling to survive long enough to find a way home.",
+    "colors": "#302933",
+    "episodes": [
+      {
+        "name": "Orientation (1)",
+        "date": "2017-12-01",
+        "duration": 44
+      },
+      {
+        "name": "Orientation (2)",
+        "date": "2017-12-01",
+        "duration": 44
+      },
+      {
+        "name": "A Life Spent",
+        "date": "2017-12-08",
+        "duration": 44
+      },
+      {
+        "name": "A Life Earned",
+        "date": "2017-12-15",
+        "duration": 44
+      },
+      {
+        "name": "Rewind",
+        "date": "2017-12-22",
+        "duration": 44
+      },
+      {
+        "name": "Fun & Games",
+        "date": "2018-01-05",
+        "duration": 44
+      },
+      {
+        "name": "Together or Not at All",
+        "date": "2018-01-12",
+        "duration": 42
+      },
+      {
+        "name": "The Last Day",
+        "date": "2018-01-19",
+        "duration": 44
+      },
+      {
+        "name": "Best Laid Plans",
+        "date": "2018-01-26",
+        "duration": 43
+      },
+      {
+        "name": "Past Life",
+        "date": "2018-02-02",
+        "duration": 44
+      },
+      {
+        "name": "All the Comforts of Home",
+        "date": "2018-03-02",
+        "duration": 44
+      },
+      {
+        "name": "The Real Deal",
+        "date": "2018-03-09",
+        "duration": 45
+      },
+      {
+        "name": "Principia",
+        "date": "2018-03-16",
+        "duration": 44
+      },
+      {
+        "name": "The Devil Complex",
+        "date": "2018-03-23",
+        "duration": 44
+      },
+      {
+        "name": "Rise and Shine",
+        "date": "2018-03-30",
+        "duration": 45
+      },
+      {
+        "name": "Inside Voices",
+        "date": "2018-04-06",
+        "duration": 44
+      },
+      {
+        "name": "The Honeymoon",
+        "date": "2018-04-13",
+        "duration": 43
+      },
+      {
+        "name": "All Roads Lead…",
+        "date": "2018-04-20",
+        "duration": 42
+      },
+      {
+        "name": "Option Two",
+        "date": "2018-04-27",
+        "duration": 44
+      },
+      {
+        "name": "The One Who Will Save Us All",
+        "date": "2018-05-04",
+        "duration": 43
+      },
+      {
+        "name": "The Force of Gravity",
+        "date": "2018-05-11",
+        "duration": 44
+      },
+      {
+        "name": "The End",
+        "date": "2018-05-18",
+        "duration": 44
+      }
+    ],
+    "tags": ["ABC"]
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
     "id": "",
     "name": "",
     "date": "",
