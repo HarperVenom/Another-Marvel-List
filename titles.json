@@ -1927,22 +1927,142 @@
     "tags": ["ABC"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "legion_s2",
+    "name": "Legion Season 2",
+    "description": "With David and Oliver missing and Farouk on the loose, the team forms an unlikely alliance with their former enemy Clark and his well-funded government is on a new path to attaining infinite and world-ending power.",
+    "colors": "#00264d",
+    "episodes": [
+      {
+        "name": "Chapter 9",
+        "date": "2018-04-03",
+        "duration": 61
+      },
+      {
+        "name": "Chapter 10",
+        "date": "2018-04-10",
+        "duration": 53
+      },
+      {
+        "name": "Chapter 11",
+        "date": "2018-04-17",
+        "duration": 54
+      },
+      {
+        "name": "Chapter 12",
+        "date": "2018-04-24",
+        "duration": 44
+      },
+      {
+        "name": "Chapter 13",
+        "date": "2018-05-01",
+        "duration": 48
+      },
+      {
+        "name": "Chapter 14",
+        "date": "2018-05-08",
+        "duration": 47
+      },
+      {
+        "name": "Chapter 15",
+        "date": "2018-05-15",
+        "duration": 50
+      },
+      {
+        "name": "Chapter 16",
+        "date": "2018-05-22",
+        "duration": 48
+      },
+      {
+        "name": "Chapter 17",
+        "date": "2018-05-29",
+        "duration": 43
+      },
+      {
+        "name": "Chapter 18",
+        "date": "2018-06-05",
+        "duration": 48
+      },
+      {
+        "name": "Chapter 19",
+        "date": "2018-06-12",
+        "duration": 52
+      }
+    ],
+    "tags": ["Fox"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "luke_cage_s2",
+    "name": "Luke Cage Season 2",
+    "description": "As his fame and responsibility soar, Luke Cage finds his life upended by a mysterious newcomer with powers of his own -- and a plan to take over Harlem.",
+    "colors": "#212626",
+    "episodes": [
+      {
+        "name": "Soul Brother #1",
+        "date": "2018-06-22",
+        "duration": 56
+      },
+      {
+        "name": "Straighten It Out",
+        "date": "2018-06-22",
+        "duration": 55
+      },
+      {
+        "name": "Wig Out",
+        "date": "2018-06-22",
+        "duration": 60
+      },
+      {
+        "name": "I Get Physical",
+        "date": "2018-06-22",
+        "duration": 54
+      },
+      {
+        "name": "All Souled Out",
+        "date": "2018-06-22",
+        "duration": 58
+      },
+      {
+        "name": "The Basement",
+        "date": "2018-06-22",
+        "duration": 64
+      },
+      {
+        "name": "On and On",
+        "date": "2018-06-22",
+        "duration": 56
+      },
+      {
+        "name": "If It Ain't Rough, It Ain't Right",
+        "date": "2018-06-22",
+        "duration": 55
+      },
+      {
+        "name": "For Pete's Sake",
+        "date": "2018-06-22",
+        "duration": 59
+      },
+      {
+        "name": "The Main Ingredient",
+        "date": "2018-06-22",
+        "duration": 59
+      },
+      {
+        "name": "The Creator",
+        "date": "2018-06-22",
+        "duration": 56
+      },
+      {
+        "name": "Can't Front on Me",
+        "date": "2018-06-22",
+        "duration": 62
+      },
+      {
+        "name": "They Reminisce Over You",
+        "date": "2018-06-22",
+        "duration": 69
+      }
+    ],
+    "tags": ["Netflix"]
   },
   {
     "id": "",
