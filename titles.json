@@ -476,7 +476,7 @@
     "date": "2014-04-11",
     "duration": 42,
     "description": "Tracing Marvel's roots from Timely Comics in 1939 to the 1940's emergence of Joe Simon and Jack Kirby as key figures in the Marvel story. Focusing on the creation of Captain America and the impact of World War II.",
-    "colors": "#47331d",
+    "colors": "#332d0d",
     "tags": ["Documentary"]
   },
   {
@@ -1994,7 +1994,7 @@
     "id": "luke_cage_s2",
     "name": "Luke Cage Season 2",
     "description": "As his fame and responsibility soar, Luke Cage finds his life upended by a mysterious newcomer with powers of his own -- and a plan to take over Harlem.",
-    "colors": "#212626",
+    "colors": "#262424",
     "episodes": [
       {
         "name": "Soul Brother #1",
