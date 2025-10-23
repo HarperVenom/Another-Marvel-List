@@ -2065,13 +2065,13 @@
     "tags": ["Netflix"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "ant_man_and_the_wasp",
+    "name": "Ant-Man and the Wasp",
+    "date": "2018-07-04",
+    "duration": 119,
+    "description": "Just when his time under house arrest is about to end, Scott Lang once again puts his freedom at risk to help Hope van Dyne and Dr. Hank Pym dive into the quantum realm and try to accomplish, against time and any chance of success, a very dangerous rescue mission.",
+    "colors": "#4d0d0b",
+    "tags": ["Marvel Studios"]
   },
   {
     "id": "",
