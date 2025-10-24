@@ -202,8 +202,8 @@ main {
   .title-list-container {
     .list {
       padding-inline: 0;
-      gap: 20px;
-      row-gap: 40px;
+      gap: 25px;
+      row-gap: 35px;
       grid-template-columns: repeat(5, 1fr);
 
       li {
