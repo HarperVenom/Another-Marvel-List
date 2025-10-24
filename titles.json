@@ -1496,7 +1496,7 @@
   },
   {
     "id": "the_defenders_s1",
-    "name": "The Defenders",
+    "name": "The Defenders Season 1",
     "description": "Daredevil, Jessica Jones, Luke Cage and Iron Fist join forces to take on common enemies as a sinister conspiracy threatens New York City.",
     "colors": "#323133",
     "episodes": [
@@ -1554,7 +1554,7 @@
   },
   {
     "id": "inhumans_s1",
-    "name": "Inhumans",
+    "name": "Inhumans Season 1",
     "description": "After the Royal Family of Inhumans is splintered by a military coup, they barely escape to Hawaii where their surprising interactions with the lush world and humanity around them may prove to not only save them, but Earth itself.",
     "colors": "#3d474d",
     "episodes": [
@@ -2074,13 +2074,63 @@
     "tags": ["Marvel Studios"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "cloak_&_dagger_s1",
+    "name": "Cloak & Dagger Season 1",
+    "description": "Two teenagers from very different backgrounds awaken to newly acquired superpowers which mysteriously link them to one another.",
+    "colors": "#1f1b1b",
+    "episodes": [
+      {
+        "name": "First Light",
+        "date": "2018-06-07",
+        "duration": 49
+      },
+      {
+        "name": "Suicide Sprints",
+        "date": "2018-06-07",
+        "duration": 42
+      },
+      {
+        "name": "Stained Glass",
+        "date": "2018-06-14",
+        "duration": 40
+      },
+      {
+        "name": "Call/Response",
+        "date": "2018-06-21",
+        "duration": 42
+      },
+      {
+        "name": "Princeton Offense",
+        "date": "2018-06-28",
+        "duration": 42
+      },
+      {
+        "name": "Funhouse Mirrors",
+        "date": "2018-07-05",
+        "duration": 42
+      },
+      {
+        "name": "Lotus Eaters",
+        "date": "2018-07-12",
+        "duration": 42
+      },
+      {
+        "name": "Ghost Stories",
+        "date": "2018-07-19",
+        "duration": 42
+      },
+      {
+        "name": "Back Breaker",
+        "date": "2018-07-26",
+        "duration": 42
+      },
+      {
+        "name": "Colony Collapse",
+        "date": "2018-08-02",
+        "duration": 42
+      }
+    ],
+    "tags": ["Freeform"]
   },
   {
     "id": "",
