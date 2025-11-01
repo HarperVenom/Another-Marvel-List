@@ -2133,13 +2133,63 @@
     "tags": ["Freeform"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "iron_fist_s2",
+    "name": "Iron Fist Season 2",
+    "description": "As a gang war brews in New York's Chinatown, Danny and Colleen strive to protect the innocent while battling fearsome enemies both old and new.",
+    "colors": "#161c1b",
+    "episodes": [
+      {
+        "name": "The Fury of Iron Fist",
+        "date": "2018-09-07",
+        "duration": 57
+      },
+      {
+        "name": "The City's Not for Burning",
+        "date": "2018-09-07",
+        "duration": 53
+      },
+      {
+        "name": "This Deadly Secret...",
+        "date": "2018-09-07",
+        "duration": 52
+      },
+      {
+        "name": "Target: Iron Fist",
+        "date": "2018-09-07",
+        "duration": 53
+      },
+      {
+        "name": "Heart of the Dragon",
+        "date": "2018-09-07",
+        "duration": 55
+      },
+      {
+        "name": "The Dragon Dies at Dawn",
+        "date": "2018-09-07",
+        "duration": 51
+      },
+      {
+        "name": "Morning of the Mindstorm",
+        "date": "2018-09-07",
+        "duration": 54
+      },
+      {
+        "name": "Citadel on the Edge of Vengeance",
+        "date": "2018-09-07",
+        "duration": 49
+      },
+      {
+        "name": "War Without End",
+        "date": "2018-09-07",
+        "duration": 50
+      },
+      {
+        "name": "A Duel of Iron",
+        "date": "2018-09-07",
+        "duration": 52
+      }
+    ],
+    "tags": ["Netflix"]
   },
   {
     "id": "",
