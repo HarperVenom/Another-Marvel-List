@@ -1804,7 +1804,7 @@
     "date": "2018-05-16",
     "duration": 120,
     "description": "Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.",
-    "colors": "#401015",
+    "colors": "#400a0f",
     "tags": ["Fox"]
   },
   {
@@ -1930,7 +1930,7 @@
     "id": "legion_s2",
     "name": "Legion Season 2",
     "description": "With David and Oliver missing and Farouk on the loose, the team forms an unlikely alliance with their former enemy Clark and his well-funded government is on a new path to attaining infinite and world-ending power.",
-    "colors": "#00264d",
+    "colors": "#001a4d",
     "episodes": [
       {
         "name": "Chapter 9",
@@ -2077,7 +2077,7 @@
     "id": "cloak_&_dagger_s1",
     "name": "Cloak & Dagger Season 1",
     "description": "Two teenagers from very different backgrounds awaken to newly acquired superpowers which mysteriously link them to one another.",
-    "colors": "#303133",
+    "colors": "#18181a",
     "episodes": [
       {
         "name": "First Light",
@@ -2192,22 +2192,87 @@
     "tags": ["Netflix"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "venom",
+    "name": "Venom",
+    "date": "2018-10-05",
+    "duration": 112,
+    "description": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.",
+    "colors": "#12151d",
+    "tags": ["Sony"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "daredevil_s3",
+    "name": "Daredevil Season 3",
+    "description": "Missing for months, Matt Murdock reemerges a broken man, putting into question his future as both vigilante Daredevil and lawyer Matthew Murdock. But when his archenemy Wilson Fisk is released from prison, Matt must choose between hiding from the world, or embracing his destiny as a hero.",
+    "colors": "#0e0b0a",
+    "episodes": [
+      {
+        "name": "Resurrection",
+        "date": "2018-10-19",
+        "duration": 54
+      },
+      {
+        "name": "Please",
+        "date": "2018-10-19",
+        "duration": 50
+      },
+      {
+        "name": "No Good Deed",
+        "date": "2018-10-19",
+        "duration": 50
+      },
+      {
+        "name": "Blindsided",
+        "date": "2018-10-19",
+        "duration": 55
+      },
+      {
+        "name": "The Perfect Game",
+        "date": "2018-10-19",
+        "duration": 50
+      },
+      {
+        "name": "The Devil You Know",
+        "date": "2018-10-19",
+        "duration": 55
+      },
+      {
+        "name": "Aftermath",
+        "date": "2018-10-19",
+        "duration": 50
+      },
+      {
+        "name": "Upstairs/Downstairs",
+        "date": "2018-10-19",
+        "duration": 51
+      },
+      {
+        "name": "Revelations",
+        "date": "2018-10-19",
+        "duration": 54
+      },
+      {
+        "name": "Karen",
+        "date": "2018-10-19",
+        "duration": 47
+      },
+      {
+        "name": "Reunion",
+        "date": "2018-10-19",
+        "duration": 50
+      },
+      {
+        "name": "One Last Shot",
+        "date": "2018-10-19",
+        "duration": 56
+      },
+      {
+        "name": "A New Napkin",
+        "date": "2018-10-19",
+        "duration": 54
+      }
+    ],
+    "tags": ["Netflix"]
   },
   {
     "id": "",
