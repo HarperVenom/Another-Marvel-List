@@ -2204,7 +2204,7 @@
     "id": "daredevil_s3",
     "name": "Daredevil Season 3",
     "description": "Missing for months, Matt Murdock reemerges a broken man, putting into question his future as both vigilante Daredevil and lawyer Matthew Murdock. But when his archenemy Wilson Fisk is released from prison, Matt must choose between hiding from the world, or embracing his destiny as a hero.",
-    "colors": "#0e0b0a",
+    "colors": "#1a1515",
     "episodes": [
       {
         "name": "Resurrection",
@@ -2280,17 +2280,82 @@
     "date": "2018-12-14",
     "duration": 117,
     "description": "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
-    "colors": "#191727",
+    "colors": "#191c2e",
     "tags": ["Sony"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "runaways_s2",
+    "name": "Runaways Season 2",
+    "description": "The Runaways have left their homes and now must survive on their own, scavenging for food, finding shelter, and learning to rely on each other. As they try to stop PRIDE for good, a mysterious message reaches Jonah—suggesting there’s a mole among them. Meanwhile, PRIDE hunts for their kids, and Jonah pursues a dangerous plan of his own.",
+    "colors": "#371026",
+    "episodes": [
+      {
+        "name": "Gimme Shelter",
+        "date": "2018-12-21",
+        "duration": 50
+      },
+      {
+        "name": "Radio On",
+        "date": "2018-12-21",
+        "duration": 46
+      },
+      {
+        "name": "Double Zeros",
+        "date": "2018-12-21",
+        "duration": 52
+      },
+      {
+        "name": "Old School",
+        "date": "2018-12-21",
+        "duration": 47
+      },
+      {
+        "name": "Rock Bottom",
+        "date": "2018-12-21",
+        "duration": 51
+      },
+      {
+        "name": "Bury Another",
+        "date": "2018-12-21",
+        "duration": 46
+      },
+      {
+        "name": "Last Rites",
+        "date": "2018-12-21",
+        "duration": 49
+      },
+      {
+        "name": "Past Life",
+        "date": "2018-12-21",
+        "duration": 45
+      },
+      {
+        "name": "Big Shot",
+        "date": "2018-12-21",
+        "duration": 46
+      },
+      {
+        "name": "Hostile Takeover",
+        "date": "2018-12-21",
+        "duration": 43
+      },
+      {
+        "name": "Last Waltz",
+        "date": "2018-12-21",
+        "duration": 52
+      },
+      {
+        "name": "Earth Angel",
+        "date": "2018-12-21",
+        "duration": 49
+      },
+      {
+        "name": "Split Up",
+        "date": "2018-12-21",
+        "duration": 51
+      }
+    ],
+    "tags": ["Hulu"]
   },
   {
     "id": "",
