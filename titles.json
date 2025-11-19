@@ -2275,13 +2275,13 @@
     "tags": ["Netflix"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "spider_man_into_the_spider_verse",
+    "name": "Spider-Man:<br>Into the Spider-Verse",
+    "date": "2018-12-14",
+    "duration": 117,
+    "description": "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
+    "colors": "#212640",
+    "tags": ["Sony"]
   },
   {
     "id": "",
