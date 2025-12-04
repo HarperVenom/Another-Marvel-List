@@ -188,7 +188,7 @@
     "date": "2010-04-30",
     "duration": 125,
     "description": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
-    "colors": "#4d0d08",
+    "colors": "#1a1618",
     "links": [
       "xRQnJyP77tY",
       "2LnT-cGCGqk",
@@ -2358,13 +2358,29 @@
     "tags": ["Hulu"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "the_gifted_s2",
+    "name": "The Gifted Season 2",
+    "description": "Season two follows a fractured mutant movement as the ruthless Inner Circle and the struggling Mutant Underground clash over control, ideology, and survival, while old families are torn apart, extremist forces rise, and a looming plan threatens to push humans and mutants into all-out conflict.",
+    "episodes": [
+      { "name": "eMergence", "date": "2018-09-25", "duration": 44 },
+      { "name": "unMoored", "date": "2018-10-02", "duration": 45 },
+      { "name": "coMplications", "date": "2018-10-09", "duration": 44 },
+      { "name": "outMatched", "date": "2018-10-16", "duration": 44 },
+      { "name": "afterMath", "date": "2018-10-30", "duration": 43 },
+      { "name": "iMprint", "date": "2018-11-06", "duration": 44 },
+      { "name": "no Mercy", "date": "2018-11-13", "duration": 45 },
+      { "name": "the dreaM", "date": "2018-11-27", "duration": 45 },
+      { "name": "gaMe changer", "date": "2018-12-04", "duration": 45 },
+      { "name": "eneMy of My eneMy", "date": "2019-01-01", "duration": 45 },
+      { "name": "meMento", "date": "2019-01-08", "duration": 45 },
+      { "name": "hoMe", "date": "2019-01-15", "duration": 45 },
+      { "name": "teMpted", "date": "2019-01-22", "duration": 44 },
+      { "name": "calaMity", "date": "2019-02-12", "duration": 45 },
+      { "name": "Monsters", "date": "2019-02-19", "duration": 45 },
+      { "name": "oMens", "date": "2019-02-26", "duration": 44 }
+    ],
+    "colors": "#11142b",
+    "tags": ["Fox"]
   },
   {
     "id": "",
