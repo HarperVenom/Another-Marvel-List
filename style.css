@@ -125,6 +125,8 @@ main {
         /* scale: 0.99; */
         transition: filter 0.1s ease;
 
+        filter: brightness(103%) contrast(103%);
+
         &.fade {
           filter: grayscale(1);
         }

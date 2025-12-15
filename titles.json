@@ -2383,6 +2383,131 @@
     "tags": ["Fox"]
   },
   {
+    "id": "the_punisher_s2",
+    "name": "The Punisher Season 2",
+    "episodes": [
+      { "name": "Roadhouse Blues", "date": "2019-01-18", "duration": 53 },
+      { "name": "Fight or Flight", "date": "2019-01-18", "duration": 54 },
+      { "name": "Trouble the Water", "date": "2019-01-18", "duration": 51 },
+      { "name": "Scar Tissue", "date": "2019-01-18", "duration": 57 },
+      { "name": "One-Eyed Jacks", "date": "2019-01-18", "duration": 51 },
+      { "name": "Nakazat", "date": "2019-01-18", "duration": 56 },
+      { "name": "One Bad Day", "date": "2019-01-18", "duration": 51 },
+      { "name": "My Brother's Keeper", "date": "2019-01-18", "duration": 48 },
+      { "name": "Flustercluck", "date": "2019-01-18", "duration": 57 },
+      {
+        "name": "The Dark Hearts of Men",
+        "date": "2019-01-18",
+        "duration": 47
+      },
+      { "name": "The Abyss", "date": "2019-01-18", "duration": 54 },
+      { "name": "Collision Course", "date": "2019-01-18", "duration": 49 },
+      { "name": "The Whirlwind", "date": "2019-01-18", "duration": 57 }
+    ],
+    "description": "Frank strives to protect a teenager caught in a sinister conspiracy while doing whatever it takes -- and then some -- to end Russo once and for all.",
+    "colors": "#161715",
+    "tags": ["Netflix"]
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
     "id": "",
     "name": "",
     "date": "",
