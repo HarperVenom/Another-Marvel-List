@@ -188,7 +188,7 @@
     "date": "2010-04-30",
     "duration": 125,
     "description": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
-    "colors": "#1a1618",
+    "colors": "#1a1115",
     "links": [
       "xRQnJyP77tY",
       "2LnT-cGCGqk",
@@ -207,7 +207,7 @@
     "date": "2011-05-06",
     "duration": 114,
     "description": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
-    "colors": "#0d2440",
+    "colors": "#0a1d33",
     "links": ["mpHQ5Rfid1c"],
     "tags": ["Marvel Studios"]
   },
@@ -849,7 +849,7 @@
     "id": "jessica_jones_s1",
     "name": "Jessica Jones Season 1",
     "description": "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases involving people with extraordinary abilities in New York City.",
-    "colors": "#2c2140",
+    "colors": "#261940",
     "episodes": [
       {
         "name": "AKA Ladies Night",
@@ -991,7 +991,7 @@
     "id": "daredevil_s2",
     "name": "Daredevil Season 2",
     "description": "Dark forces are tearing Hell's Kitchen apart once again, but this time Daredevil may have to choose between the city and his friends.",
-    "colors": "#261318",
+    "colors": "#1a0d10",
     "episodes": [
       {
         "name": "Bang",
@@ -1930,7 +1930,7 @@
     "id": "legion_s2",
     "name": "Legion Season 2",
     "description": "With David and Oliver missing and Farouk on the loose, the team forms an unlikely alliance with their former enemy Clark and his well-funded government is on a new path to attaining infinite and world-ending power.",
-    "colors": "#001a4d",
+    "colors": "#00102e",
     "episodes": [
       {
         "name": "Chapter 9",
@@ -2204,7 +2204,7 @@
     "id": "daredevil_s3",
     "name": "Daredevil Season 3",
     "description": "Missing for months, Matt Murdock reemerges a broken man, putting into question his future as both vigilante Daredevil and lawyer Matthew Murdock. But when his archenemy Wilson Fisk is released from prison, Matt must choose between hiding from the world, or embracing his destiny as a hero.",
-    "colors": "#1a1515",
+    "colors": "#1a0a0a",
     "episodes": [
       {
         "name": "Resurrection",
