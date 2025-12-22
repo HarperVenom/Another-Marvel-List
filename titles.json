@@ -57,7 +57,7 @@
   {
     "id": "hulk",
     "name": "Hulk",
-    "date": "2003-06-17",
+    "date": "2003-06-20",
     "duration": 138,
     "description": "Bruce Banner, a genetics researcher with a tragic past, suffers a lab accident that makes him transform into a raging, giant green monster when angered, making him a target of forces seeking to abuse his power.",
     "colors": "#0c2415",
@@ -66,7 +66,7 @@
   {
     "id": "the_punisher",
     "name": "The Punisher",
-    "date": "2004-04-16",
+    "date": "2004-04-13",
     "duration": 124,
     "description": "An undercover FBI agent becomes a vigilante and sets out to unleash his wrath upon the corrupt businessman who slaughtered his entire family at a reunion.",
     "colors": "#1a1c1f",
@@ -75,7 +75,7 @@
   {
     "id": "spider_man_2",
     "name": "Spider Man 2",
-    "date": "2004-07-16",
+    "date": "2004-06-30",
     "duration": 127,
     "description": "Peter Parker is beset with troubles in his failing personal life as he battles a former brilliant scientist named Otto Octavius.",
     "colors": "#4d0d08",
@@ -297,7 +297,7 @@
   {
     "id": "the_wolverine",
     "name": "The Wolverine",
-    "date": "2013-07-26",
+    "date": "2013-07-16",
     "duration": 126,
     "description": "Wolverine comes to Japan to meet an old friend whose life he saved years ago, and gets embroiled in a conspiracy involving yakuza and mutants.",
     "colors": "#1c1f1f",
@@ -435,7 +435,7 @@
   {
     "id": "thor_the_dark_world",
     "name": "Thor: The Dark World",
-    "date": "2013-11-08",
+    "date": "2013-10-22",
     "duration": 112,
     "description": "When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.",
     "colors": "#1e3134",
@@ -463,7 +463,7 @@
   {
     "id": "captain_america_the_winter_soldier",
     "name": "Captain America: The Winter Soldier",
-    "date": "2014-04-04",
+    "date": "2014-03-13",
     "duration": 136,
     "description": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
     "colors": "#142e33",
@@ -473,7 +473,7 @@
   {
     "id": "marvel_75_years_from_pulp_to_pop",
     "name": "Marvel: 75 Years, from Pulp to Pop!",
-    "date": "2014-04-11",
+    "date": "2014-11-04",
     "duration": 42,
     "description": "Tracing Marvel's roots from Timely Comics in 1939 to the 1940's emergence of Joe Simon and Jack Kirby as key figures in the Marvel story. Focusing on the creation of Captain America and the impact of World War II.",
     "colors": "#332d0d",
@@ -795,7 +795,7 @@
   {
     "id": "ant_man",
     "name": "Ant-Man",
-    "date": "2015-06-15",
+    "date": "2015-07-17",
     "duration": 118,
     "description": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, pull off a plan that will save the world.",
     "colors": "#323d4d",
@@ -804,7 +804,7 @@
   {
     "id": "fantastic_four_2015",
     "name": "Fantastic Four",
-    "date": "2015-08-06",
+    "date": "2015-08-07",
     "duration": 100,
     "description": "Four young outsiders teleport to an alternate and dangerous universe which alters their physical form in shocking ways. The four must learn to harness their new abilities and work together to save Earth from a former friend turned enemy.",
     "colors": "#262125",
@@ -1348,7 +1348,7 @@
   {
     "id": "logan",
     "name": "Logan",
-    "date": "2017-03-01",
+    "date": "2017-03-03",
     "duration": 137,
     "description": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
     "colors": "#18191c",
@@ -1478,7 +1478,7 @@
   {
     "id": "guardians_of_the_galaxy_vol_2",
     "name": "Guardians of the Galaxy Vol. 2",
-    "date": "2017-04-26",
+    "date": "2017-05-05",
     "duration": 137,
     "description": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
     "colors": "#201a40",
@@ -1487,7 +1487,7 @@
   {
     "id": "spider_man_homecoming",
     "name": "Spider-Man: Homecoming",
-    "date": "2017-07-05",
+    "date": "2017-07-07",
     "duration": 133,
     "description": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
     "colors": "#3d5966",
@@ -1546,7 +1546,7 @@
   {
     "id": "thor_ragnarok",
     "name": "Thor: Ragnarok",
-    "date": "2017-10-27",
+    "date": "2017-11-03",
     "duration": 131,
     "description": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of a powerful new threat, the ruthless Hela.",
     "colors": "#661e0a",
@@ -1792,7 +1792,7 @@
   {
     "id": "avengers_infinity_war",
     "name": "Avengers: Infinity War",
-    "date": "2018-04-25",
+    "date": "2018-04-27",
     "duration": 149,
     "description": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
     "colors": "#2e0e2d",
@@ -1801,7 +1801,7 @@
   {
     "id": "deadpool_2",
     "name": "Deadpool 2",
-    "date": "2018-05-16",
+    "date": "2018-05-18",
     "duration": 120,
     "description": "Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.",
     "colors": "#400a0f",
@@ -2067,7 +2067,7 @@
   {
     "id": "ant_man_and_the_wasp",
     "name": "Ant-Man and the Wasp",
-    "date": "2018-07-04",
+    "date": "2018-07-06",
     "duration": 119,
     "description": "Just when his time under house arrest is about to end, Scott Lang once again puts his freedom at risk to help Hope van Dyne and Dr. Hank Pym dive into the quantum realm and try to accomplish, against time and any chance of success, a very dangerous rescue mission.",
     "colors": "#4d0d0b",
@@ -2409,13 +2409,13 @@
     "tags": ["Netflix"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "captain_marvel",
+    "name": "Captain Marvel",
+    "date": "2019-03-08",
+    "duration": 124,
+    "description": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
+    "colors": "#132144",
+    "tags": ["Marvel Studios"]
   },
   {
     "id": "",
