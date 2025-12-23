@@ -7,7 +7,7 @@
     "description": "Deacon Frost, a vampire, kills the elders of the underground vampiric society in order to gain control over his kind. To cement his powers, he needs the blood of Blade, a half-human vampire hunter.",
     "colors": "#3d0e08",
     "type": "Movie",
-    "tags": ["New Line Cinema"]
+    "tags": ["Canon"]
   },
   {
     "id": "x_men",
@@ -16,7 +16,7 @@
     "duration": 104,
     "description": "In a world where mutants (evolved super-powered humans) exist and are discriminated against, two groups form for an inevitable clash: the supremacist Brotherhood, and the pacifist X-Men.",
     "colors": "#23272b",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "blade_ii",
@@ -25,7 +25,7 @@
     "duration": 117,
     "description": "Blade forms an uneasy alliance with the vampire council in order to combat the Reapers, who are feeding on vampires.",
     "colors": "#393240",
-    "tags": ["New Line Cinema"]
+    "tags": ["Canon"]
   },
   {
     "id": "spider_man",
@@ -34,7 +34,7 @@
     "duration": 121,
     "description": "After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.",
     "colors": "#592a12",
-    "tags": ["Sony"]
+    "tags": ["Canon"]
   },
   {
     "id": "daredevil",
@@ -43,7 +43,7 @@
     "duration": 103,
     "description": "A man blinded by toxic waste which also enhanced his remaining senses fights crime as an acrobatic martial arts superhero.",
     "colors": "#331310",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "x2",
@@ -52,7 +52,7 @@
     "duration": 134,
     "description": "When anti-mutant Colonel William Stryker kidnaps Professor X and attacks his school, the X-Men must ally with their archenemy Magneto to stop him.",
     "colors": "#2d2e40",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "hulk",
@@ -79,7 +79,7 @@
     "duration": 127,
     "description": "Peter Parker is beset with troubles in his failing personal life as he battles a former brilliant scientist named Otto Octavius.",
     "colors": "#4d0d08",
-    "tags": ["Sony"]
+    "tags": ["Canon"]
   },
   {
     "id": "blade_trinity",
@@ -88,7 +88,7 @@
     "duration": 113,
     "description": "Blade, now a wanted man by the FBI, must join forces with the Nightstalkers to face his most challenging enemy yet: Dracula.",
     "colors": "#1c3040",
-    "tags": ["New Line Cinema"]
+    "tags": ["Canon"]
   },
   {
     "id": "elektra",
@@ -97,7 +97,7 @@
     "duration": 97,
     "description": "An assassin's change of heart leads her into a war against an evil crime syndicate.",
     "colors": "#4d0f0b",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "fantastic_four",
@@ -106,7 +106,7 @@
     "duration": 106,
     "description": "A group of astronauts gain superpowers after a cosmic radiation exposure and must use them to oppose the plans of their enemy, Doctor Victor Von Doom.",
     "colors": "#203b4d",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "x_men_the_last_stand",
@@ -115,7 +115,7 @@
     "duration": 104,
     "description": "The human government develops a cure for mutations, and Jean Grey becomes a darker uncontrollable persona called the Phoenix who allies with Magneto, causing escalation into an all-out battle for the X-Men.",
     "colors": "#123145",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "ghost_rider",
@@ -133,7 +133,7 @@
     "duration": 139,
     "description": "A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.",
     "colors": "#212526",
-    "tags": ["Sony"]
+    "tags": ["Canon"]
   },
   {
     "id": "fantastic_four_rise_of_the_silver_surfer",
@@ -142,7 +142,7 @@
     "duration": 92,
     "description": "The Fantastic Four learn that they aren't the only super-powered beings in the universe when they square off against the powerful Silver Surfer and the planet-eating Galactus.",
     "colors": "#0e3d60",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "iron_man",
@@ -152,7 +152,7 @@
     "description": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
     "colors": "#05172e",
     "links": ["C7kmm16PoDY"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "the_incredible_hulk",
@@ -162,7 +162,7 @@
     "description": "Bruce Banner, a scientist on the run from the U.S. Government, must find a cure for the monster he turns into whenever he loses his temper.",
     "colors": "#12171b",
     "links": ["JzSWaMAcMbg"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "punisher_war_zone",
@@ -180,7 +180,7 @@
     "duration": 107,
     "description": "The early years of James Logan, featuring his rivalry with his brother Victor Creed, his service in the special forces team Weapon X, and his experimentation into the metal-lined mutant Wolverine.",
     "colors": "#261a15",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "iron_man_2",
@@ -199,7 +199,7 @@
       "IgKcAlFp-wo",
       "a_x3Dc1kAKA"
     ],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "thor",
@@ -209,7 +209,7 @@
     "description": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
     "colors": "#0a1d33",
     "links": ["mpHQ5Rfid1c"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "x_men_first_class",
@@ -218,7 +218,7 @@
     "duration": 132,
     "description": "In the 1960s, superpowered humans Charles Xavier and Erik Lensherr work together to find others like them, but Erik's vengeful pursuit of an ambitious mutant who ruined his life causes a schism to divide them.",
     "colors": "#223b43",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "captain_america_the_first_avenger",
@@ -227,7 +227,7 @@
     "duration": 124,
     "description": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\". But being Captain America comes at a price as he attempts to take down a warmonger and a terrorist organization.",
     "colors": "#242025",
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "the_consultant",
@@ -264,7 +264,7 @@
     "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
     "colors": "#08444d",
     "links": ["s3EMSCwOafg", "FcLdR7Z2f9Q", "D3ZNtOcY_1A"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "the_amazing_spider_man",
@@ -273,7 +273,7 @@
     "duration": 136,
     "description": "After Peter Parker is bitten by a genetically altered spider, he gains newfound, spider-like powers and ventures out to save the city from the machinations of a mysterious reptilian foe.",
     "colors": "#171722",
-    "tags": ["Sony"]
+    "tags": ["Canon"]
   },
   {
     "id": "item_47",
@@ -292,7 +292,7 @@
     "description": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
     "colors": "#002233",
     "links": ["0szL2xEKL2Y"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "the_wolverine",
@@ -301,7 +301,7 @@
     "duration": 126,
     "description": "Wolverine comes to Japan to meet an old friend whose life he saved years ago, and gets embroiled in a conspiracy involving yakuza and mutants.",
     "colors": "#1c1f1f",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "agent_carter",
@@ -430,7 +430,7 @@
         "duration": 43
       }
     ],
-    "tags": ["ABC"]
+    "tags": ["Canon"]
   },
   {
     "id": "thor_the_dark_world",
@@ -440,7 +440,7 @@
     "description": "When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster.",
     "colors": "#1e3134",
     "links": ["ALUCl2p4aFc"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "all_hail_the_king",
@@ -468,7 +468,7 @@
     "description": "As Steve Rogers struggles to embrace his role in the modern world, he teams up with a fellow Avenger and S.H.I.E.L.D agent, Black Widow, to battle a new threat from history: an assassin known as the Winter Soldier.",
     "colors": "#142e33",
     "links": ["OlEuShTEC6I"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "marvel_75_years_from_pulp_to_pop",
@@ -486,7 +486,7 @@
     "duration": 142,
     "description": "When New York is put under siege by Oscorp, it is up to Spider-Man to save the city he swore to protect as well as his loved ones.",
     "colors": "#0a3766",
-    "tags": ["Sony"]
+    "tags": ["Canon"]
   },
   {
     "id": "x_men_days_of_future_past",
@@ -495,7 +495,7 @@
     "duration": 151,
     "description": "The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
     "colors": "#323440",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "guardians_of_the_galaxy",
@@ -505,7 +505,7 @@
     "description": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
     "colors": "#051633",
     "links": ["CdgCleQNdb0"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "agents_of_shield_s2",
@@ -624,7 +624,7 @@
         "duration": 44
       }
     ],
-    "tags": ["ABC"]
+    "tags": ["Canon"]
   },
   {
     "id": "agent_carter_s1",
@@ -673,7 +673,7 @@
         "duration": 43
       }
     ],
-    "tags": ["ABC"]
+    "tags": ["Canon"]
   },
   {
     "id": "daredevil_s1",
@@ -747,7 +747,7 @@
         "duration": 56
       }
     ],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "avengers_age_of_ultron",
@@ -756,7 +756,7 @@
     "duration": 141,
     "description": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
     "colors": "#32384d",
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "whih_newsfront_s1",
@@ -790,7 +790,7 @@
         "duration": 3
       }
     ],
-    "tags": ["WHiH"]
+    "tags": ["Other"]
   },
   {
     "id": "ant_man",
@@ -799,7 +799,7 @@
     "duration": 118,
     "description": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, pull off a plan that will save the world.",
     "colors": "#323d4d",
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "fantastic_four_2015",
@@ -843,7 +843,7 @@
       { "name": "Absolution (1)", "date": "2016-05-17", "duration": 43 },
       { "name": "Ascension (2)", "date": "2016-05-17", "duration": 44 }
     ],
-    "tags": ["ABC"]
+    "tags": ["Canon"]
   },
   {
     "id": "jessica_jones_s1",
@@ -917,7 +917,7 @@
         "duration": 54
       }
     ],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "agent_carter_s2",
@@ -976,7 +976,7 @@
         "duration": 42
       }
     ],
-    "tags": ["ABC"]
+    "tags": ["Canon"]
   },
   {
     "id": "deadpool",
@@ -985,7 +985,7 @@
     "duration": 108,
     "description": "The origin story of former Special Forces operative turned mercenary Wade Wilson, who, after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.",
     "colors": "#400c11",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "daredevil_s2",
@@ -1059,7 +1059,7 @@
         "duration": 59
       }
     ],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "whih_newsfront_s2",
@@ -1093,7 +1093,7 @@
         "duration": 3
       }
     ],
-    "tags": ["WHiH"]
+    "tags": ["Other"]
   },
   {
     "id": "captain_america_civil_war",
@@ -1103,7 +1103,7 @@
     "description": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
     "colors": "#26394d",
     "links": ["rpMClVCcgWM", "OvHNcULsL3s", "tahjluBe--E"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "x-men_apocalypse",
@@ -1112,7 +1112,7 @@
     "duration": 144,
     "description": "After the re-emergence of the world's first mutant, world-destroyer Apocalypse, the X-Men must unite to defeat his extinction level plan.",
     "colors": "#31454d",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "team_thor_part_1",
@@ -1241,7 +1241,7 @@
       }
     ],
     "links": ["1xgQUoVfiL8&list=PLDe0CguuqcMBVtZJk0iCNoSblixvAt4BY&index=1"],
-    "tags": ["ABC"]
+    "tags": ["Canon"]
   },
   {
     "id": "luke_cage_s1",
@@ -1316,7 +1316,7 @@
       }
     ],
     "links": ["Sj8DHgUANl8", "OLPbw52g5bQ"],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "doctor_strange",
@@ -1325,7 +1325,7 @@
     "duration": 115,
     "description": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
     "colors": "#2e2f4d",
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "marvels_captain_america_75_heroic_years",
@@ -1352,7 +1352,7 @@
     "duration": 137,
     "description": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
     "colors": "#18191c",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "deadpool_no_good_deed",
@@ -1424,7 +1424,7 @@
       { "name": "Dragon Plays with Fire", "date": "2017-03-17", "duration": 54 }
     ],
     "links": ["bg-725HzJtc", "AJjYzbbq6-I"],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "legion_s1",
@@ -1482,7 +1482,7 @@
     "duration": 137,
     "description": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
     "colors": "#201a40",
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "spider_man_homecoming",
@@ -1492,7 +1492,7 @@
     "description": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
     "colors": "#3d5966",
     "links": ["bGuHgRQSEuk", "BWRuzKIHVOk", "W5er9dI7RII"],
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "the_defenders_s1",
@@ -1541,7 +1541,7 @@
         "duration": 55
       }
     ],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "thor_ragnarok",
@@ -1549,8 +1549,8 @@
     "date": "2017-11-03",
     "duration": 131,
     "description": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of a powerful new threat, the ruthless Hela.",
-    "colors": "#661e0a",
-    "tags": ["Marvel Studios"]
+    "colors": "#4d1708",
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "inhumans_s1",
@@ -1591,7 +1591,7 @@
         "duration": 45
       }
     ],
-    "tags": ["ABC"]
+    "tags": ["Other"]
   },
   {
     "id": "the_gifted_s1",
@@ -1613,7 +1613,7 @@
       { "name": "eXtraction", "date": "2018-01-15", "duration": 44 },
       { "name": "X-roads", "date": "2018-01-15", "duration": 45 }
     ],
-    "tags": ["Fox"]
+    "tags": ["Other"]
   },
   {
     "id": "the_punisher_s1",
@@ -1635,7 +1635,7 @@
       { "name": "Home", "date": "2017-11-17", "duration": 52 },
       { "name": "Memento Mori", "date": "2017-11-17", "duration": 56 }
     ],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "runaways_s1",
@@ -1694,7 +1694,7 @@
         "duration": 49
       }
     ],
-    "tags": ["Hulu"]
+    "tags": ["Other"]
   },
   {
     "id": "black_panther",
@@ -1703,7 +1703,7 @@
     "duration": 135,
     "description": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
     "colors": "#132b4d",
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "team_darryl",
@@ -1787,7 +1787,7 @@
       }
     ],
     "links": ["KpYQJNcmCXw", "tCR9Z4dq9x0"],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "avengers_infinity_war",
@@ -1796,7 +1796,7 @@
     "duration": 149,
     "description": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
     "colors": "#2e0e2d",
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "deadpool_2",
@@ -1805,7 +1805,7 @@
     "duration": 120,
     "description": "Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.",
     "colors": "#400a0f",
-    "tags": ["Fox"]
+    "tags": ["Canon"]
   },
   {
     "id": "agents_of_shield_s5",
@@ -1924,7 +1924,7 @@
         "duration": 44
       }
     ],
-    "tags": ["ABC"]
+    "tags": ["Canon"]
   },
   {
     "id": "legion_s2",
@@ -2062,7 +2062,7 @@
         "duration": 69
       }
     ],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "ant_man_and_the_wasp",
@@ -2071,7 +2071,7 @@
     "duration": 119,
     "description": "Just when his time under house arrest is about to end, Scott Lang once again puts his freedom at risk to help Hope van Dyne and Dr. Hank Pym dive into the quantum realm and try to accomplish, against time and any chance of success, a very dangerous rescue mission.",
     "colors": "#4d0d0b",
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "cloak_&_dagger_s1",
@@ -2130,7 +2130,7 @@
         "duration": 42
       }
     ],
-    "tags": ["Freeform"]
+    "tags": ["Other"]
   },
   {
     "id": "iron_fist_s2",
@@ -2189,7 +2189,7 @@
         "duration": 52
       }
     ],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "venom",
@@ -2198,7 +2198,7 @@
     "duration": 112,
     "description": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.",
     "colors": "#12151d",
-    "tags": ["Sony"]
+    "tags": ["Other"]
   },
   {
     "id": "daredevil_s3",
@@ -2272,7 +2272,7 @@
         "duration": 54
       }
     ],
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "spider_man_into_the_spider_verse",
@@ -2281,7 +2281,7 @@
     "duration": 117,
     "description": "Teen Miles Morales becomes the Spider-Man of his universe and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
     "colors": "#191c2e",
-    "tags": ["Sony"]
+    "tags": ["Other"]
   },
   {
     "id": "runaways_s2",
@@ -2355,7 +2355,7 @@
         "duration": 51
       }
     ],
-    "tags": ["Hulu"]
+    "tags": ["Other"]
   },
   {
     "id": "the_gifted_s2",
@@ -2380,7 +2380,7 @@
       { "name": "oMens", "date": "2019-02-26", "duration": 44 }
     ],
     "colors": "#11142b",
-    "tags": ["Fox"]
+    "tags": ["Other"]
   },
   {
     "id": "the_punisher_s2",
@@ -2406,7 +2406,7 @@
     ],
     "description": "Frank strives to protect a teenager caught in a sinister conspiracy while doing whatever it takes -- and then some -- to end Russo once and for all.",
     "colors": "#161715",
-    "tags": ["Netflix"]
+    "tags": ["Canon"]
   },
   {
     "id": "captain_marvel",
@@ -2415,16 +2415,16 @@
     "duration": 124,
     "description": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
     "colors": "#132144",
-    "tags": ["Marvel Studios"]
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "avengers_endgame",
+    "name": "Avengers: Endgame",
+    "date": "2019-04-26",
+    "duration": 181,
+    "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+    "colors": "#1c0a29",
+    "tags": ["Canon", "Infinity Saga"]
   },
   {
     "id": "",

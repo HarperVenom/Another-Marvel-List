@@ -160,24 +160,68 @@ function setFilterButtons() {
     filter.textContent = tag;
     filtersSection.appendChild(filter);
 
-    filter.addEventListener("click", () => {
-      filter.classList.toggle("off");
+    filter.addEventListener("click", (e) => {
+      if (e.detail === 2) {
+        // Double click → activate only this filter
+        filtersSection.querySelectorAll(".filter").forEach((el) => {
+          el.classList.add("off");
+        });
+        filter.classList.remove("off");
 
-      let activeFilters = Array.from(
-        filtersSection.querySelectorAll(".filter:not(.off)")
-      ).map((el) => el.textContent);
+        updateURL([tag]);
+      } else {
+        // Single click → normal toggle behavior
+        filter.classList.toggle("off");
 
-      if (activeFilters.length === 0) {
-        filtersSection
-          .querySelectorAll(".filter")
-          .forEach((el) => el.classList.remove("off"));
-        activeFilters = [...allTags]; // All active
+        let activeFilters = Array.from(
+          filtersSection.querySelectorAll(".filter:not(.off)")
+        ).map((el) => el.textContent);
+
+        if (activeFilters.length === 0) {
+          filtersSection
+            .querySelectorAll(".filter")
+            .forEach((el) => el.classList.remove("off"));
+          activeFilters = [...allTags];
+        }
+
+        updateURL(activeFilters);
       }
-
-      updateURL(activeFilters);
     });
   });
 }
+
+// function setFilterButtons() {
+//   const filtersSection = document.querySelector("#filters");
+//   filtersSection.innerHTML = "";
+
+//   const activeTags = getTagsFromURL();
+
+//   allTags.forEach((tag) => {
+//     if (!tag) return;
+
+//     const filter = document.createElement("div");
+//     filter.className = "filter" + (!activeTags.includes(tag) ? " off" : "");
+//     filter.textContent = tag;
+//     filtersSection.appendChild(filter);
+
+//     filter.addEventListener("click", () => {
+//       filter.classList.toggle("off");
+
+//       let activeFilters = Array.from(
+//         filtersSection.querySelectorAll(".filter:not(.off)")
+//       ).map((el) => el.textContent);
+
+//       if (activeFilters.length === 0) {
+//         filtersSection
+//           .querySelectorAll(".filter")
+//           .forEach((el) => el.classList.remove("off"));
+//         activeFilters = [...allTags]; // All active
+//       }
+
+//       updateURL(activeFilters);
+//     });
+//   });
+// }
 
 function getTagsFromURL() {
   const params = new URLSearchParams(window.location.search);
