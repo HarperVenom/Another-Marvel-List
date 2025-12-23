@@ -2427,13 +2427,23 @@
     "tags": ["Canon", "Infinity Saga"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "cloak_&_dagger_s2",
+    "name": "Cloak & Dagger Season 2",
+    "episodes": [
+      { "name": "Restless Energy", "date": "2019-04-04", "duration": 41 },
+      { "name": "White Lines", "date": "2019-04-04", "duration": 41 },
+      { "name": "Shadow Selves", "date": "2019-04-11", "duration": 41 },
+      { "name": "Rabbit Hold", "date": "2019-04-18", "duration": 41 },
+      { "name": "Alignment Chart", "date": "2019-04-25", "duration": 41 },
+      { "name": "B Sides", "date": "2019-05-02", "duration": 40 },
+      { "name": "Vikingtown Sound", "date": "2019-05-09", "duration": 41 },
+      { "name": "Two Player", "date": "2019-05-16", "duration": 41 },
+      { "name": "Blue Note", "date": "2019-05-23", "duration": 41 },
+      { "name": "Level Up", "date": "2019-05-30", "duration": 41 }
+    ],
+    "description": "Season two turns the heat up on our young heroes as Tyrone and Tandy try to find their place as more active heroes in this world. As they learn and grow emotionally, so will their skills. With enhanced powers and a decision to make about the type of heroes they want to be, they make the choice to run into the danger, head first. They tackle a heartless vigilante and uncover an evil that’s been preying on the young women of the city, as the show takes on more serious topics like gang violence and human trafficking.",
+    "colors": "#313330",
+    "tags": ["Other"]
   },
   {
     "id": "",
