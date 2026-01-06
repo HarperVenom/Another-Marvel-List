@@ -430,7 +430,7 @@
         "duration": 43
       }
     ],
-    "tags": ["Canon"]
+    "tags": ["Other"]
   },
   {
     "id": "thor_the_dark_world",
@@ -624,7 +624,7 @@
         "duration": 44
       }
     ],
-    "tags": ["Canon"]
+    "tags": ["Other"]
   },
   {
     "id": "agent_carter_s1",
@@ -673,7 +673,7 @@
         "duration": 43
       }
     ],
-    "tags": ["Canon"]
+    "tags": ["Other"]
   },
   {
     "id": "daredevil_s1",
@@ -843,7 +843,7 @@
       { "name": "Absolution (1)", "date": "2016-05-17", "duration": 43 },
       { "name": "Ascension (2)", "date": "2016-05-17", "duration": 44 }
     ],
-    "tags": ["Canon"]
+    "tags": ["Other"]
   },
   {
     "id": "jessica_jones_s1",
@@ -976,7 +976,7 @@
         "duration": 42
       }
     ],
-    "tags": ["Canon"]
+    "tags": ["Other"]
   },
   {
     "id": "deadpool",
@@ -1241,7 +1241,7 @@
       }
     ],
     "links": ["1xgQUoVfiL8&list=PLDe0CguuqcMBVtZJk0iCNoSblixvAt4BY&index=1"],
-    "tags": ["Canon"]
+    "tags": ["Other"]
   },
   {
     "id": "luke_cage_s1",
@@ -1924,7 +1924,7 @@
         "duration": 44
       }
     ],
-    "tags": ["Canon"]
+    "tags": ["Other"]
   },
   {
     "id": "legion_s2",
@@ -2446,13 +2446,13 @@
     "tags": ["Other"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "dark_phoenix",
+    "name": "Dark Phoenix",
+    "date": "2019-06-07",
+    "duration": 114,
+    "description": "Jean Grey begins to develop incredible powers that corrupt and turn her into a Dark Phoenix, causing the X-Men to have to decide if her life is worth more than all of humanity.",
+    "colors": "#180d14",
+    "tags": ["Canon"]
   },
   {
     "id": "",
