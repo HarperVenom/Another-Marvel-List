@@ -2442,7 +2442,7 @@
       { "name": "Level Up", "date": "2019-05-30", "duration": 41 }
     ],
     "description": "Season two turns the heat up on our young heroes as Tyrone and Tandy try to find their place as more active heroes in this world. As they learn and grow emotionally, so will their skills. With enhanced powers and a decision to make about the type of heroes they want to be, they make the choice to run into the danger, head first. They tackle a heartless vigilante and uncover an evil that’s been preying on the young women of the city, as the show takes on more serious topics like gang violence and human trafficking.",
-    "colors": "#313330",
+    "colors": "#252624",
     "tags": ["Other"]
   },
   {
@@ -2455,13 +2455,42 @@
     "tags": ["Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "jessica_jones_s3",
+    "name": "Jessica Jones Season 3",
+    "episodes": [
+      {
+        "name": "AKA The Perfect Burger",
+        "date": "2019-06-14",
+        "duration": 52
+      },
+      { "name": "AKA You're Welcome", "date": "2019-06-14", "duration": 55 },
+      { "name": "AKA I Have No Spleen", "date": "2019-06-14", "duration": 56 },
+      {
+        "name": "AKA Customer Service is Standing By",
+        "date": "2019-06-14",
+        "duration": 46
+      },
+      { "name": "AKA I Wish", "date": "2019-06-14", "duration": 53 },
+      { "name": "AKA Sorry Face", "date": "2019-06-14", "duration": 53 },
+      {
+        "name": "AKA The Double Half-Wappinger",
+        "date": "2019-06-14",
+        "duration": 50
+      },
+      { "name": "AKA Camera Friendly", "date": "2019-06-14", "duration": 44 },
+      {
+        "name": "AKA I Did Something Today",
+        "date": "2019-06-14",
+        "duration": 52
+      },
+      { "name": "AKA Hero Pants", "date": "2019-06-14", "duration": 50 },
+      { "name": "AKA Hellcat", "date": "2019-06-14", "duration": 48 },
+      { "name": "AKA A Lotta Worms", "date": "2019-06-14", "duration": 49 },
+      { "name": "AKA Everything", "date": "2019-06-14", "duration": 51 }
+    ],
+    "description": "Jessica matches wits with a calculating serial killer, and a newly powered Trish goes to extremes to stamp out evil.",
+    "colors": "#1a0d0d",
+    "tags": ["Canon"]
   },
   {
     "id": "",
