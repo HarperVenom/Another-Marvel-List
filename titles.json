@@ -11,7 +11,7 @@
   },
   {
     "id": "x_men",
-    "name": "Fox",
+    "name": "X-Men",
     "date": "2000-07-14",
     "duration": 104,
     "description": "In a world where mutants (evolved super-powered humans) exist and are discriminated against, two groups form for an inevitable clash: the supremacist Brotherhood, and the pacifist X-Men.",
@@ -29,7 +29,7 @@
   },
   {
     "id": "spider_man",
-    "name": "Sony",
+    "name": "Spider-Man",
     "date": "2002-05-03",
     "duration": 121,
     "description": "After being bitten by a genetically-modified spider, a shy teenager gains spider-like abilities that he uses to fight injustice as a masked superhero and face a vengeful enemy.",
@@ -74,7 +74,7 @@
   },
   {
     "id": "spider_man_2",
-    "name": "Spider Man 2",
+    "name": "Spider-Man 2",
     "date": "2004-06-30",
     "duration": 127,
     "description": "Peter Parker is beset with troubles in his failing personal life as he battles a former brilliant scientist named Otto Octavius.",
@@ -2441,7 +2441,7 @@
       { "name": "Blue Note", "date": "2019-05-23", "duration": 41 },
       { "name": "Level Up", "date": "2019-05-30", "duration": 41 }
     ],
-    "description": "Season two turns the heat up on our young heroes as Tyrone and Tandy try to find their place as more active heroes in this world. As they learn and grow emotionally, so will their skills. With enhanced powers and a decision to make about the type of heroes they want to be, they make the choice to run into the danger, head first. They tackle a heartless vigilante and uncover an evil that’s been preying on the young women of the city, as the show takes on more serious topics like gang violence and human trafficking.",
+    "description": "Season two turns up the heat as Tyrone and Tandy step into more active heroic roles. As they grow emotionally, their powers strengthen, and they must decide what kind of heroes they want to be. Choosing to face danger head-on, they confront a ruthless vigilante and uncover a dark threat targeting young women, while the series tackles heavier themes like gang violence and human trafficking.",
     "colors": "#252624",
     "tags": ["Freeform"]
   },
@@ -2451,7 +2451,7 @@
     "date": "2019-06-07",
     "duration": 114,
     "description": "Jean Grey begins to develop incredible powers that corrupt and turn her into a Dark Phoenix, causing the X-Men to have to decide if her life is worth more than all of humanity.",
-    "colors": "#180d14",
+    "colors": "#170912",
     "tags": ["Fox", "Canon"]
   },
   {
@@ -2489,17 +2489,17 @@
       { "name": "AKA Everything", "date": "2019-06-14", "duration": 51 }
     ],
     "description": "Jessica matches wits with a calculating serial killer, and a newly powered Trish goes to extremes to stamp out evil.",
-    "colors": "#1a0d0d",
+    "colors": "#1a0808",
     "tags": ["Netflix", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "spider_man_far_from_home",
+    "name": "Spider-Man: Far From Home",
+    "date": "2019-07-02",
+    "duration": 129,
+    "description": "Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent.",
+    "colors": "#111923",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
