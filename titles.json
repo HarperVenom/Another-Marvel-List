@@ -2502,13 +2502,78 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "agents_of_shield_s6",
+    "name": "Agents of S.H.I.E.L.D. Season 6",
+    "episodes": [
+      {
+        "name": "Missing Pieces",
+        "date": "2019-05-10",
+        "duration": 44
+      },
+      {
+        "name": "Window of Opportunity",
+        "date": "2019-05-17",
+        "duration": 45
+      },
+      {
+        "name": "Fear and Loathing on the Planet of Kitson",
+        "date": "2019-05-24",
+        "duration": 45
+      },
+      {
+        "name": "Code Yellow",
+        "date": "2019-05-31",
+        "duration": 43
+      },
+      {
+        "name": "The Other Thing",
+        "date": "2019-06-14",
+        "duration": 45
+      },
+      {
+        "name": "Inescapable",
+        "date": "2019-06-21",
+        "duration": 45
+      },
+      {
+        "name": "Toldja",
+        "date": "2019-06-28",
+        "duration": 44
+      },
+      {
+        "name": "Collision Course (1)",
+        "date": "2019-07-05",
+        "duration": 44
+      },
+      {
+        "name": "Collision Course (2)",
+        "date": "2019-07-12",
+        "duration": 44
+      },
+      {
+        "name": "Leap",
+        "date": "2019-07-19",
+        "duration": 44
+      },
+      {
+        "name": "From the Ashes",
+        "date": "2019-07-26",
+        "duration": 45
+      },
+      {
+        "name": "The Sign",
+        "date": "2019-08-02",
+        "duration": 43
+      },
+      {
+        "name": "New Life",
+        "date": "2019-08-02",
+        "duration": 45
+      }
+    ],
+    "description": "Last season, the team leaped forward in time to a dystopian future they soon realized must be prevented. While facing multiple timelines and new enemies from faraway planets, they found family, friends, teammates and the courage to pull off their biggest challenge yet. Their next challenge? Coming to grips with the knowledge that bending the laws of space and time may have saved the planet, but it couldn’t save Fitz or Coulson.",
+    "colors": "#120f1a",
+    "tags": ["ABC", "Canon"]
   },
   {
     "id": "",
