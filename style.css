@@ -19,7 +19,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(10, 10, 10);
   width: 100vw;
   height: 100dvh;
 
@@ -100,7 +100,9 @@ main {
         pointer-events: none;
         outline-width: 3px;
         outline-style: solid;
-        transition: opacity 0.1s ease, outline-color 0.1s ease;
+        transition:
+          opacity 0.1s ease,
+          outline-color 0.1s ease;
 
         &.pulse {
           animation: bounce 1.5s infinite normal;
@@ -120,7 +122,9 @@ main {
         object-fit: cover;
         user-select: none;
         cursor: pointer;
-        transition: scale 0.1s ease, outline-color 1s ease;
+        transition:
+          scale 0.1s ease,
+          outline-color 1s ease;
         -webkit-user-drag: none;
         /* scale: 0.99; */
         transition: filter 0.1s ease;

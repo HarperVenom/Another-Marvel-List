@@ -2625,22 +2625,72 @@
     "tags": ["FX"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "peters_to_do_list",
+    "name": "Peter's To-Do List",
+    "date": "2019-09-17",
+    "duration": 4,
+    "description": "On the eve of his departure to Europe, Peter Parker tells Ned Leeds that he has several things to do before they leave.",
+    "colors": "#1f1811",
+    "tags": ["One-Shot"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "runaways_s3",
+    "name": "Runaways Season 3",
+    "episodes": [
+      {
+        "name": "Smoke and Mirrors",
+        "date": "2019-12-13",
+        "duration": 51
+      },
+      {
+        "name": "The Great Escape",
+        "date": "2019-12-13",
+        "duration": 46
+      },
+      {
+        "name": "Lord of Lies",
+        "date": "2019-12-13",
+        "duration": 51
+      },
+      {
+        "name": "Rite of Thunder",
+        "date": "2019-12-13",
+        "duration": 51
+      },
+      {
+        "name": "Enter the Dreamland",
+        "date": "2019-12-13",
+        "duration": 48
+      },
+      {
+        "name": "Merry Meet Again",
+        "date": "2019-12-13",
+        "duration": 50
+      },
+      {
+        "name": "Left-Hand Path",
+        "date": "2019-12-13",
+        "duration": 44
+      },
+      {
+        "name": "Devil's Torture Chamber",
+        "date": "2019-12-13",
+        "duration": 44
+      },
+      {
+        "name": "The Broken Circle",
+        "date": "2019-12-13",
+        "duration": 53
+      },
+      {
+        "name": "Cheat the Gallows",
+        "date": "2019-12-13",
+        "duration": 49
+      }
+    ],
+    "description": "The Runaways frantically search for their captured friends Chase, Gert and Karolina. The kids go head to head with an unstoppable enemy who has targeted Leslie - or more accurately, the child she's carrying. Nico draws them all into a dark realm where its ruler Morgan le Fay, is much more nefarious than anyone the kids have yet to face.",
+    "colors": "#202138",
+    "tags": ["Freeform"]
   },
   {
     "id": "",
