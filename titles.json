@@ -2405,7 +2405,7 @@
       { "name": "The Whirlwind", "date": "2019-01-18", "duration": 57 }
     ],
     "description": "Frank strives to protect a teenager caught in a sinister conspiracy while doing whatever it takes -- and then some -- to end Russo once and for all.",
-    "colors": "#161715",
+    "colors": "#131413",
     "tags": ["Netflix", "Canon"]
   },
   {
@@ -2693,13 +2693,78 @@
     "tags": ["Freeform"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "agents_of_shield_s7",
+    "name": "Agents of S.H.I.E.L.D. Season 7",
+    "episodes": [
+      {
+        "name": "The New Deal",
+        "date": "2020-05-27",
+        "duration": 45
+      },
+      {
+        "name": "Know Your Onions",
+        "date": "2020-06-03",
+        "duration": 44
+      },
+      {
+        "name": "Alien Commies from the Future!",
+        "date": "2020-06-10",
+        "duration": 44
+      },
+      {
+        "name": "Out of the Past",
+        "date": "2020-06-17",
+        "duration": 44
+      },
+      {
+        "name": "A Trout in the Milk",
+        "date": "2020-06-24",
+        "duration": 43
+      },
+      {
+        "name": "Adapt or Die",
+        "date": "2020-07-01",
+        "duration": 44
+      },
+      {
+        "name": "The Totally Excellent Adventures of Mack and The D",
+        "date": "2020-07-08",
+        "duration": 45
+      },
+      {
+        "name": "After, Before",
+        "date": "2020-07-15",
+        "duration": 44
+      },
+      {
+        "name": "As I Have Always Been",
+        "date": "2020-07-22",
+        "duration": 44
+      },
+      {
+        "name": "Stolen",
+        "date": "2020-07-29",
+        "duration": 43
+      },
+      {
+        "name": "Brand New Day",
+        "date": "2020-08-05",
+        "duration": 44
+      },
+      {
+        "name": "The End Is at Hand",
+        "date": "2020-08-12",
+        "duration": 44
+      },
+      {
+        "name": "What We're Fighting For",
+        "date": "2020-08-12",
+        "duration": 45
+      }
+    ],
+    "description": "Coulson and the Agents of S.H.I.E.L.D. are thrust backward in time and stranded in 1931 New York City. With the all-new Zephyr set to time-jump at any moment, the team must hurry to find out exactly what happened. If they fail, it would mean disaster for the past, present and future of the world.",
+    "colors": "#0a1633",
+    "tags": ["ABC", "Canon"]
   },
   {
     "id": "",
