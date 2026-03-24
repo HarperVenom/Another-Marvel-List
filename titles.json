@@ -430,7 +430,7 @@
         "duration": 43
       }
     ],
-    "tags": ["ABC", "Canon"]
+    "tags": ["ABC"]
   },
   {
     "id": "thor_the_dark_world",
@@ -624,7 +624,7 @@
         "duration": 44
       }
     ],
-    "tags": ["ABC", "Canon"]
+    "tags": ["ABC"]
   },
   {
     "id": "agent_carter_s1",
@@ -673,7 +673,7 @@
         "duration": 43
       }
     ],
-    "tags": ["ABC", "Canon"]
+    "tags": ["ABC"]
   },
   {
     "id": "daredevil_s1",
@@ -843,7 +843,7 @@
       { "name": "Absolution (1)", "date": "2016-05-17", "duration": 43 },
       { "name": "Ascension (2)", "date": "2016-05-17", "duration": 44 }
     ],
-    "tags": ["ABC", "Canon"]
+    "tags": ["ABC"]
   },
   {
     "id": "jessica_jones_s1",
@@ -976,7 +976,7 @@
         "duration": 42
       }
     ],
-    "tags": ["ABC", "Canon"]
+    "tags": ["ABC"]
   },
   {
     "id": "deadpool",
@@ -1241,7 +1241,7 @@
       }
     ],
     "links": ["1xgQUoVfiL8&list=PLDe0CguuqcMBVtZJk0iCNoSblixvAt4BY&index=1"],
-    "tags": ["ABC", "Canon"]
+    "tags": ["ABC"]
   },
   {
     "id": "luke_cage_s1",
@@ -1694,7 +1694,7 @@
         "duration": 49
       }
     ],
-    "tags": ["Freeform"]
+    "tags": ["Hulu"]
   },
   {
     "id": "black_panther",
@@ -2355,7 +2355,7 @@
         "duration": 51
       }
     ],
-    "tags": ["Freeform"]
+    "tags": ["Hulu"]
   },
   {
     "id": "the_gifted_s2",
@@ -2573,7 +2573,7 @@
     ],
     "description": "Last season, the team leaped forward in time to a dystopian future they soon realized must be prevented. While facing multiple timelines and new enemies from faraway planets, they found family, friends, teammates and the courage to pull off their biggest challenge yet. Their next challenge? Coming to grips with the knowledge that bending the laws of space and time may have saved the planet, but it couldn’t save Fitz or Coulson.",
     "colors": "#120f1a",
-    "tags": ["ABC", "Canon"]
+    "tags": ["ABC"]
   },
   {
     "id": "legion_s3",
@@ -2690,7 +2690,7 @@
     ],
     "description": "The Runaways frantically search for their captured friends Chase, Gert and Karolina. The kids go head to head with an unstoppable enemy who has targeted Leslie - or more accurately, the child she's carrying. Nico draws them all into a dark realm where its ruler Morgan le Fay, is much more nefarious than anyone the kids have yet to face.",
     "colors": "#202138",
-    "tags": ["Freeform"]
+    "tags": ["Hulu"]
   },
   {
     "id": "agents_of_shield_s7",
@@ -2764,7 +2764,7 @@
     ],
     "description": "Coulson and the Agents of S.H.I.E.L.D. are thrust backward in time and stranded in 1931 New York City. With the all-new Zephyr set to time-jump at any moment, the team must hurry to find out exactly what happened. If they fail, it would mean disaster for the past, present and future of the world.",
     "colors": "#0a1633",
-    "tags": ["ABC", "Canon"]
+    "tags": ["ABC"]
   },
   {
     "id": "the_new_mutants",
@@ -2774,5 +2774,172 @@
     "description": "Five young mutants, just discovering their abilities while held in a secret facility against their will, fight to escape their past sins and save themselves.",
     "colors": "#321819",
     "tags": ["Fox"]
+  },
+  {
+    "id": "helstrom",
+    "name": "Helstrom",
+    "episodes": [
+      {
+        "name": "Mother’s Little Helpers",
+        "date": "2020-10-16",
+        "duration": 56
+      },
+      {
+        "name": "Viaticum",
+        "date": "2020-10-16",
+        "duration": 49
+      },
+      {
+        "name": "The One Who Got Away",
+        "date": "2020-10-16",
+        "duration": 46
+      },
+      {
+        "name": "Containment",
+        "date": "2020-10-16",
+        "duration": 53
+      },
+      {
+        "name": "Committed",
+        "date": "2020-10-16",
+        "duration": 47
+      },
+      {
+        "name": "Leviathan",
+        "date": "2020-10-16",
+        "duration": 49
+      },
+      {
+        "name": "Scars",
+        "date": "2020-10-16",
+        "duration": 54
+      },
+      {
+        "name": "Underneath",
+        "date": "2020-10-16",
+        "duration": 52
+      },
+      {
+        "name": "Vessels",
+        "date": "2020-10-16",
+        "duration": 54
+      },
+      {
+        "name": "Hell Storm",
+        "date": "2020-10-16",
+        "duration": 56
+      }
+    ],
+    "description": "Daimon and Ana Helstrom are the son and daughter of a mysterious and powerful serial killer. The siblings have a complicated dynamic as they track down the terrorizing worst of humanity — each with their attitude and skills.",
+    "colors": "#181818",
+    "tags": ["Hulu"]
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
   }
 ]
