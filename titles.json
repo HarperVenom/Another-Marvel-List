@@ -2835,13 +2835,58 @@
     "tags": ["Hulu"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "wandavision",
+    "name": "WandaVision",
+    "episodes": [
+      {
+        "name": "Filmed Before a Live Studio Audience",
+        "date": "2021-01-15",
+        "duration": 31
+      },
+      {
+        "name": "Don't Touch That Dial",
+        "date": "2021-01-15",
+        "duration": 39
+      },
+      {
+        "name": "Now in Color",
+        "date": "2021-01-22",
+        "duration": 35
+      },
+      {
+        "name": "We Interrupt This Program",
+        "date": "2021-01-29",
+        "duration": 37
+      },
+      {
+        "name": "On a Very Special Episode...",
+        "date": "2021-02-05",
+        "duration": 43
+      },
+      {
+        "name": "All-New Halloween Spooktacular!",
+        "date": "2021-02-12",
+        "duration": 40
+      },
+      {
+        "name": "Breaking the Fourth Wall",
+        "date": "2021-02-19",
+        "duration": 39
+      },
+      {
+        "name": "Previously On",
+        "date": "2021-02-26",
+        "duration": 48
+      },
+      {
+        "name": "The Series Finale",
+        "date": "2021-03-05",
+        "duration": 51
+      }
+    ],
+    "description": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
+    "colors": "#1f0c1a",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
