@@ -1924,7 +1924,7 @@
         "duration": 44
       }
     ],
-    "tags": ["ABC", "Canon"]
+    "tags": ["ABC"]
   },
   {
     "id": "legion_s2",
@@ -2885,17 +2885,47 @@
       }
     ],
     "description": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
-    "colors": "#1f0c1a",
-    "tags": ["Marvel Studios", "Canon"]
+    "colors": "#260f20",
+    "tags": ["Disney Plus", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "the_falcon_and_the_winter_soldier",
+    "name": "The Falcon and the Winter Soldier",
+    "episodes": [
+      {
+        "name": "New World Order",
+        "date": "2021-03-19",
+        "duration": 51
+      },
+      {
+        "name": "The Star-Spangled Man",
+        "date": "2021-03-26",
+        "duration": 52
+      },
+      {
+        "name": "Power Broker",
+        "date": "2021-04-02",
+        "duration": 55
+      },
+      {
+        "name": "The Whole World Is Watching",
+        "date": "2021-04-09",
+        "duration": 56
+      },
+      {
+        "name": "Truth",
+        "date": "2021-04-16",
+        "duration": 62
+      },
+      {
+        "name": "One World, One People",
+        "date": "2021-04-23",
+        "duration": 54
+      }
+    ],
+    "description": "Following the events of “Avengers: Endgame”, the Falcon, Sam Wilson and the Winter Soldier, Bucky Barnes team up in a global adventure that tests their abilities, and their patience.",
+    "colors": "#2d3640",
+    "tags": ["Disney Plus", "Canon"]
   },
   {
     "id": "",
