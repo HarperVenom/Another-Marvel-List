@@ -5,7 +5,7 @@
     "date": "1998-08-21",
     "duration": 120,
     "description": "Deacon Frost, a vampire, kills the elders of the underground vampiric society in order to gain control over his kind. To cement his powers, he needs the blood of Blade, a half-human vampire hunter.",
-    "colors": "#3d0e08",
+    "colors": "#330c07",
     "type": "Movie",
     "tags": ["New Line Cinema", "Canon"]
   },
@@ -2928,13 +2928,13 @@
     "tags": ["Disney Plus", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "black_widow",
+    "name": "Black Widow",
+    "date": "2021-07-09",
+    "duration": 134,
+    "description": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+    "colors": "#330f11",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
