@@ -2933,17 +2933,47 @@
     "date": "2021-07-09",
     "duration": 134,
     "description": "Natasha Romanoff, also known as Black Widow, confronts the darker parts of her ledger when a dangerous conspiracy with ties to her past arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
-    "colors": "#330f11",
+    "colors": "#330a0c",
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "loki_s1",
+    "name": "Loki Season 1",
+    "episodes": [
+      {
+        "name": "Glorious Purpose",
+        "date": "2021-06-09",
+        "duration": 53
+      },
+      {
+        "name": "The Variant",
+        "date": "2021-06-16",
+        "duration": 56
+      },
+      {
+        "name": "Lamentis",
+        "date": "2021-06-23",
+        "duration": 44
+      },
+      {
+        "name": "The Nexus Event",
+        "date": "2021-06-30",
+        "duration": 50
+      },
+      {
+        "name": "Journey into Mystery",
+        "date": "2021-07-07",
+        "duration": 51
+      },
+      {
+        "name": "For All Time. Always.",
+        "date": "2021-07-14",
+        "duration": 48
+      }
+    ],
+    "description": "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of \"Avengers: Endgame.\"",
+    "colors": "#210f07",
+    "tags": ["Disney Plus", "Canon"]
   },
   {
     "id": "",
