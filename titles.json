@@ -151,7 +151,6 @@
     "duration": 126,
     "description": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
     "colors": "#05172e",
-    "links": ["C7kmm16PoDY"],
     "tags": ["Marvel Studios", "Canon"]
   },
   {
@@ -2630,7 +2629,7 @@
     "date": "2019-09-17",
     "duration": 4,
     "description": "On the eve of his departure to Europe, Peter Parker tells Ned Leeds that he has several things to do before they leave.",
-    "colors": "#1f1811",
+    "colors": "#351935",
     "tags": ["One-Shot"]
   },
   {
@@ -2985,13 +2984,13 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "venom_let_there_be_carnage",
+    "name": "Venom: Let There Be Carnage",
+    "date": "2021-10-01",
+    "duration": 97,
+    "description": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
+    "colors": "#14161d",
+    "tags": ["Sony"]
   },
   {
     "id": "",
