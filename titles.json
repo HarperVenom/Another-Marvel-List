@@ -2993,13 +2993,13 @@
     "tags": ["Sony"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "eternals",
+    "name": "Eternals",
+    "date": "2021-11-05",
+    "duration": 156,
+    "description": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
+    "colors": "#331e0f",
+    "tags": ["Marvel Studios"]
   },
   {
     "id": "",
