@@ -2971,7 +2971,7 @@
       }
     ],
     "description": "Loki, the God of Mischief, steps out of his brother's shadow to embark on an adventure that takes place after the events of \"Avengers: Endgame.\"",
-    "colors": "#210f07",
+    "colors": "#26120b",
     "tags": ["Disney Plus", "Canon"]
   },
   {
@@ -2998,17 +2998,17 @@
     "date": "2021-11-05",
     "duration": 156,
     "description": "The Eternals are a team of ancient aliens who have been living on Earth in secret for thousands of years. When an unexpected tragedy forces them out of the shadows, they are forced to reunite against mankind’s most ancient enemy, the Deviants.",
-    "colors": "#331e0f",
-    "tags": ["Marvel Studios"]
+    "colors": "#1f130c",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "spider_man_no_way_home",
+    "name": "Spider-Man: No Way Home",
+    "date": "2021-12-17",
+    "duration": 148,
+    "description": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+    "colors": "#37313f",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
