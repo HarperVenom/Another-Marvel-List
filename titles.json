@@ -3011,13 +3011,43 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "hawkeye",
+    "name": "Hawkeye",
+    "episodes": [
+      {
+        "name": "Never Meet Your Heroes",
+        "date": "2021-11-24",
+        "duration": 51
+      },
+      {
+        "name": "Hide and Seek",
+        "date": "2021-11-24",
+        "duration": 52
+      },
+      {
+        "name": "Echoes",
+        "date": "2021-12-01",
+        "duration": 44
+      },
+      {
+        "name": "Partners, Am I Right?",
+        "date": "2021-12-08",
+        "duration": 42
+      },
+      {
+        "name": "Ronin",
+        "date": "2021-12-15",
+        "duration": 46
+      },
+      {
+        "name": "So This Is Christmas?",
+        "date": "2021-12-22",
+        "duration": 62
+      }
+    ],
+    "description": "Former Avenger Clint Barton has a seemingly simple mission: get back to his family for Christmas. Possible? Maybe with the help of Kate Bishop, a 22-year-old archer with dreams of becoming a superhero. The two are forced to work together when a presence from Barton’s past threatens to derail far more than the festive spirit.",
+    "colors": "#2a0d39",
+    "tags": ["Disney Plus", "Canon"]
   },
   {
     "id": "",
