@@ -3050,13 +3050,13 @@
     "tags": ["Disney Plus", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "morbius",
+    "name": "Morbius",
+    "date": "2022-01-04",
+    "duration": 105,
+    "description": "Dangerously ill with a rare blood disorder, and determined to save others suffering his same fate, Dr. Michael Morbius attempts a desperate gamble. What at first appears to be a radical success soon reveals itself to be a remedy potentially worse than the disease.",
+    "colors": "#0d1c1c",
+    "tags": ["Sony"]
   },
   {
     "id": "",
