@@ -3103,17 +3103,17 @@
     "date": "2022-05-06",
     "duration": 126,
     "description": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.",
-    "colors": "#1a0a0c",
+    "colors": "#260b0f",
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "thor_love_and_thunder",
+    "name": "Thor: Love and Thunder",
+    "date": "2022-07-07",
+    "duration": 119,
+    "description": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher’s vengeance and stop him before it’s too late.",
+    "colors": "#33275e",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
