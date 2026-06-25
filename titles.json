@@ -3152,34 +3152,104 @@
     ],
     "description": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
     "colors": "#591926",
-    "tags": ["Sony", "Canon"]
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "i_am_groot_s1",
+    "name": "I Am Groot Season 1",
+    "episodes": [
+      {
+        "name": "Groot's First Steps",
+        "date": "2022-08-10",
+        "duration": 6
+      },
+      {
+        "name": "The Little Guy",
+        "date": "2022-08-10",
+        "duration": 6
+      },
+      {
+        "name": "Groot's Pursuit",
+        "date": "2022-08-10",
+        "duration": 6
+      },
+      {
+        "name": "Groot Takes a Bath",
+        "date": "2022-08-10",
+        "duration": 6
+      },
+      {
+        "name": "Magnum Opus",
+        "date": "2022-08-10",
+        "duration": 5
+      }
+    ],
+    "description": "There's no guarding the galaxy from this mischievous toddler! Get ready as Baby Groot takes center stage in his very own collection of shorts, exploring his glory days growing up and getting into trouble among the stars.",
+    "colors": "#352228",
+    "tags": ["Marvel Studios"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "she_hulk_attorney_at_law",
+    "name": "She-Hulk: Attorney at Law",
+    "episodes": [
+      {
+        "name": "A Normal Amount of Rage",
+        "date": "2022-08-18",
+        "duration": 38
+      },
+      {
+        "name": "Superhuman Law",
+        "date": "2022-08-25",
+        "duration": 31
+      },
+      {
+        "name": "The People vs. Emil Blonsky",
+        "date": "2022-09-01",
+        "duration": 35
+      },
+      {
+        "name": "Is This Not Real Magic?",
+        "date": "2022-09-08",
+        "duration": 37
+      },
+      {
+        "name": "Mean, Green, and Straight Poured into These Jeans",
+        "date": "2022-09-15",
+        "duration": 31
+      },
+      {
+        "name": "Just Jen",
+        "date": "2022-09-22",
+        "duration": 31
+      },
+      {
+        "name": "The Retreat",
+        "date": "2022-09-29",
+        "duration": 35
+      },
+      {
+        "name": "Ribbit and Rip It",
+        "date": "2022-10-06",
+        "duration": 36
+      },
+      {
+        "name": "Whose Show Is This?",
+        "date": "2022-10-13",
+        "duration": 35
+      }
+    ],
+    "description": "Jennifer Walters navigates the complicated life of a single, 30-something attorney who also happens to be a green 6-foot-7-inch superpowered hulk.",
+    "colors": "#212d1e",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "werewolf_by_night",
+    "name": "Werewolf by Night",
+    "date": "2022-09-25",
+    "duration": 55,
+    "description": "On a dark and somber night, a secret cabal of monster hunters emerge from the shadows and gather at the foreboding Bloodstone Temple following the death of their leader. In a strange and macabre memorial to the leader’s life, the attendees are thrust into a mysterious and deadly competition for a powerful relic—a hunt that will ultimately bring them face to face with a dangerous monster.",
+    "colors": "#392517",
+    "tags": ["Marvel Studios", "Special"]
   },
   {
     "id": "",
