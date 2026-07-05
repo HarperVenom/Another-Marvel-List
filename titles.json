@@ -3270,13 +3270,13 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "ant_man_and_the_wasp_quantumania",
+    "name": "Ant-Man and the Wasp: Quantumania",
+    "date": "2023-02-15",
+    "duration": 125,
+    "description": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
+    "colors": "#1c1a33",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
