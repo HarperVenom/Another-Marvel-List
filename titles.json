@@ -3279,22 +3279,22 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "guardians_of_the_galaxy_vol_3",
+    "name": "Guardians of the Galaxy Vol. 3",
+    "date": "2023-05-03",
+    "duration": 150,
+    "description": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+    "colors": "#281d48",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "spider_man_across_the_spider_verse",
+    "name": "Spider-Man: Across the Spider-Verse",
+    "date": "2023-06-02",
+    "duration": 140,
+    "description": "After reuniting with Gwen Stacy, Brooklyn’s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse, where he encounters the Spider Society, a team of Spider-People charged with protecting the Multiverse's very existence. But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set out on his own to save those he loves most.",
+    "colors": "#56264c",
+    "tags": ["Sony"]
   },
   {
     "id": "",
