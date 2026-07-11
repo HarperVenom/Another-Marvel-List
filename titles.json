@@ -3297,6 +3297,117 @@
     "tags": ["Sony"]
   },
   {
+    "id": "secret_invasion",
+    "name": "Secret Invasion",
+    "episodes": [
+      {
+        "name": "Resurrection",
+        "date": "2023-06-21",
+        "duration": 55
+      },
+      {
+        "name": "Promises",
+        "date": "2023-06-28",
+        "duration": 56
+      },
+      {
+        "name": "Betrayed",
+        "date": "2023-07-05",
+        "duration": 42
+      },
+      {
+        "name": "Beloved",
+        "date": "2023-07-12",
+        "duration": 36
+      },
+      {
+        "name": "Harvest",
+        "date": "2023-07-19",
+        "duration": 37
+      },
+      {
+        "name": "Home",
+        "date": "2023-07-26",
+        "duration": 36
+      }
+    ],
+    "description": "Nick Fury and Talos discover a faction of shapeshifting Skrulls who have been infiltrating Earth for years.",
+    "colors": "#1e2123",
+    "tags": ["Marvel Studios", "Canon"]
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
     "id": "",
     "name": "",
     "date": "",
