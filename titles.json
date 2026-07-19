@@ -3185,7 +3185,7 @@
       }
     ],
     "description": "There's no guarding the galaxy from this mischievous toddler! Get ready as Baby Groot takes center stage in his very own collection of shorts, exploring his glory days growing up and getting into trouble among the stars.",
-    "colors": "#352228",
+    "colors": "#331626",
     "tags": ["Marvel Studios"]
   },
   {
@@ -3336,22 +3336,77 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "i_am_groot_s2",
+    "name": "I Am Groot Season 2",
+    "episodes": [
+      {
+        "name": "Are You My Groot?",
+        "date": "2023-09-06",
+        "duration": 5
+      },
+      {
+        "name": "Groot Noses Around",
+        "date": "2023-09-06",
+        "duration": 4
+      },
+      {
+        "name": "Groot's Snow Day",
+        "date": "2023-09-06",
+        "duration": 5
+      },
+      {
+        "name": "Groot's Sweet Treat",
+        "date": "2023-09-06",
+        "duration": 4
+      },
+      {
+        "name": "Groot and the Great Prophecy",
+        "date": "2023-09-06",
+        "duration": 6
+      }
+    ],
+    "description": "The troublemaking twig returns to mischief in the second season of “I Am Groot.” This time, Baby Groot finds himself exploring the universe and beyond aboard the Guardians' spaceships, coming face-to-face—or nose-to-nose—with new and colorful creatures and environments.",
+    "colors": "#23264d",
+    "tags": ["Marvel Studios"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "loki_s2",
+    "name": "Loki Season 2",
+    "episodes": [
+      {
+        "name": "Ouroboros",
+        "date": "2023-10-05",
+        "duration": 48
+      },
+      {
+        "name": "Breaking Brad",
+        "date": "2023-10-12",
+        "duration": 52
+      },
+      {
+        "name": "1893",
+        "date": "2023-10-19",
+        "duration": 56
+      },
+      {
+        "name": "Heart of the TVA",
+        "date": "2023-10-26",
+        "duration": 51
+      },
+      {
+        "name": "Science/Fiction",
+        "date": "2023-11-02",
+        "duration": 47
+      },
+      {
+        "name": "Glorious Purpose",
+        "date": "2023-11-09",
+        "duration": 59
+      }
+    ],
+    "description": "In the aftermath of Season 1, Loki finds himself in a battle for the soul of the Time Variance Authority. Along with Mobius, Hunter B-15 and a team of new and returning characters, Loki navigates an ever-expanding and increasingly dangerous multiverse in search of Sylvie, Judge Renslayer, Miss Minutes and the truth of what it means to possess free will and glorious purpose.",
+    "colors": "#1b1512",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
