@@ -3409,13 +3409,13 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "the_marvels",
+    "name": "The Marvels",
+    "date": "2023-11-08",
+    "duration": 105,
+    "description": "When her duties send her to an anomalous wormhole linked to a Kree revolutionary, Carol's powers become entangled with that of Jersey City super-fan Kamala Khan, aka Ms. Marvel, and Carol's estranged niece, now S.A.B.E.R. astronaut Captain Monica Rambeau. Together, this unlikely trio must team up and learn to work in concert to save the universe.",
+    "colors": "#181433",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
