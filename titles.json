@@ -3418,13 +3418,38 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "echo",
+    "name": "Echo",
+    "episodes": [
+      {
+        "name": "Chafa",
+        "date": "2024-01-09",
+        "duration": 51
+      },
+      {
+        "name": "Lowak",
+        "date": "2024-01-09",
+        "duration": 41
+      },
+      {
+        "name": "Tuklo",
+        "date": "2024-01-09",
+        "duration": 44
+      },
+      {
+        "name": "Taloa",
+        "date": "2024-01-09",
+        "duration": 40
+      },
+      {
+        "name": "Maya",
+        "date": "2024-01-09",
+        "duration": 37
+      }
+    ],
+    "description": "Pursued by Wilson Fisk's criminal empire, Maya's journey brings her home and she must confront her own family and legacy.",
+    "colors": "#131a35",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
