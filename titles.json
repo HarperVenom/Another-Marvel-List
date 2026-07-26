@@ -3452,13 +3452,13 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
-    "id": "",
-    "name": "",
-    "date": "",
-    "duration": 0,
-    "description": "",
-    "colors": "",
-    "tags": []
+    "id": "deadpool_&_wolverine",
+    "name": "Deadpool & Wolverine",
+    "date": "2024-07-24",
+    "duration": 128,
+    "description": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
+    "colors": "#180e0d",
+    "tags": ["Marvel Studios", "Canon"]
   },
   {
     "id": "",
