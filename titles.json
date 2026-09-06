@@ -3524,6 +3524,105 @@
     "tags": ["Marvel Studios", "Canon"]
   },
   {
+    "id": "daredevil_born_again_s1",
+    "name": "Daredevil: Born Again Season 1",
+    "episodes": [
+      {
+        "name": "Heaven's Half Hour",
+        "date": "2025-03-04",
+        "duration": 61
+      },
+      {
+        "name": "Optics",
+        "date": "2025-03-04",
+        "duration": 50
+      },
+      {
+        "name": "The Hollow of His Hand",
+        "date": "2025-03-11",
+        "duration": 47
+      },
+      {
+        "name": "Sic Semper Systema",
+        "date": "2025-03-18",
+        "duration": 55
+      },
+      {
+        "name": "With Interest",
+        "date": "2025-03-25",
+        "duration": 42
+      },
+      {
+        "name": "Excessive Force",
+        "date": "2025-03-25",
+        "duration": 45
+      },
+      {
+        "name": "Art for Art's Sake",
+        "date": "2025-04-01",
+        "duration": 43
+      },
+      {
+        "name": "Isle of Joy",
+        "date": "2025-04-08",
+        "duration": 52
+      },
+      {
+        "name": "Straight to Hell",
+        "date": "2025-04-15",
+        "duration": 60
+      }
+    ],
+    "description": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
+    "colors": "#261313",
+    "tags": ["Marvel Studios", "Canon"]
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
+    "id": "",
+    "name": "",
+    "date": "",
+    "duration": 0,
+    "description": "",
+    "colors": "",
+    "tags": []
+  },
+  {
     "id": "",
     "name": "",
     "date": "",
